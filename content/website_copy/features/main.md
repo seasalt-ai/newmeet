@@ -11,9 +11,17 @@ meta_description: Explore the powerful features of SeaMeet, including our AI Mee
 
 ## **Core Features**
 
+### **[Daily Executive Insights](/features/daily-executive-insights)**
+
+Transform your team's conversations into strategic intelligence delivered to your inbox every morning. Get strategic signals, risk alerts, and actionable recommendations - loved by CEOs and stakeholders.
+
 ### **[AI Meeting Assistant](/features/ai-assistant)**
 
 Your 24/7 AI copilot that handles all the note-taking, so you can focus on the conversation. The assistant automatically joins meetings, records, and provides a complete post-meeting analysis.
+
+### **[SeaMeet Agentic Copilot](/features/agentic-meeting-copilot)**
+
+Transform your post-meeting productivity with an intelligent email-based agent. Engage in conversational follow-up to generate customized content, SOWs, and reports directly through email.
 
 ### **[Transcription & Analysis](/features/transcription-analysis)**
 

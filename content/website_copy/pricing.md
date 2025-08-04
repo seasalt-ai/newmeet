@@ -16,6 +16,7 @@ meta_description: Find the perfect SeaMeet plan for your team. We offer flexible
 | **Price** | $0 | $15/user/mo | $25/user/mo | [Contact Us](#) |
 | **Key Feature** | For individuals just getting started | For power users and small teams | For growing teams and businesses | For large organizations with advanced needs |
 | **Transcription Hours** | 5 hours/month | 20 hours/month | 40 hours/month | Custom |
+| **Daily Executive Insights** | - | - | ✓ | ✓ |
 | **Ineffective Meeting Detection** | - | ✓ | ✓ | ✓ |
 | **Advanced Language Support** | - | ✓ | ✓ | ✓ |
 | **Integrations** | Basic | Standard | Premium | Custom |
