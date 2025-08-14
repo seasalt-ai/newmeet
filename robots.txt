@@ -1,5 +1,5 @@
 # Robots.txt for SeaMeet.ai
-# Generated on 2025-08-14T13:59:43.952Z
+# Generated on 2025-08-14T16:47:59.835Z
 
 User-agent: *
 Allow: /
