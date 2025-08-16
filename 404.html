@@ -11,18 +11,16 @@
     // Convert path-based URL to hash-based URL for SPA compatibility
     const path = window.location.pathname;
     const search = window.location.search;
-    const hash = window.location.hash;
     
     if (path !== '/') {
       // Convert /en/pricing to /#/en/pricing
       const hashPath = '#' + path + search;
       const targetUrl = window.location.origin + '/' + hashPath;
       
-      console.log('🔄 404 Redirect:', path, '→', targetUrl);
       window.location.replace(targetUrl);
     } else {
-      // If already at root, redirect to default language
-      window.location.replace(window.location.origin + '/#/en');
+      // If already at root, redirect to hash root to trigger language detection
+      window.location.replace(window.location.origin + '/#/');
     }
   </script>
   
