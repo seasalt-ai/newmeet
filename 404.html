@@ -4,638 +4,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>SeaMeet - Loading...</title>
   
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NCR9N2B7');</script>
-  <!-- End Google Tag Manager -->
-  
-  <!-- Critical SEO meta tags for immediate Google visibility -->
-  <title>SeaMeet - AI Meeting Assistant & Transcription</title>
-  <meta name="description" content="AI-powered meeting assistant with real-time transcription, smart summaries, and multilingual support for Google Meet, Teams, Discord and Twilio." />
-  <meta name="keywords" content="AI meeting assistant, meeting transcription, smart summaries, multilingual meetings, Google Meet, Microsoft Teams, Discord, Twilio, meeting productivity" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="SeaMeet - AI Meeting Assistant & Transcription" />
-  <meta property="og:description" content="AI-powered meeting assistant with real-time transcription, smart summaries, and multilingual support for Google Meet, Teams, and Zoom." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://seameet.ai" />
-  <meta property="og:image" content="https://seameet.ai/og-image.jpg" />
-  <meta property="og:site_name" content="SeaMeet" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="SeaMeet - AI Meeting Assistant" />
-  <meta name="twitter:description" content="AI-powered meeting assistant with real-time transcription, smart summaries, and multilingual support." />
-  <meta name="twitter:image" content="https://seameet.ai/og-image.jpg" />
-  
-  <!-- Basic hreflang for homepage -->
-  <link rel="alternate" hreflang="x-default" href="https://seameet.ai/" />
-  <link rel="alternate" hreflang="en" href="https://seameet.ai/en" />
-  <link rel="alternate" hreflang="es" href="https://seameet.ai/es" />
-  <link rel="alternate" hreflang="fr" href="https://seameet.ai/fr" />
-  <link rel="alternate" hreflang="de" href="https://seameet.ai/de" />
-  <link rel="alternate" hreflang="ja" href="https://seameet.ai/ja" />
-  <link rel="alternate" hreflang="ko" href="https://seameet.ai/ko" />
-  <link rel="alternate" hreflang="zh-CN" href="https://seameet.ai/zh-CN" />
-  <link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW" />
-  <link rel="alternate" hreflang="pt" href="https://seameet.ai/pt" />
-  <link rel="alternate" hreflang="ru" href="https://seameet.ai/ru" />
-  <link rel="alternate" hreflang="ar" href="https://seameet.ai/ar" />
-  <link rel="alternate" hreflang="hi" href="https://seameet.ai/hi" />
-  
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://seameet.ai/" />
-  
-  <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://seameet.ai/#organization",
-        "name": "SeaMeet",
-        "url": "https://seameet.ai",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://seameet.ai/logo.png"
-        },
-        "description": "AI-powered meeting assistant with real-time transcription, smart summaries, and multilingual support for Google Meet, Teams, and Zoom.",
-        "foundingDate": "2020",
-        "founders": [{
-          "@type": "Organization",
-          "name": "Seasalt.ai"
-        }],
-        "sameAs": [
-          "https://www.linkedin.com/company/seasalt-ai",
-          "https://twitter.com/seasalt_ai"
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://seameet.ai/#website",
-        "url": "https://seameet.ai",
-        "name": "SeaMeet - AI Meeting Assistant & Transcription",
-        "description": "AI-powered meeting assistant with real-time transcription, smart summaries, and multilingual support for Google Meet, Teams, and Zoom.",
-        "publisher": {
-          "@id": "https://seameet.ai/#organization"
-        },
-        "potentialAction": [{
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://seameet.ai/search?q={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-        }]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "https://seameet.ai/#software",
-        "name": "SeaMeet",
-        "description": "AI-powered meeting assistant with real-time transcription, smart summaries, and multilingual support for Google Meet, Teams, and Zoom.",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Web Browser",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "description": "Free tier available"
-        },
-        "featureList": [
-          "Real-time transcription",
-          "Smart meeting summaries",
-          "Multilingual support",
-          "Google Meet integration",
-          "Microsoft Teams integration",
-          "Zoom integration",
-          "Action item tracking",
-          "Meeting analytics"
-        ]
-      }
-    ]
-  }
+  <!-- GitHub Pages Hash Routing - Proper redirect for SPA -->
+  <script>
+    // Convert path-based URL to hash-based URL for SPA compatibility
+    const path = window.location.pathname;
+    const search = window.location.search;
+    const hash = window.location.hash;
+    
+    if (path !== '/') {
+      // Convert /en/pricing to /#/en/pricing
+      const hashPath = '#' + path + search;
+      const targetUrl = window.location.origin + '/' + hashPath;
+      
+      console.log('🔄 404 Redirect:', path, '→', targetUrl);
+      window.location.replace(targetUrl);
+    } else {
+      // If already at root, redirect to default language
+      window.location.replace(window.location.origin + '/#/en');
+    }
   </script>
   
-  <!-- Additional SEO meta tags are handled dynamically by React Helmet in Layout component -->
-  
-  <!-- Favicon and Icons -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-  
-  <!-- Performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="//www.google-analytics.com">
-  
-  <!-- Theme -->
-  <meta name="theme-color" content="#2563eb" />
-  <meta name="msapplication-TileColor" content="#2563eb" />
-  
-  <!-- Mobile -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="SeaMeet" />
-  <script type="module" crossorigin src="/assets/index-B4WNO2-H.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/vendor-CY2pZAgS.js">
-  <link rel="modulepreload" crossorigin href="/assets/ui-BMDgJSbT.js">
-  <link rel="modulepreload" crossorigin href="/assets/utils-uBqnhteM.js">
-  <link rel="stylesheet" crossorigin href="/assets/index-CCoOSCPe.css">
+  <!-- Fallback CSS -->
+  <style>
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      text-align: center; 
+      padding: 3rem 1rem;
+      margin: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container { max-width: 500px; }
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(255,255,255,0.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 1s ease-in-out infinite;
+      margin: 0 auto 2rem;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    h1 { font-size: 2rem; margin-bottom: 1rem; }
+    p { opacity: 0.9; line-height: 1.6; }
+    a { color: white; }
+  </style>
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCR9N2B7"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <div id="root"></div>
-  
-  <!-- SeaChat Webchat Widget -->
-  <button id="sui-widget-btn" class=""></button>
-  <button id="sui-webchat-btn"></button>
-  <iframe id="sui-webchat" src="https://chat.seasalt.ai/chat/aecaf1a1e9fe46858975bad5f0d61f5d"></iframe>
-  
-  
-  <noscript>
-    Powered by 
-    <a href="https://chat.seasalt.ai">SeaChat</a> from
-    <a href="https://seasalt.ai" target="_blank">Seasalt.ai</a>.
-  </noscript>
-  <style>
-    #sui-Voice-btn {
-      position: fixed;
-      display: block;
-      width: 56px;
-      height: 56px;
-      right: 16px;
-      border-radius: 50%;
-      box-shadow: 1px 2px 8px 0px #000;
-      border: none;
-      z-index: 9997;
-      bottom: 358px;
-      background: 50%/24px no-repeat
-        url(https://seasalt-cdn.s3.us-west-2.amazonaws.com/f2e/icon-voice.svg);
-      background-size: cover;
-      cursor: pointer;
-    }
-    #sui-Instagram-btn {
-      position: fixed;
-      display: block;
-      width: 56px;
-      height: 56px;
-      right: 16px;
-      border-radius: 50%;
-      box-shadow: 1px 2px 8px 0px #000;
-      border: none;
-      z-index: 9997;
-      bottom: 290px;
-      background: 50%/24px no-repeat
-        url(https://seasalt-cdn.s3.us-west-2.amazonaws.com/f2e/icon-instagram.svg);
-      background-size: cover;
-      cursor: pointer;
-    }
-    #sui-Messenger-btn {
-      position: fixed;
-      display: block;
-      width: 56px;
-      height: 56px;
-      right: 16px;
-      border-radius: 50%;
-      box-shadow: 1px 2px 8px 0px #000;
-      border: none;
-      z-index: 9997;
-      bottom: 154px;
-      background: 50%/24px no-repeat
-        url(https://seasalt-cdn.s3.us-west-2.amazonaws.com/f2e/icon-facebook.svg);
-      background-size: cover;
-      cursor: pointer;
-    }
-    #sui-Line-btn {
-      position: fixed;
-      display: block;
-      width: 56px;
-      height: 56px;
-      right: 16px;
-      border-radius: 50%;
-      box-shadow: 1px 2px 8px 0px #000;
-      border: none;
-      z-index: 9997;
-      bottom: 86px;
-      background: 50%/24px no-repeat
-        url(https://seasalt-cdn.s3.us-west-2.amazonaws.com/f2e/icon-line.svg);
-      background-size: cover;
-      cursor: pointer;
-    }
-    #sui-WhatsApp-btn {
-      position: fixed;
-      display: block;
-      width: 56px;
-      height: 56px;
-      right: 16px;
-      border-radius: 50%;
-      box-shadow: 1px 2px 8px 0px #000;
-      border: none;
-      z-index: 9997;
-      bottom: 222px;
-      background: 50%/24px no-repeat
-        url(https://seasalt-cdn.s3.us-west-2.amazonaws.com/f2e/icon-whatsapp.svg);
-      background-size: cover;
-      cursor: pointer;
-    }
-    #sui-webchat-btn {
-      position: fixed;
-      display: block;
-      width: 56px;
-      height: 56px;
-      bottom: 16px;
-      right: 16px;
-      padding: 0;
-      font-size: 0;
-      color: transparent;
-      background: 50%/24px no-repeat
-        url(https://chat.seasalt.ai/api/v1/conversations/async/config/aecaf1a1e9fe46858975bad5f0d61f5d/webchat_widget_icon?1754605926711) #19b9c3;
-      background-size: cover;
-      border: none;
-      border-radius: 50%;
-      box-shadow: 1px 2px 8px 0px #000;
-      z-index: 9999;
-      cursor: pointer;
-    }
-    #sui-webchat-btn.close{
-      background: 50%/24px no-repeat
-        url(https://seasalt-cdn.s3.us-west-2.amazonaws.com/f2e/icon-close.svg);
-      background-size: cover;
-      display: block;
-    }
-    #sui-widget-btn {
-      position: fixed;
-      display: none;
-      width: 56px;
-      height: 56px;
-      bottom: 20px;
-      right: 16px;
-      background: 50%/24px no-repeat
-        url(https://seasalt-cdn.s3.us-west-2.amazonaws.com/f2e/icon-widget.svg);
-      background-size: cover;
-      z-index: 9997;
-      border-radius: 50%;
-      box-shadow: 1px 2px 8px 0px #000;
-      border: none;
-      cursor: pointer;
-    }
-    #sui-widget-btn.close{
-      background: 50%/24px no-repeat
-        url(https://seasalt-cdn.s3.us-west-2.amazonaws.com/f2e/icon-close.svg);
-      background-size: cover;
-         display: block;
-    }
-    #sui-webchat {
-      position: fixed;
-      display: none;
-      width: 30%;
-      min-width: 280px;
-      height: 500px;
-      bottom: 80px;
-      right: 80px;
-      margin-top: 24px;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.9);
-      z-index: 9998;
-    }
-    #sui-call-form{
-      position: fixed;
-      display: none;
-      bottom: 358px;
-      right: 80px;
-      margin-top: 24px;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.9);
-      background:#fff;
-      z-index: 9998;
-    }
-    @media only screen and (max-width: 460px) {
-      #sui-widget-btn {
-        display: block;
-      }
-      #sui-webchat {     
-        right: 50%;  
-        transform: translate(50%, -12%);
-        bottom: 20px;
-      }
-      #sui-webchat-btn {
-          display: none;
-          bottom: 88px;
-      }
-      #sui-webchat-btn.show {
-          display: block;
-      }
-      #sui-webchat-btn.show-iframe {
-        display: block;
-        bottom: 20px;
-        z-index: 9998;
-      }
-      #sui-call-form {     
-        right: 50%;  
-        transform: translate(50%, -12%);
-        bottom: 20px;
-      }
-      #sui-Line-btn {
-          display: none;
-          bottom:156px;
-      }
-      #sui-Line-btn.show {
-          display: block;
-      }
-      #sui-Line-btn.show.show-iframe {
-          display: none;
-          
-      }
-      #sui-WhatsApp-btn {
-          display: none;
-          bottom:292px;
-      }
-      #sui-WhatsApp-btn.show {
-          display: block;
-        
-      }
-      #sui-WhatsApp-btn.show.show-iframe {
-          display: none;
-      }
-      #sui-Messenger-btn {
-          display: none;
-          bottom:224px;
-      }
-      #sui-Messenger-btn.show {
-          display: block;
-      }
-      #sui-Messenger-btn.show.show-iframe {
-          display: none;
-      }
-      #sui-Instagram-btn {
-          display: none;
-          bottom:360px;
-      }
-      #sui-Instagram-btn.show {
-          display: block;
-      }
-      #sui-Instagram-btn.show.show-iframe {
-          display: none;
-      }
-      #sui-Voice-btn {
-          display: none;
-          bottom:428px;
-      }
-      #sui-Voice-btn.show {
-          display: block;
-      }
-      #sui-Voice-btn.show.show-iframe {
-          display: none;
-      }
-      #sui-Voice-btn.show.show-call-form{
-          bottom: 20px;
-        	z-index: 9998;
-      }
-    }
-    
-  </style>
-  <script>
-    var configId = "aecaf1a1e9fe46858975bad5f0d61f5d";
-    var currentConversationId = null;
-    var showWebChat = false;
-    
-    window.addEventListener("message", function (event) {
-      if (event.origin !== "https://chat.seasalt.ai") {
-        return;
-      }
-      
-      if (event.data?.type === "SEACHAT_CONVERSATION_ID") {
-        currentConversationId = event.data.conversation_id;
-      }
-  
-      if (event.data?.type === "CLOSE_IFRAME_AFTER_SURVEY") {
-        setTimeout(() => {
-          resetIframeToChat();
-        }, 300);
-      }
-    });
-    function tryRedirectToSurvey() {
-      var iframe = document.getElementById("sui-webchat");
-      if (iframe) {
-        if (!currentConversationId) {
-          iframe.style.display = "none";
-          return;
-        }
-  
-        var surveyUrl = "https://chat.seasalt.ai/chat/survey/csat?id="+ configId + "&conversation_id=" + currentConversationId;
-        iframe.src = surveyUrl;
-        iframe.dataset.fromSurvey = "true";
-      }
-    }
-    
-    function resetIframeToChat() {
-      var iframe = document.getElementById("sui-webchat");
-      var btn = document.getElementById("sui-webchat-btn");
-      iframe.style.display = "none";
-      iframe.src = "https://chat.seasalt.ai/chat/aecaf1a1e9fe46858975bad5f0d61f5d";
-      btn.classList.remove("close");
-      showWebChat = false;
-      updateButtonClasses();
-    }
-      
-    function initSeaChat() {
-      showWebChat = false;
-      var isMobile = window.innerWidth <= 460;
-      var callFormUrl = "";
-      function calc() {
-        var buttons = document.querySelectorAll('.chat-button');
-        buttons.forEach(function(button, index) {
-          var baseOffset;
-          if (isMobile) {
-            baseOffset = 88;
-          } else{
-            baseOffset = 20;
-          }
-          var increment = 68;
-          button.style.bottom = baseOffset + (index + 1) * increment + 'px';
-        }); 
-      }
-      calc();
-      handleSingleButtonDisplay();
-      function updateButtonClasses() {
-        document.querySelectorAll('.chat-button').forEach(function(button) {
-          button.className = 'chat-button';
-          if (showWebChat) {
-            button.classList.add('show-iframe');
-          } else if (isMobile) {
-              button.classList.add('show');
-          }
-        });
-        calc();
-        var button = document.querySelector('#sui-webchat-btn');
-        button.className = '';
-          if (showWebChat) {
-            button.classList.add('show-iframe');
-            button.classList.add('close');
-          } else if (isMobile) {
-              button.classList.add('show');
-          }
-      }
-      function handleSingleButtonDisplay() {
-          var webchatButton = document.querySelector("#sui-webchat-btn");
-          var chatButtons = Array.prototype.slice.call(document.querySelectorAll(".chat-button"));
-          var allButtons = [webchatButton].concat(chatButtons);
-          var widgetButton = document.querySelector("#sui-widget-btn");
-  
-          if (window.innerWidth <= 460 && allButtons.length === 1) {
-              widgetButton.style.display = "none";
-              allButtons[0].style.display = "block";
-              allButtons[0].style.bottom = "20px";
-          }
-      }
-      function handleResize() {
-        var currentIsMobile = window.innerWidth <= 460;
-        if (currentIsMobile !== isMobile) {
-          isMobile = currentIsMobile;
-          widgetButton.classList.remove('close');
-          calc(); 
-        }
-        handleSingleButtonDisplay();
-      }
-      window.addEventListener('resize', handleResize);
-      var button = document.querySelector('#sui-webchat-btn');
-      var iframe = document.querySelector('#sui-webchat');
-      var callFormButton = document.querySelector('#sui-Voice-btn');
-  
-      var handleClick = function(event) {
-        var isClosing = event.currentTarget.classList.contains("close");
-        var isVisible = iframe && iframe.style.display === "block";
-        if (iframe?.dataset.fromSurvey === "true" && isClosing && isVisible) {
-          resetIframeToChat();
-          delete iframe.dataset.fromSurvey;
-          return;
-        }
-        if (isClosing && isVisible) {
-          setTimeout(() => {
-            tryRedirectToSurvey();
-          }, 200);
-          return;
-        }
-  
-        if (iframe.src !== "https://chat.seasalt.ai/chat/aecaf1a1e9fe46858975bad5f0d61f5d") {
-          iframe.src = "https://chat.seasalt.ai/chat/aecaf1a1e9fe46858975bad5f0d61f5d";
-        }
-        if (iframe.style.display !== 'block') {
-          iframe.style.display = 'block';
-          button.classList.add('close');
-        } else {
-          iframe.style.display = 'none';
-          button.classList.remove('close');
-        }
-        showWebChat = !showWebChat;
-        updateButtonClasses();
-      };
-      var widgetButton = document.querySelector('#sui-widget-btn');
-      function assignClickHandlers() {
-        if(callFormButton && callFormUrl){
-          callFormButton.addEventListener('click', function() {
-            window.location.href = callFormUrl;
-          });
-        }
-        button.addEventListener('click', handleClick);
-  
-        widgetButton.addEventListener("click", function (event) {
-          var isClosing = event.currentTarget.classList.contains("close");
-          var isVisible = iframe && iframe.style.display === "block";
-  
-          if (iframe?.dataset.fromSurvey === "true" && isClosing && isVisible) {
-            resetIframeToChat();
-            delete iframe.dataset.fromSurvey;
-            return;
-          }
-  
-          if (isClosing && isVisible) {
-            setTimeout(() => {
-              tryRedirectToSurvey();
-            }, 500);
-            return;
-          }
-  
-          if (iframe.src !== "https://chat.seasalt.ai/chat/aecaf1a1e9fe46858975bad5f0d61f5d") {
-            iframe.src = "https://chat.seasalt.ai/chat/aecaf1a1e9fe46858975bad5f0d61f5d";
-          }
-  
-          iframe.style.display = "block";
-          widgetButton.classList.add("close");
-          showWebChat = true;
-          updateButtonClasses();
-        });
-      }
-      assignClickHandlers();
-  
-      document.querySelectorAll('button[id^="sui-"]').forEach(function(button, index) {
-        var card = [].find(function(c) {return button.id === 'sui-' + c.channel_type + '-btn'});
-        if (card) {
-          button.addEventListener('click', function() {
-            if (card.channel_url.startsWith('<iframe')) {
-              handleCallForm(card);
-          } else {
-            window.open(card.channel_url, '_blank');
-          }
-          });
-        }
-      });
-  
-      function handleCallForm(card) {
-        var voiceButton = document.querySelector('#sui-Voice-btn');
-        if (!voiceButton){
-          return;
-        }
-        var iframeContainer = document.querySelector('#sui-call-form');
-        if (!iframeContainer) {
-          iframeContainer = document.createElement('div');
-          iframeContainer.id = 'sui-call-form';
-          document.body.appendChild(iframeContainer);
-        }
-        var srcMatch = card.channel_url.match(/<iframe.*?src="(.*?)"/);
-        var src = srcMatch ? srcMatch[1] : null;
-        if (src) {
-          iframeContainer.innerHTML = ''; // Clear previous content
-          var iframe = document.createElement('iframe');
-          iframe.src = src;
-          // Note: Other attributes from the original iframe string are ignored for security.
-          iframeContainer.appendChild(iframe);
-
-          callFormUrl = src;
-          var buttonBottom = getComputedStyle(voiceButton).bottom;
-          iframeContainer.style.bottom = buttonBottom;
-          iframeContainer.style.display =
-          iframeContainer.style.display === 'block' ? 'none' : 'block';
-        } else{
-          window.open(card.channel_url, '_blank');
-        }
-      }
-      
-    }
-    if (document.readyState !== 'loading') {
-      initSeaChat();
-    } else {
-      document.addEventListener('DOMContentLoaded', function () {
-        initSeaChat();
-      });
-    }
-  </script>
+  <div class="container">
+    <div class="spinner"></div>
+    <h1>SeaMeet</h1>
+    <p>Loading your page...</p>
+    <noscript>
+      <p>This page requires JavaScript. Please enable JavaScript and refresh, or visit <a href="https://seameet.ai">seameet.ai</a></p>
+    </noscript>
+  </div>
 </body>
 
 </html>
