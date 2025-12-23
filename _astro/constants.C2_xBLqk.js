@@ -1,0 +1,1 @@
+const s={HUBSPOT_DEMO:"https://meetings.hubspot.com/seasalt-ai/seasalt-meeting/",HUBSPOT_DEMO_ZH_TW:"https://meetings.hubspot.com/seasalt-ai/seasalt-meeting-taiwan",SEAMEET_SIGNUP:"https://meet.seasalt.ai/signup"},{HUBSPOT_DEMO:t,HUBSPOT_DEMO_ZH_TW:a,SEAMEET_SIGNUP:e}=s;export{a as H,e as S,t as a};

@@ -1,11 +1,11 @@
 # Robots.txt for SeaMeet.ai
-# Generated on 2025-08-17T05:03:46.854Z
+# Generated on 2025-09-05T08:36:10.369Z
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://seameet.ai/sitemap.xml
+Sitemap: https://seameet.ai/sitemap-index.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
