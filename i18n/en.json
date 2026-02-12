@@ -57,7 +57,9 @@
   },
   "nav": {
     "announcement": {
-      "tripleTrack": "New: the World’s First Triple-Track Translation Engine!"
+      "tripleTrack": "New: the World's First Triple-Track Translation Engine!",
+      "trilingualTranscription": "🌏 World's First: Chinese-Japanese-English Trilingual Transcription AI",
+      "learnMore": "Learn More"
     },
     "home": "Home",
     "features": {
@@ -77,7 +79,8 @@
         "meetingLabels": "Meeting Labels",
         "transcription": "Smart Transcription",
         "speakerId": "Speaker Identification",
-        "topicsSummary": "Topics Summary"
+        "topicsSummary": "Topics Summary",
+        "trilingualTranscription": "Trilingual Transcription"
       },
       "team": {
         "agenticMeetingCopilot": "Agentic Copilot",
@@ -6036,6 +6039,126 @@
       "title": "Ready to Break Down Language Barriers?",
       "button": "Sign up for Free",
       "trust": "Privacy First. Encryption in transit."
+    }
+  },
+  "trilingualTranscriptionPage": {
+    "meta": {
+      "title": "Chinese-Japanese-English Trilingual Transcription",
+      "description": "Experience the world's first trilingual meeting AI. Seamlessly transcribe and translate mixed conversations in Chinese, Japanese, and English in real-time."
+    },
+    "hero": {
+      "badge": "New Feature Release",
+      "title": "The World's First Trilingual Meeting AI",
+      "subtitle": "Seamlessly transcribe and translate mixed conversations in Chinese, Japanese, and English. No switching required.",
+      "cta_primary": "Try SeaMeet Free",
+      "cta_secondary": "Watch Demo",
+      "trusted_by": "Trusted by global teams connecting Asia and the World",
+      "video_placeholder": "Demo Video Coming Soon",
+      "overlay": {
+        "original": "Hello everyone. My revenue has also increased.",
+        "english": "Hello everyone. My revenue has also increased.",
+        "japanese": "皆さん、こんにちは。私の収益も増加しました。"
+      }
+    },
+    "how_it_works": {
+      "title": "One Meeting, Three Languages",
+      "step1": "Start a Meeting",
+      "step1_desc": "Launch SeaMeet in your Zoom, Google Meet, or Teams call.",
+      "step2": "Speak Naturally",
+      "step2_desc": "Participants can mix English, Japanese, and Chinese freely.",
+      "step3": "Instant Clarity",
+      "step3_desc": "Everyone sees the transcript and translation in their preferred language.",
+      "mockup": {
+        "header": "Live Transcription",
+        "text1_original": "We need to finalize the Q3 budget.",
+        "text1_trans1": "我們需要敲定第三季度的預算。",
+        "text1_trans2": "第3四半期の予算を確定する必要があります。",
+        "text2_original": "Understood. My team is ready.",
+        "text2_trans1": "了解。我的團隊已經準備好了。",
+        "text2_trans2": "了解です。私のチームは準備ができています。"
+      }
+    },
+    "feature_main": {
+      "title": "Speak Freely. We Understand.",
+      "desc": "SeaMeet's new engine detects code-switching instantly. Whether your team says 'Revenue' in the middle of a Chinese sentence, or switches to Japanese for a quick aside, we capture every word.",
+      "card1_title": "Trilingual Recognition",
+      "card1_desc": "Simultaneous detection of Mandarin (TW/CN), Japanese, and English in a single audio stream.",
+      "card2_title": "Dual-Target Translation",
+      "card2_desc": "Translate the live transcript into two different languages at the same time for diverse teams.",
+      "card3_title": "Context Aware",
+      "card3_desc": "Our AI understands business context across cultures to ensure 'sales' isn't translated as 'selling on sale'."
+    },
+    "diagram": {
+      "title": "Core Breakthrough: Simultaneous Detection Engine",
+      "input_zh": "Chinese (Audio)",
+      "input_jp": "Japanese (Audio)",
+      "input_en": "English (Audio)",
+      "core": "AI Trilingual Core",
+      "output": "Unified Text Stream",
+      "output_text1": "Hello everyone. My",
+      "output_highlight": "revenue",
+      "output_text2": "has also increased.",
+      "output_text3": "Understood. My team is ready.",
+      "feat1_title": "Simultaneous Recognition",
+      "feat1_desc": "System processes CN, JP, & EN inputs concurrently without manual switching.",
+      "feat2_title": "Seamless Integration",
+      "feat2_desc": "Automatically identifies and tags the speaker's current language in real-time."
+    },
+    "diagram2": {
+      "title": "Synchronous Translation After Recognition",
+      "source_title": "Source: Mixed Text (C/J/E)",
+      "source_text1": "Hello everyone. My",
+      "source_highlight": "revenue",
+      "source_text2": "has also increased.",
+      "source_text3": "Understood. My team is ready.",
+      "core_title": "AI Translation Core",
+      "trans_a": "Translation A: Traditional Chinese",
+      "trans_a_text": "大家平安。我的營收也增加了。了解。我的團隊已經準備好了。",
+      "trans_b": "Translation B: Japanese",
+      "trans_b_text": "皆さん、こんにちは。私の収益も増加しました。了解です。私のチームは準備ができています。",
+      "trans_c": "Translation C: English",
+      "trans_c_text": "Hello everyone. My revenue has also increased. Understood. My team is ready.",
+      "desc_1_title": "Multi-language Output",
+      "desc_1_text": "The system not only transcribes but simultaneously translates into two other languages.",
+      "desc_2_title": "Universal Understanding",
+      "desc_2_text": "Whether speakers use Chinese, Japanese, or English, everyone views content in their native language."
+    },
+    "table": {
+      "title": "See How Everyone Understands",
+      "subtitle": "Each participant sees the conversation in their own preferred language, regardless of what is spoken.",
+      "col_speaker": "Speaker Language",
+      "col_view_en": "English User View",
+      "col_view_zh": "Chinese User View",
+      "col_view_jp": "Japanese User View",
+      "label_original": "Original",
+      "label_translation": "Translation",
+      "row1_speaker": "English",
+      "row1_en_text": "Let's review the Q1 results.",
+      "row1_zh_text": "讓我們回顧一下第一季度的結果。",
+      "row1_jp_text": "第1四半期の結果を確認しましょう。",
+      "row2_speaker": "Chinese",
+      "row2_en_text": "The data looks very promising.",
+      "row2_zh_text": "數據看起來很有希望。",
+      "row2_jp_text": "データは有望に見えます。",
+      "row3_speaker": "Japanese",
+      "row3_en_text": "I agree. Let's proceed.",
+      "row3_zh_text": "我同意。讓我們繼續吧。",
+      "row3_jp_text": "賛成です。進めましょう。"
+    },
+    "cta_section": {
+      "title": "Ready to break language barriers?",
+      "desc": "Join thousands of teams using SeaMeet to close deals across the Pacific.",
+      "button": "Start Free Trial"
+    },
+    "featuresPage": {
+      "title": "Chinese-Japanese-English Trilingual",
+      "description": "World's first AI to simultaneously transcribe and translate mixed Chinese, Japanese, and English conversations in real-time.",
+      "benefits": [
+        "Simultaneous trilingual recognition",
+        "Automatic language detection",
+        "Real-time translation to all three languages",
+        "Code-switching support"
+      ]
     }
   }
 }

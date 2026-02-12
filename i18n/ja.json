@@ -74,7 +74,8 @@
         "meetingLabels": "会議ラベル",
         "transcription": "スマート文字起こし",
         "speakerId": "話者識別",
-        "topicsSummary": "トピック要約"
+        "topicsSummary": "トピック要約",
+        "trilingualTranscription": "三言語同時書き起こし"
       },
       "team": {
         "agenticMeetingCopilot": "SeaMeetスマート副操縦士",
@@ -123,7 +124,9 @@
     "solutionsLabel": "ソリューション",
     "bookDemo": "デモを予約",
     "announcement": {
-      "tripleTrack": "🚀 世界初：3トラック同時翻訳エンジン登場！"
+      "tripleTrack": "🚀 世界初：3トラック同時翻訳エンジン登場！",
+      "trilingualTranscription": "🌏 世界初：日中英3ヶ国語同時文字起こしAI",
+      "learnMore": "詳細を見る"
     }
   },
   "home": {
@@ -6036,6 +6039,126 @@
       "title": "言葉の壁を取り払う準備はできましたか？",
       "button": "無料で登録",
       "trust": "プライバシー優先。転送中暗号化。"
+    }
+  },
+  "trilingualTranscriptionPage": {
+    "meta": {
+      "title": "日中英3ヶ国語同時文字起こし",
+      "description": "世界初の3ヶ国語対応会議AIを体験。中国語、日本語、英語が混在する会話をリアルタイムで文字起こし・翻訳します。"
+    },
+    "hero": {
+      "badge": "新機能リリース",
+      "title": "世界初：日中英3ヶ国語同時通訳AI",
+      "subtitle": "日本語、中国語、英語が混在する会話をシームレスに文字起こし・翻訳。切り替えの手間は一切不要です。",
+      "cta_primary": "SeaMeetを無料で試す",
+      "cta_secondary": "デモを見る",
+      "trusted_by": "アジアと世界をつなぐグローバルチームが信頼",
+      "video_placeholder": "デモ動画は近日公開",
+      "overlay": {
+        "original": "皆さん、こんにちは。私の収益も増加しました。",
+        "english": "Hello everyone. My revenue has also increased.",
+        "japanese": "皆さん、こんにちは。私の収益も増加しました。"
+      }
+    },
+    "how_it_works": {
+      "title": "1つの会議、3つの言語",
+      "step1": "会議を開始",
+      "step1_desc": "Zoom、Google Meet、TeamsでSeaMeetを起動します。",
+      "step2": "自然に話す",
+      "step2_desc": "参加者は日・中・英を自由に混ぜて話すことができます。",
+      "step3": "瞬時に理解",
+      "step3_desc": "全員が自分の好みの言語で文字起こしと翻訳を確認できます。",
+      "mockup": {
+        "header": "ライブ文字起こし",
+        "text1_original": "We need to finalize the Q3 budget.",
+        "text1_trans1": "我們需要敲定第三季度的預算。",
+        "text1_trans2": "第3四半期の予算を確定する必要があります。",
+        "text2_original": "了解です。私のチームは準備ができています。",
+        "text2_trans1": "Understood. My team is ready.",
+        "text2_trans2": "了解。我的團隊已經準備好了。"
+      }
+    },
+    "feature_main": {
+      "title": "言葉の壁を超えて、自由に話そう",
+      "desc": "SeaMeetの新しいエンジンは、コードスイッチング（言語の切り替え）を即座に検知します。日本語の会話中に「Revenue」のような英語が混ざっても、突然中国語に切り替わっても、正確にキャプチャします。",
+      "card1_title": "3ヶ国語混合認識",
+      "card1_desc": "日本語、中国語（繁体字/簡体字）、英語の同時音声認識に対応。",
+      "card2_title": "デュアルターゲット翻訳",
+      "card2_desc": "リアルタイムの文字起こしを、同時に2つの異なる言語へ翻訳表示します。",
+      "card3_title": "文脈認識 AI",
+      "card3_desc": "異文化間のビジネス文脈を理解し、専門用語も正確に翻訳します。"
+    },
+    "diagram": {
+      "title": "核心技術：日中英同時検出エンジン",
+      "input_zh": "中国語 (Audio)",
+      "input_jp": "日本語 (Audio)",
+      "input_en": "English (Audio)",
+      "core": "AI 3ヶ国語コア",
+      "output": "統合テキストストリーム",
+      "output_text1": "皆さん、こんにちは。私の",
+      "output_highlight": "収益",
+      "output_text2": "も増加しました。",
+      "output_text3": "了解です。私のチームは...",
+      "feat1_title": "多言語同時認識",
+      "feat1_desc": "手動切り替えなしで、中国語・日本語・英語の入力を同時に処理します。",
+      "feat2_title": "シームレスな統合",
+      "feat2_desc": "話されている言語をリアルタイムで自動的に識別し、統合します。"
+    },
+    "diagram2": {
+      "title": "音声認識後、他言語へ同時翻訳",
+      "source_title": "ソース: 認識後の混合テキスト (中/日/英)",
+      "source_text1": "皆さん、こんにちは。私の",
+      "source_highlight": "収益",
+      "source_text2": "も増加しました。",
+      "source_text3": "了解です。私のチームは...",
+      "core_title": "AI 翻訳コア",
+      "trans_a": "Translation A: 繁体字中国語",
+      "trans_a_text": "大家平安。我的營收也增加了。了解。我的團隊已經準備好了。",
+      "trans_b": "Translation B: 日本語",
+      "trans_b_text": "皆さん、こんにちは。私の収益も増加しました。了解です。私のチームは準備ができています。",
+      "trans_c": "Translation C: 英語",
+      "trans_c_text": "Hello everyone. My revenue has also increased. Understood. My team is ready.",
+      "desc_1_title": "多言語出力",
+      "desc_1_text": "書き起こしだけでなく、同時に他の2つの言語に翻訳します。",
+      "desc_2_title": "全員が理解",
+      "desc_2_text": "話者がどの言語を話していても、全員が母国語で内容を確認できます。"
+    },
+    "table": {
+      "title": "全員が理解できる仕組み",
+      "subtitle": "話者がどの言語を話しても、参加者はそれぞれの母国語で内容を確認できます。",
+      "col_speaker": "話者の言語",
+      "col_view_en": "英語ユーザーの表示",
+      "col_view_zh": "中国語ユーザーの表示",
+      "col_view_jp": "日本語ユーザーの表示",
+      "label_original": "原文",
+      "label_translation": "翻訳",
+      "row1_speaker": "英語",
+      "row1_en_text": "Let's review the Q1 results.",
+      "row1_zh_text": "讓我們回顧一下第一季度的結果。",
+      "row1_jp_text": "第1四半期の結果を確認しましょう。",
+      "row2_speaker": "中国語",
+      "row2_en_text": "The data looks very promising.",
+      "row2_zh_text": "數據看起來很有希望。",
+      "row2_jp_text": "データは有望に見えます。",
+      "row3_speaker": "日本語",
+      "row3_en_text": "I agree. Let's proceed.",
+      "row3_zh_text": "我同意。讓我們繼續吧。",
+      "row3_jp_text": "賛成です。進めましょう。"
+    },
+    "cta_section": {
+      "title": "言葉の壁を取り払う準備はできましたか？",
+      "desc": "SeaMeetを活用して、世界中のチームと円滑なコミュニケーションを実現しましょう。",
+      "button": "無料トライアルを開始"
+    },
+    "featuresPage": {
+      "title": "日中英3ヶ国語同時文字起こし",
+      "description": "世界初のAIが、中国語・日本語・英語が混在する会話をリアルタイムで同時に文字起こし・翻訳します。",
+      "benefits": [
+        "3ヶ国語の同時認識",
+        "自動言語検出",
+        "3言語へのリアルタイム翻訳",
+        "コードスイッチング対応"
+      ]
     }
   }
 }

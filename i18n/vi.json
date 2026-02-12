@@ -74,7 +74,8 @@
         "meetingLabels": "Nhãn cuộc họp",
         "transcription": "Phiên âm thông minh",
         "speakerId": "Nhận dạng người nói",
-        "topicsSummary": "Tóm tắt chủ đề"
+        "topicsSummary": "Tóm tắt chủ đề",
+        "trilingualTranscription": "Phiên âm đa ngôn ngữ"
       },
       "team": {
         "agenticMeetingCopilot": "Copilot đại lý",
@@ -123,7 +124,9 @@
     "solutionsLabel": "Giải pháp",
     "bookDemo": "Đặt lịch Demo",
     "announcement": {
-      "tripleTrack": "Mới: Công cụ dịch thuật ba luồng đầu tiên trên thế giới!"
+      "tripleTrack": "Mới: Công cụ dịch thuật ba luồng đầu tiên trên thế giới!",
+      "trilingualTranscription": "🌏 Đầu tiên trên thế giới: AI phiên âm ba ngôn ngữ Trung-Nhật-Anh",
+      "learnMore": "Tìm hiểu thêm"
     }
   },
   "home": {
@@ -6070,6 +6073,126 @@
       "title": "Sẵn sàng phá bỏ rào cản ngôn ngữ?",
       "button": "Đăng ký miễn phí",
       "trust": "Quyền riêng tư là trên hết. Mã hóa khi truyền tải."
+    }
+  },
+  "trilingualTranscriptionPage": {
+    "meta": {
+      "title": "Phiên âm ba ngôn ngữ Trung-Nhật-Anh",
+      "description": "Trải nghiệm AI họp ba ngôn ngữ đầu tiên trên thế giới. Chuyển văn bản và dịch các cuộc trò chuyện pha trộn bằng tiếng Trung, tiếng Nhật và tiếng Anh theo thời gian thực."
+    },
+    "hero": {
+      "badge": "Tính năng mới",
+      "title": "AI Họp Ba Ngôn Ngữ Đầu Tiên Trên Thế Giới",
+      "subtitle": "Chuyển văn bản và dịch các cuộc trò chuyện pha trộn bằng tiếng Trung, tiếng Nhật và tiếng Anh một cách liền mạch. Không cần chuyển đổi.",
+      "cta_primary": "Dùng thử SeaMeet miễn phí",
+      "cta_secondary": "Xem Demo",
+      "trusted_by": "Được tin cậy bởi các đội ngũ toàn cầu kết nối Châu Á và Thế giới",
+      "video_placeholder": "Video Demo sắp ra mắt",
+      "overlay": {
+        "original": "Hello everyone. My revenue has also increased.",
+        "english": "Hello everyone. My revenue has also increased.",
+        "japanese": "皆さん、こんにちは。私の収益も増加しました。"
+      }
+    },
+    "how_it_works": {
+      "title": "Một Cuộc Họp, Ba Ngôn Ngữ",
+      "step1": "Bắt đầu Cuộc Họp",
+      "step1_desc": "Khởi động SeaMeet trong cuộc gọi Zoom, Google Meet hoặc Teams của bạn.",
+      "step2": "Nói Tự Nhiên",
+      "step2_desc": "Người tham gia có thể pha trộn tiếng Anh, tiếng Nhật và tiếng Trung một cách tự do.",
+      "step3": "Rõ Ràng Ngay Lập Tức",
+      "step3_desc": "Mọi người đều xem được bản ghi và bản dịch bằng ngôn ngữ họ ưa thích.",
+      "mockup": {
+        "header": "Chuyển văn bản Trực tiếp",
+        "text1_original": "We need to finalize the Q3 budget.",
+        "text1_trans1": "我們需要敲定第三季度的預算。",
+        "text1_trans2": "第3四半期の予算を確定する必要があります。",
+        "text2_original": "Understood. My team is ready.",
+        "text2_trans1": "了解。我的團隊已經準備好了。",
+        "text2_trans2": "了解です。私のチームは準備ができています。"
+      }
+    },
+    "feature_main": {
+      "title": "Nói Tự Do. Chúng Tôi Hiểu.",
+      "desc": "Công cụ mới của SeaMeet phát hiện chuyển mã ngay lập tức. Cho dù đội của bạn nói 'Revenue' giữa câu tiếng Trung, hoặc chuyển sang tiếng Nhật cho một ghi chú nhanh, chúng tôi ghi lại mọi từ.",
+      "card1_title": "Nhận dạng Ba Ngôn Ngữ",
+      "card1_desc": "Phát hiện đồng thời tiếng Quan thoại (TW/CN), tiếng Nhật và tiếng Anh trong một luồng âm thanh.",
+      "card2_title": "Dịch Mục tiêu Kép",
+      "card2_desc": "Dịch bản ghi trực tiếp sang hai ngôn ngữ khác nhau cùng một lúc cho các đội ngũ đa dạng.",
+      "card3_title": "Nhận thức Ngữ cảnh",
+      "card3_desc": "AI của chúng tôi hiểu ngữ cảnh kinh doanh xuyên văn hóa để đảm bảo 'sales' không bị dịch thành 'bán hạ giá'."
+    },
+    "diagram": {
+      "title": "Đột phá Cốt lõi: Công cụ Phát hiện Đồng thời",
+      "input_zh": "Tiếng Trung (Âm thanh)",
+      "input_jp": "Tiếng Nhật (Âm thanh)",
+      "input_en": "Tiếng Anh (Âm thanh)",
+      "core": "Lõi AI Ba Ngôn Ngữ",
+      "output": "Luồng Văn bản Thống nhất",
+      "output_text1": "Hello everyone. My",
+      "output_highlight": "revenue",
+      "output_text2": "has also increased.",
+      "output_text3": "Understood. My team is ready.",
+      "feat1_title": "Nhận dạng Đồng thời",
+      "feat1_desc": "Hệ thống xử lý đầu vào CN, JP và EN đồng thời mà không cần chuyển đổi thủ công.",
+      "feat2_title": "Tích hợp Liền mạch",
+      "feat2_desc": "Tự động xác định và gắn thẻ ngôn ngữ hiện tại của người nói theo thời gian thực."
+    },
+    "diagram2": {
+      "title": "Dịch Đồng bộ Sau Nhận dạng",
+      "source_title": "Nguồn: Văn bản Pha trộn (T/N/A)",
+      "source_text1": "Hello everyone. My",
+      "source_highlight": "revenue",
+      "source_text2": "has also increased.",
+      "source_text3": "Understood. My team is ready.",
+      "core_title": "Lõi Dịch AI",
+      "trans_a": "Bản dịch A: Tiếng Trung Phồn thể",
+      "trans_a_text": "大家平安。我的營收也增加了。了解。我的團隊已經準備好了。",
+      "trans_b": "Bản dịch B: Tiếng Nhật",
+      "trans_b_text": "皆さん、こんにちは。私の収益も増加しました。了解です。私のチームは準備ができています。",
+      "trans_c": "Bản dịch C: Tiếng Anh",
+      "trans_c_text": "Hello everyone. My revenue has also increased. Understood. My team is ready.",
+      "desc_1_title": "Đầu ra Đa ngôn ngữ",
+      "desc_1_text": "Hệ thống không chỉ chuyển văn bản mà còn dịch đồng thời sang hai ngôn ngữ khác.",
+      "desc_2_title": "Hiểu biết Phổ quát",
+      "desc_2_text": "Cho dù người nói sử dụng tiếng Trung, tiếng Nhật hay tiếng Anh, mọi người đều xem nội dung bằng ngôn ngữ mẹ đẻ của họ."
+    },
+    "table": {
+      "title": "Xem Mọi Người Hiểu Như Thế Nào",
+      "subtitle": "Mỗi người tham gia đều xem cuộc trò chuyện bằng ngôn ngữ ưa thích của họ, bất kể nội dung được nói.",
+      "col_speaker": "Ngôn ngữ Người nói",
+      "col_view_en": "Góc nhìn Người dùng Tiếng Anh",
+      "col_view_zh": "Góc nhìn Người dùng Tiếng Trung",
+      "col_view_jp": "Góc nhìn Người dùng Tiếng Nhật",
+      "label_original": "Bản gốc",
+      "label_translation": "Bản dịch",
+      "row1_speaker": "Tiếng Anh",
+      "row1_en_text": "Let's review the Q1 results.",
+      "row1_zh_text": "讓我們回顧一下第一季度的結果。",
+      "row1_jp_text": "第1四半期の結果を確認しましょう。",
+      "row2_speaker": "Tiếng Trung",
+      "row2_en_text": "The data looks very promising.",
+      "row2_zh_text": "數據看起來很有希望。",
+      "row2_jp_text": "データは有望に見えます。",
+      "row3_speaker": "Tiếng Nhật",
+      "row3_en_text": "I agree. Let's proceed.",
+      "row3_zh_text": "我同意。讓我們繼續吧。",
+      "row3_jp_text": "賛成です。進めましょう。"
+    },
+    "cta_section": {
+      "title": "Sẵn sàng phá vỡ rào cản ngôn ngữ?",
+      "desc": "Tham gia cùng hàng nghìn đội ngũ đang sử dụng SeaMeet để kết thúc giao dịch xuyên Thái Bình Dương.",
+      "button": "Bắt đầu Dùng thử Miễn phí"
+    },
+    "featuresPage": {
+      "title": "Phiên âm ba ngôn ngữ Trung-Nhật-Anh",
+      "description": "AI đầu tiên trên thế giới đồng thời chuyển văn bản và dịch các cuộc trò chuyện pha trộn bằng tiếng Trung, tiếng Nhật và tiếng Anh theo thời gian thực.",
+      "benefits": [
+        "Nhận dạng ba ngôn ngữ đồng thời",
+        "Tự động phát hiện ngôn ngữ",
+        "Dịch thời gian thực sang cả ba ngôn ngữ",
+        "Hỗ trợ chuyển mã"
+      ]
     }
   }
 }

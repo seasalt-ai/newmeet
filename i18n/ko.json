@@ -123,7 +123,9 @@
     "solutionsLabel": "솔루션",
     "bookDemo": "데모 예약",
     "announcement": {
-      "tripleTrack": "🚀 신규: 세계 최초의 트리플 트랙 번역 엔진!"
+      "tripleTrack": "🚀 신규: 세계 최초의 트리플 트랙 번역 엔진!",
+      "trilingualTranscription": "🌏 세계 최초: 중일영 3국어 통합 전사 AI",
+      "learnMore": "자세히 알아보기"
     }
   },
   "home": {
@@ -6070,6 +6072,116 @@
       "title": "언어 장벽을 허물 준비가 되셨나요?",
       "button": "무료 가입",
       "trust": "개인정보 우선. 전송 중 암호화."
+    }
+  },
+  "trilingualTranscriptionPage": {
+    "meta": {
+      "title": "중일영 3개국어 동시 전사",
+      "description": "세계 최초의 3개국어 회의 AI를 경험핳세요. 중국어, 일본어, 영어가 섞인 대화를 실시간으로 전사하고 번역합니다."
+    },
+    "hero": {
+      "badge": "신기능 출시",
+      "title": "세계 최초: 중일영 3개국어 동시 통역 AI",
+      "subtitle": "중국어, 일본어, 영어가 섞인 대화를 원활하게 전사하고 번역합니다. 전환할 필요가 없습니다.",
+      "cta_primary": "SeaMeet 무료로 체험",
+      "cta_secondary": "데모 보기",
+      "trusted_by": "아시아와 세계를 연결하는 글로벌 팀이 신뢰",
+      "video_placeholder": "데모 영상 곧 공개",
+      "overlay": {
+        "original": "안녕하세요. 매출도 증가했습니다.",
+        "english": "Hello everyone. My revenue has also increased.",
+        "japanese": "皆さん、こんにちは。私の収益も増加しました。"
+      }
+    },
+    "how_it_works": {
+      "title": "하나의 회의, 세 개의 언어",
+      "step1": "회의 시작",
+      "step1_desc": "Zoom, Google Meet, Teams에서 SeaMeet을 실행하세요.",
+      "step2": "자연스럽게 대화",
+      "step2_desc": "참가자는 중국어, 일본어, 영어를 자유롭게 섞어 사용할 수 있습니다.",
+      "step3": "즉각적인 이해",
+      "step3_desc": "모든 사람이 선호하는 언어로 전사와 번역을 확인할 수 있습니다.",
+      "mockup": {
+        "header": "실시간 전사",
+        "text1_original": "Q3 예산을 확정해야 합니다.",
+        "text1_trans1": "我们需要敲定第三季度的预算。",
+        "text1_trans2": "第3四半期の予算を確定する必要があります。",
+        "text2_original": "了解했습니다. 팀이 준비되어 있습니다.",
+        "text2_trans1": "Understood. My team is ready.",
+        "text2_trans2": "了解。我的团队已经准备好了。"
+      }
+    },
+    "feature_main": {
+      "title": "자유롭게 대화하세요. 우리는 이해합니다.",
+      "desc": "SeaMeet의 새로운 엔진은 코드 스위칭을 즉시 감지합니다. 중국어 대화 중간에 'Revenue'가 섞이거나 일본어로 갑자기 전환되어도 모든 단어를 정확히 캡처합니다.",
+      "card1_title": "3개국어 혼합 인식",
+      "card1_desc": "중국어(번체/간체), 일본어, 영어의 동시 음성 인식을 지원합니다.",
+      "card2_title": "듀얼 타겟 번역",
+      "card2_desc": "실시간 자막을 동시에 두 가지 다른 언어로 번역하여 다양한 팀의 요구를 충족합니다.",
+      "card3_title": "맥락 인식 AI",
+      "card3_desc": "문화 간 비즈니스 맥락을 이해하여 전문 용어도 정확히 번역합니다."
+    },
+    "diagram": {
+      "title": "핵심 혁신: 중일영 동시 감지 엔진",
+      "input_zh": "중국어 (Audio)",
+      "input_jp": "일본어 (Audio)",
+      "input_en": "영어 (Audio)",
+      "core": "AI 3개국어 코어",
+      "output": "통합 텍스트 스트림",
+      "output_text1": "안녕하세요. 제",
+      "output_highlight": "매출",
+      "output_text2": "도 증가했습니다.",
+      "output_text3": "알겠습니다. 제 팀은...",
+      "feat1_title": "동시 다국어 인식",
+      "feat1_desc": "시스템은 중국어, 일본어, 영어 입력을 수동 전환 없이 동시에 처리합니다.",
+      "feat2_title": "원활한 통합",
+      "feat2_desc": "실시간으로 화자의 현재 언어를 자동으로 식별하고 태그를 지정합니다."
+    },
+    "diagram2": {
+      "title": "음성 인식 후 다른 언어로 동시 번역",
+      "source_title": "소스: 인식된 혼합 텍스트 (중/일/영)",
+      "source_text1": "안녕하세요. 제",
+      "source_highlight": "매출",
+      "source_text2": "도 증가했습니다.",
+      "source_text3": "알겠습니다. 제 팀은...",
+      "core_title": "AI 번역 코어",
+      "trans_a": "번역 A: 중국어",
+      "trans_a_text": "大家平安。我的營收也增加了。了解。我的團隊已經準備好了。",
+      "trans_b": "번역 B: 일본어",
+      "trans_b_text": "皆さん、こんにちは。私の収益も増加しました。了解です。私のチームは準備ができています。",
+      "trans_c": "번역 C: 영어",
+      "trans_c_text": "Hello everyone. My revenue has also increased. Understood. My team is ready.",
+      "desc_1_title": "다국어 출력",
+      "desc_1_text": "시스템은 전사뿐만 아니라 동시에 다른 두 언어로 번역합니다.",
+      "desc_2_title": "보편적 이해",
+      "desc_2_text": "화자가 중국어, 일본어, 영어를 사용하든 모두가 모국어로 콘텐츠를 볼 수 있습니다."
+    },
+    "table": {
+      "title": "모두가 이해하는 방식",
+      "subtitle": "화자가 어떤 언어를 사용하든 각 참가자는 자신이 선호하는 언어로 대화를 볼 수 있습니다.",
+      "col_speaker": "화자 언어",
+      "col_view_en": "영어 사용자 보기",
+      "col_view_zh": "중국어 사용자 보기",
+      "col_view_jp": "일본어 사용자 보기",
+      "label_original": "원문",
+      "label_translation": "번역",
+      "row1_speaker": "영어",
+      "row1_en_text": "Let's review the Q1 results.",
+      "row1_zh_text": "讓我們回顧一下第一季度的結果。",
+      "row1_jp_text": "第1四半期の結果を確認しましょう。",
+      "row2_speaker": "중국어",
+      "row2_en_text": "The data looks very promising.",
+      "row2_zh_text": "數據看起來很有希望。",
+      "row2_jp_text": "データは有望に見えます。",
+      "row3_speaker": "일본어",
+      "row3_en_text": "I agree. Let's proceed.",
+      "row3_zh_text": "我同意。讓我們繼續吧。",
+      "row3_jp_text": "賛成です。進めましょう。"
+    },
+    "cta_section": {
+      "title": "언어 장벽을 허물 준비가 되셨나요?",
+      "desc": "수천 개의 다국적 팀과 함께 SeaMeet을 사용하여 태평양을 넘어 거래를 성사시키세요.",
+      "button": "무료 체험 시작"
     }
   }
 }

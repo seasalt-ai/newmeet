@@ -122,7 +122,9 @@
     "solutionsLabel": "समाधान",
     "bookDemo": "डेमो बुक करें",
     "announcement": {
-      "tripleTrack": "New: the World’s First Triple-Track Translation Engine!"
+      "tripleTrack": "New: the World's First Triple-Track Translation Engine!",
+      "trilingualTranscription": "🌏 दुनिया में पहली बार: चीनी-जापानी-अंग्रेजी त्रिभाषी ट्रांसक्रिप्शन AI",
+      "learnMore": "और जानें"
     }
   },
   "home": {
@@ -6035,6 +6037,116 @@
       "title": "Ready to Break Down Language Barriers?",
       "button": "Sign up for Free",
       "trust": "Privacy First. Encryption in transit."
+    }
+  },
+  "trilingualTranscriptionPage": {
+    "meta": {
+      "title": "त्रिभाषी प्रतिलेखन और अनुवाद - SeaMeet",
+      "description": "दुनिया का पहला त्रिभाषी मीटिंग AI। चीनी, जापानी और अंग्रेजी में मिश्रित बातचीत का मैन्युअल स्विचिंग के बिना प्रतिलेखन और अनुवाद करें।"
+    },
+    "hero": {
+      "badge": "नई सुविधा रिलीज़",
+      "title": "दुनिया का पहला त्रिभाषी मीटिंग AI",
+      "subtitle": "चीनी, जापानी और अंग्रेजी में मिश्रित बातचीत का निर्बाध रूप से प्रतिलेखन और अनुवाद करें। कोई स्विचिंग आवश्यक नहीं।",
+      "cta_primary": "SeaMeet को निःशुल्क आज़माएं",
+      "cta_secondary": "डेमो देखें",
+      "trusted_by": "वैश्विक टीमों द्वारा भरोसा किया गया जो एशिया और दुनिया को जोड़ते हैं",
+      "video_placeholder": "डेमो वीडियो जल्द आ रहा है",
+      "overlay": {
+        "original": "नमस्ते सभी को। मेरा राजस्व भी बढ़ गया है।",
+        "english": "Hello everyone. My revenue has also increased.",
+        "japanese": "皆さん、こんにちは。私の収益も増加しました。"
+      }
+    },
+    "how_it_works": {
+      "title": "एक बैठक, तीन भाषाएं",
+      "step1": "एक बैठक शुरू करें",
+      "step1_desc": "अपने Zoom, Google Meet, या Teams कॉल में SeaMeet लॉन्च करें।",
+      "step2": "स्वाभाविक रूप से बोलें",
+      "step2_desc": "प्रतिभागी स्वतंत्र रूप से अंग्रेजी, जापानी और चीनी मिला सकते हैं।",
+      "step3": "तत्काल स्पष्टता",
+      "step3_desc": "हर कोई अपनी पसंदीदा भाषा में प्रतिलेखन और अनुवाद देखता है।",
+      "mockup": {
+        "header": "लाइव प्रतिलेखन",
+        "text1_original": "We need to finalize the Q3 budget.",
+        "text1_trans1": "我們需要敲定第三季度的預算。",
+        "text1_trans2": "第3四半期の予算を確定する必要があります。",
+        "text2_original": "Understood. My team is ready.",
+        "text2_trans1": "了解。我的團隊已經準備好了。",
+        "text2_trans2": "了解です。私のチームは準備ができています।"
+      }
+    },
+    "feature_main": {
+      "title": "स्वतंत्र रूप से बोलें। हम समझते हैं।",
+      "desc": "SeaMeet का नया इंजन कोड-स्विचिंग को तुरंत पहचानता है। चाहे आपकी टीम चीनी वाक्य के बीच में 'Revenue' कहे, या एक त्वरित पार्श्व नोट के लिए जापानी में बदल जाए, हम हर शब्द कैप्चर करते हैं।",
+      "card1_title": "त्रिभाषी पहचान",
+      "card1_desc": "एक ही ऑडियो स्ट्रीम में मंदारिन (TW/CN), जापानी और अंग्रेजी का एक साथ पता लगाना।",
+      "card2_title": "दोहरा-लक्ष्य अनुवाद",
+      "card2_desc": "विविध टीमों के लिए लाइव प्रतिलेखन को एक ही समय में दो अलग-अलग भाषाओं में अनुवादित करें।",
+      "card3_title": "संदर्भ जागरूक",
+      "card3_desc": "हमारा AI संस्कृतियों के बीच व्यावसायिक संदर्भ को समझता है ताकि यह सुनिश्चित हो सके कि 'sales' का अनुवाद 'बिक्री पर बेचना' न हो।"
+    },
+    "diagram": {
+      "title": "मुख्य सफलता: एक साथ पहचान इंजन",
+      "input_zh": "चीनी (ऑडियो)",
+      "input_jp": "जापानी (ऑडियो)",
+      "input_en": "अंग्रेजी (ऑडियो)",
+      "core": "त्रिभाषी AI कोर",
+      "output": "एकीकृत टेक्स्ट स्ट्रीम",
+      "output_text1": "नमस्ते सभी को। मेरा",
+      "output_highlight": "राजस्व",
+      "output_text2": "भी बढ़ गया है।",
+      "output_text3": "समझ गया। मेरी टीम तैयार है।",
+      "feat1_title": "एक साथ पहचान",
+      "feat1_desc": "सिस्टम बिना मैन्युअल स्विचिंग के CN, JP और EN इनपुट को एक साथ प्रक्रियाओं।",
+      "feat2_title": "निर्बाध एकीकरण",
+      "feat2_desc": "वास्तविक समय में वक्ता की वर्तमान भाषा की स्वचालित रूप से पहचान और टैगिंग।"
+    },
+    "diagram2": {
+      "title": "पहचान के बाद समकालीन अनुवाद",
+      "source_title": "स्रोत: मिश्रित पाठ (ची/जा/अ)",
+      "source_text1": "नमस्ते सभी को। मेरा",
+      "source_highlight": "राजस्व",
+      "source_text2": "भी बढ़ गया है।",
+      "source_text3": "समझ गया। मेरी टीम तैयार है।",
+      "core_title": "AI अनुवाद कोर",
+      "trans_a": "अनुवाद अ: पारंपरिक चीनी",
+      "trans_a_text": "大家平安。我的營收也增加了。了解。我的團隊已經準備好了。",
+      "trans_b": "अनुवाद ब: जापानी",
+      "trans_b_text": "皆さん、こんにちは।私の収益も増加しました。了解です。私のチームは準備ができています।",
+      "trans_c": "अनुवाद स: अंग्रेजी",
+      "trans_c_text": "Hello everyone. My revenue has also increased. Understood. My team is ready.",
+      "desc_1_title": "बहु-भाषा आउटपुट",
+      "desc_1_text": "सिस्टम न केवल प्रतिलेखन करता है बल्कि एक साथ दो अन्य भाषाओं में अनुवाद भी करता है।",
+      "desc_2_title": "सार्वभौमिक समझ",
+      "desc_2_text": "चाहे वक्ता चीनी, जापानी या अंग्रेजी का उपयोग करें, हर कोई अपनी मूल भाषा में सामग्री देखता है।"
+    },
+    "table": {
+      "title": "देखें कि हर कोई कैसे समझता है",
+      "subtitle": "प्रत्येक प्रतिभागी बातचीत को अपनी पसंदीदा भाषा में देखता है, भले ही क्या बोला जा रहा हो।",
+      "col_speaker": "वक्ता की भाषा",
+      "col_view_en": "अंग्रेजी उपयोगकर्ता दृश्य",
+      "col_view_zh": "चीनी उपयोगकर्ता दृश्य",
+      "col_view_jp": "जापानी उपयोगकर्ता दृश्य",
+      "label_original": "मूल",
+      "label_translation": "अनुवाद",
+      "row1_speaker": "अंग्रेजी",
+      "row1_en_text": "Let's review the Q1 results.",
+      "row1_zh_text": "讓我們回顧一下第一季度的結果。",
+      "row1_jp_text": "第1四半期の結果を確認しましょう।",
+      "row2_speaker": "चीनी",
+      "row2_en_text": "The data looks very promising.",
+      "row2_zh_text": "數據看起來很有希望।",
+      "row2_jp_text": "データは有望に見えます।",
+      "row3_speaker": "जापानी",
+      "row3_en_text": "I agree. Let's proceed.",
+      "row3_zh_text": "我同意।讓我們繼續吧।",
+      "row3_jp_text": "賛成です।進めましょう।"
+    },
+    "cta_section": {
+      "title": "भाषा की बाधाओं को तोड़ने के लिए तैयार हैं?",
+      "desc": "हजारों टीमों से जुड़ें जो प्रशांत में सौदे पूरे करने के लिए SeaMeet का उपयोग कर रहे हैं।",
+      "button": "निःशुल्क परीक्षण शुरू करें"
     }
   }
 }

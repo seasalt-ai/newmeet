@@ -123,7 +123,9 @@
     "solutionsLabel": "راه‌حل‌ها",
     "bookDemo": "رزرو دمو",
     "announcement": {
-      "tripleTrack": "New: the World’s First Triple-Track Translation Engine!"
+      "tripleTrack": "New: the World's First Triple-Track Translation Engine!",
+      "trilingualTranscription": "🌏 اولین در جهان: هوش مصنوعی رونویسی سه‌زبانه چینی-ژاپنی-انگلیسی",
+      "learnMore": "بیشتر بدانید"
     }
   },
   "home": {
@@ -5948,6 +5950,116 @@
       "title": "Ready to Break Down Language Barriers?",
       "button": "Sign up for Free",
       "trust": "Privacy First. Encryption in transit."
+    }
+  },
+  "trilingualTranscriptionPage": {
+    "meta": {
+      "title": "رونویسی و ترجمه سه‌زبانه - SeaMeet",
+      "description": "اولین هوش مصنوعی جلسات سه‌زبانه جهان. گفتگوهای ترکیبی چینی، ژاپنی و انگلیسی را بدون تغییر دستی رونویسی و ترجمه کنید."
+    },
+    "hero": {
+      "badge": "انتشار ویژگی جدید",
+      "title": "اولین هوش مصنوعی جلسات سه‌زبانه جهان",
+      "subtitle": "گفتگوهای ترکیبی چینی، ژاپنی و انگلیسی را به‌طور یکپارچه رونویسی و ترجمه کنید. نیازی به تغییر نیست.",
+      "cta_primary": "SeaMeet را رایگان امتحان کنید",
+      "cta_secondary": "تماشای دمو",
+      "trusted_by": "مورد اعتماد تیم‌های جهانی که آسیا و جهان را به هم متصل می‌کنند",
+      "video_placeholder": "ویدیوی دمو به زودی",
+      "overlay": {
+        "original": "سلام به همه. درآمد من هم افزایش یافته است.",
+        "english": "Hello everyone. My revenue has also increased.",
+        "japanese": "皆さん、こんにちは。私の収益も増加しました。"
+      }
+    },
+    "how_it_works": {
+      "title": "یک جلسه، سه زبان",
+      "step1": "شروع یک جلسه",
+      "step1_desc": "SeaMeet را در تماس Zoom، Google Meet یا Teams خود راه‌اندازی کنید.",
+      "step2": "به‌طور طبیعی صحبت کنید",
+      "step2_desc": "شرکت‌کنندگان می‌توانند انگلیسی، ژاپنی و چینی را آزادانه ترکیب کنند.",
+      "step3": "وضوح فوری",
+      "step3_desc": "همه رونویسی و ترجمه را به زبان مورد نظر خود می‌بینند.",
+      "mockup": {
+        "header": "رونویسی زنده",
+        "text1_original": "We need to finalize the Q3 budget.",
+        "text1_trans1": "我們需要敲定第三季度的預算。",
+        "text1_trans2": "第3四半期の予算を確定する必要があります。",
+        "text2_original": "Understood. My team is ready.",
+        "text2_trans1": "了解。我的團隊已經準備好了。",
+        "text2_trans2": "了解です。私のチームは準備ができています。"
+      }
+    },
+    "feature_main": {
+      "title": "آزادانه صحبت کنید. ما می‌فهمیم.",
+      "desc": "موتور جدید SeaMeet تغییر کد را فوراً تشخیص می‌دهد. چه تیم شما در وسط یک جمله چینی 'Revenue' بگوید، یا برای یک یادداشت سریع به ژاپنی تغییر کند، ما هر کلمه‌ای را ثبت می‌کنیم.",
+      "card1_title": "تشخیص سه‌زبانه",
+      "card1_desc": "تشخیص همزمان ماندارین (TW/CN)، ژاپنی و انگلیسی در یک جریان صوتی واحد.",
+      "card2_title": "ترجمه دوهدفه",
+      "card2_desc": "رونویسی زنده را به دو زبان مختلف در یک زمان برای تیم‌های متنوع ترجمه کنید.",
+      "card3_title": "آگاه از زمینه",
+      "card3_desc": "هوش مصنوعی ما زمینه کسب‌وکار را در فرهنگ‌ها درک می‌کند تا مطمئن شود 'sales' به‌عنوان 'فروش ویژه' ترجمه نمی‌شود."
+    },
+    "diagram": {
+      "title": "پیشرفت اصلی: موتور تشخیص همزمان",
+      "input_zh": "چینی (صدا)",
+      "input_jp": "ژاپنی (صدا)",
+      "input_en": "انگلیسی (صدا)",
+      "core": "هسته هوش مصنوعی سه‌زبانه",
+      "output": "جریان متن یکپارچه",
+      "output_text1": "سلام به همه. درآمد",
+      "output_highlight": "من",
+      "output_text2": "هم افزایش یافته است.",
+      "output_text3": "متوجه شدم. تیم من آماده است.",
+      "feat1_title": "تشخیص همزمان",
+      "feat1_desc": "سیستم ورودی‌های CN، JP و EN را بدون تغییر دستی به‌طور همزمان پردازش می‌کند.",
+      "feat2_title": "یکپارچه‌سازی یکپارچه",
+      "feat2_desc": "به‌طور خودکار زبان فعلی گوینده را در زمان واقعی شناسایی و برچسب‌گذاری می‌کند."
+    },
+    "diagram2": {
+      "title": "ترجمه همزمان پس از تشخیص",
+      "source_title": "منبع: متن ترکیبی (چ/ژ/ا)",
+      "source_text1": "سلام به همه. درآمد",
+      "source_highlight": "من",
+      "source_text2": "هم افزایش یافته است.",
+      "source_text3": "متوجه شدم. تیم من آماده است.",
+      "core_title": "هسته ترجمه هوش مصنوعی",
+      "trans_a": "ترجمه الف: چینی سنتی",
+      "trans_a_text": "大家平安。我的營收也增加了。了解。我的團隊已經準備好了。",
+      "trans_b": "ترجمه ب: ژاپنی",
+      "trans_b_text": "皆さん、こんにちは。私の収益も増加しました。了解です。私のチームは準備ができています。",
+      "trans_c": "ترجمه ج: انگلیسی",
+      "trans_c_text": "Hello everyone. My revenue has also increased. Understood. My team is ready.",
+      "desc_1_title": "خروجی چندزبانه",
+      "desc_1_text": "سیستم نه تنها رونویسی می‌کند بلکه به‌طور همزمان به دو زبان دیگر ترجمه می‌کند.",
+      "desc_2_title": "درک جهانی",
+      "desc_2_text": "چه گویندگان از چینی، ژاپنی یا انگلیسی استفاده کنند، همه محتوا را به زبان مادری خود می‌بینند."
+    },
+    "table": {
+      "title": "ببینید همه چگونه درک می‌کنند",
+      "subtitle": "هر شرکت‌کننده گفتگو را به زبان مورد نظر خود می‌بیند، صرف‌نظر از آنچه گفته می‌شود.",
+      "col_speaker": "زبان گوینده",
+      "col_view_en": "نمای کاربر انگلیسی",
+      "col_view_zh": "نمای کاربر چینی",
+      "col_view_jp": "نمای کاربر ژاپنی",
+      "label_original": "اصلی",
+      "label_translation": "ترجمه",
+      "row1_speaker": "انگلیسی",
+      "row1_en_text": "Let's review the Q1 results.",
+      "row1_zh_text": "讓我們回顧一下第一季度的結果。",
+      "row1_jp_text": "第1四半期の結果を確認しましょう。",
+      "row2_speaker": "چینی",
+      "row2_en_text": "The data looks very promising.",
+      "row2_zh_text": "數據看起來很有希望。",
+      "row2_jp_text": "データは有望に見えます。",
+      "row3_speaker": "ژاپنی",
+      "row3_en_text": "I agree. Let's proceed.",
+      "row3_zh_text": "我同意。讓我們繼續吧。",
+      "row3_jp_text": "賛成です。進めましょう。"
+    },
+    "cta_section": {
+      "title": "آماده برای شکستن موانع زبان؟",
+      "desc": "به هزاران تیمی بپیوندید که از SeaMeet برای بستن معاملات در سراسر آرام استفاده می‌کنند.",
+      "button": "شروع دوره آزمایشی رایگان"
     }
   }
 }

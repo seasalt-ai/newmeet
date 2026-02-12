@@ -123,7 +123,9 @@
     "solutionsLabel": "Soluciones",
     "bookDemo": "Reservar Demo",
     "announcement": {
-      "tripleTrack": "🚀 Nuevo: ¡El primer motor de traducción de triple vía del mundo!"
+      "tripleTrack": "🚀 Nuevo: ¡El primer motor de traducción de triple vía del mundo!",
+      "trilingualTranscription": "🌏 Primero en el mundo: IA de transcripción trilingüe chino-japonés-inglés",
+      "learnMore": "Más información"
     }
   },
   "home": {
@@ -6070,6 +6072,116 @@
       "title": "¿Listo para romper las barreras del idioma?",
       "button": "Regístrate gratis",
       "trust": "Privacidad primero. Cifrado en tránsito."
+    }
+  },
+  "trilingualTranscriptionPage": {
+    "meta": {
+      "title": "Transcripción y Traducción Trilingüe - SeaMeet",
+      "description": "La primera IA de reuniones trilingüe del mundo. Transcribe y traduce conversaciones mixtas en chino, japonés e inglés sin cambios manuales."
+    },
+    "hero": {
+      "badge": "Nuevo Lanzamiento",
+      "title": "La Primera IA de Reuniones Trilingüe del Mundo",
+      "subtitle": "Transcribe y traduce sin problemas conversaciones mixtas en chino, japonés e inglés. Sin cambios necesarios.",
+      "cta_primary": "Prueba SeaMeet Gratis",
+      "cta_secondary": "Ver Demo",
+      "trusted_by": "Confiado por equipos globales que conectan Asia y el Mundo",
+      "video_placeholder": "Video Demo Próximamente",
+      "overlay": {
+        "original": "Hola a todos. Mis ingresos también han aumentado.",
+        "english": "Hello everyone. My revenue has also increased.",
+        "japanese": "皆さん、こんにちは。私の収益も増加しました。"
+      }
+    },
+    "how_it_works": {
+      "title": "Una Reunión, Tres Idiomas",
+      "step1": "Inicia una Reunión",
+      "step1_desc": "Lanza SeaMeet en tu llamada de Zoom, Google Meet o Teams.",
+      "step2": "Habla Naturalmente",
+      "step2_desc": "Los participantes pueden mezclar inglés, japonés y chino libremente.",
+      "step3": "Claridad Instantánea",
+      "step3_desc": "Todos ven la transcripción y traducción en su idioma preferido.",
+      "mockup": {
+        "header": "Transcripción en Vivo",
+        "text1_original": "We need to finalize the Q3 budget.",
+        "text1_trans1": "我們需要敲定第三季度的預算。",
+        "text1_trans2": "第3四半期の予算を確定する必要があります。",
+        "text2_original": "Understood. My team is ready.",
+        "text2_trans1": "了解。我的團隊已經準備好了。",
+        "text2_trans2": "了解です。私のチームは準備ができています。"
+      }
+    },
+    "feature_main": {
+      "title": "Habla Libremente. Nosotros Entendemos.",
+      "desc": "El nuevo motor de SeaMeet detecta el cambio de código al instante. Ya sea que tu equipo diga 'Revenue' en medio de una oración en chino, o cambie al japonés para una nota rápida, capturamos cada palabra.",
+      "card1_title": "Reconocimiento Trilingüe",
+      "card1_desc": "Detección simultánea de mandarín (TW/CN), japonés e inglés en un solo flujo de audio.",
+      "card2_title": "Traducción de Doble Objetivo",
+      "card2_desc": "Traduce la transcripción en vivo en dos idiomas diferentes al mismo tiempo para equipos diversos.",
+      "card3_title": "Consciente del Contexto",
+      "card3_desc": "Nuestra IA entiende el contexto empresarial entre culturas para asegurar que 'sales' no se traduzca como 'ventas en oferta'."
+    },
+    "diagram": {
+      "title": "Avance Principal: Motor de Detección Simultánea",
+      "input_zh": "Chino (Audio)",
+      "input_jp": "Japonés (Audio)",
+      "input_en": "Inglés (Audio)",
+      "core": "Núcleo AI Trilingüe",
+      "output": "Flujo de Texto Unificado",
+      "output_text1": "Hola a todos. Mis",
+      "output_highlight": "ingresos",
+      "output_text2": "también han aumentado.",
+      "output_text3": "Entendido. Mi equipo está listo.",
+      "feat1_title": "Reconocimiento Simultáneo",
+      "feat1_desc": "El sistema procesa entradas en CN, JP y EN concurrentemente sin cambios manuales.",
+      "feat2_title": "Integración Sin Costuras",
+      "feat2_desc": "Identifica y etiqueta automáticamente el idioma actual del hablante en tiempo real."
+    },
+    "diagram2": {
+      "title": "Traducción Síncrona Después del Reconocimiento",
+      "source_title": "Fuente: Texto Mixto (C/J/I)",
+      "source_text1": "Hola a todos. Mis",
+      "source_highlight": "ingresos",
+      "source_text2": "también han aumentado.",
+      "source_text3": "Entendido. Mi equipo está listo.",
+      "core_title": "Núcleo de Traducción AI",
+      "trans_a": "Traducción A: Chino Tradicional",
+      "trans_a_text": "大家平安。我的營收也增加了。了解。我的團隊已經準備好了。",
+      "trans_b": "Traducción B: Japonés",
+      "trans_b_text": "皆さん、こんにちは。私の収益も増加しました。了解です。私のチームは準備ができています。",
+      "trans_c": "Traducción C: Inglés",
+      "trans_c_text": "Hello everyone. My revenue has also increased. Understood. My team is ready.",
+      "desc_1_title": "Salida Multilingüe",
+      "desc_1_text": "El sistema no solo transcribe sino que traduce simultáneamente a otros dos idiomas.",
+      "desc_2_title": "Comprensión Universal",
+      "desc_2_text": "Ya sea que los hablantes usen chino, japonés o inglés, todos ven el contenido en su idioma nativo."
+    },
+    "table": {
+      "title": "Ve Cómo Todos Entienden",
+      "subtitle": "Cada participante ve la conversación en su propio idioma preferido, independientemente de lo que se hable.",
+      "col_speaker": "Idioma del Habla",
+      "col_view_en": "Vista Usuario Inglés",
+      "col_view_zh": "Vista Usuario Chino",
+      "col_view_jp": "Vista Usuario Japonés",
+      "label_original": "Original",
+      "label_translation": "Traducción",
+      "row1_speaker": "Inglés",
+      "row1_en_text": "Let's review the Q1 results.",
+      "row1_zh_text": "讓我們回顧一下第一季度的結果。",
+      "row1_jp_text": "第1四半期の結果を確認しましょう。",
+      "row2_speaker": "Chino",
+      "row2_en_text": "The data looks very promising.",
+      "row2_zh_text": "數據看起來很有希望。",
+      "row2_jp_text": "データは有望に見えます。",
+      "row3_speaker": "Japonés",
+      "row3_en_text": "I agree. Let's proceed.",
+      "row3_zh_text": "我同意。讓我們繼續吧。",
+      "row3_jp_text": "賛成です。進めましょう。"
+    },
+    "cta_section": {
+      "title": "¿Listo para romper las barreras del idioma?",
+      "desc": "Únete a miles de equipos que usan SeaMeet para cerrar acuerdos a través del Pacífico.",
+      "button": "Iniciar Prueba Gratuita"
     }
   }
 }

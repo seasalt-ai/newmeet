@@ -74,7 +74,8 @@
         "meetingLabels": "ป้ายกำกับประชุม",
         "transcription": "การถอดความอัจฉริยะ",
         "speakerId": "การระบุตัวตนผู้พูด",
-        "topicsSummary": "สรุปหัวข้อ"
+        "topicsSummary": "สรุปหัวข้อ",
+        "trilingualTranscription": "การถอดเสียงสามภาษา"
       },
       "team": {
         "agenticMeetingCopilot": "Agentic Copilot",
@@ -123,7 +124,9 @@
     "channelsLabel": "ช่องทาง",
     "solutionsLabel": "โซลูชัน",
     "announcement": {
-      "tripleTrack": "New: the World’s First Triple-Track Translation Engine!"
+      "tripleTrack": "New: the World's First Triple-Track Translation Engine!",
+      "trilingualTranscription": "🌏 รายแรกของโลก: AI ถอดเสียงสามภาษา จีน-ญี่ปุ่น-อังกฤษ",
+      "learnMore": "เรียนรู้เพิ่มเติม"
     }
   },
   "home": {
@@ -6036,6 +6039,126 @@
       "title": "Ready to Break Down Language Barriers?",
       "button": "Sign up for Free",
       "trust": "Privacy First. Encryption in transit."
+    }
+  },
+  "trilingualTranscriptionPage": {
+    "meta": {
+      "title": "การถอดเสียงสามภาษา จีน-ญี่ปุ่น-อังกฤษ",
+      "description": "สัมผัสประสบการณ์ AI การประชุมสามภาษาแห่งแรกของโลก ถอดเสียงและแปลบทสนทนาที่ผสมผสานกันเป็นภาษาจีน ญี่ปุ่น และอังกฤษได้แบบเรียลไทม์"
+    },
+    "hero": {
+      "badge": "ฟีเจอร์ใหม่",
+      "title": "AI การประชุมสามภาษาแห่งแรกของโลก",
+      "subtitle": "ถอดเสียงและแปลบทสนทนาที่ผสมผสานกันเป็นภาษาจีน ญี่ปุ่น และอังกฤษได้อย่างราบรื่น ไม่ต้องสลับภาษา",
+      "cta_primary": "ลอง SeaMeet ฟรี",
+      "cta_secondary": "ดูสาธิต",
+      "trusted_by": "ได้รับความไว้วางใจจากทีมทั่วโลกที่เชื่อมต่อเอเชียและโลก",
+      "video_placeholder": "วิดีโอสาธิตเร็วๆ นี้",
+      "overlay": {
+        "original": "Hello everyone. My revenue has also increased.",
+        "english": "Hello everyone. My revenue has also increased.",
+        "japanese": "皆さん、こんにちは。私の収益も増加しました。"
+      }
+    },
+    "how_it_works": {
+      "title": "การประชุมหนึ่งครั้ง สามภาษา",
+      "step1": "เริ่มการประชุม",
+      "step1_desc": "เปิด SeaMeet ในการโทร Zoom, Google Meet หรือ Teams ของคุณ",
+      "step2": "พูดอย่างเป็นธรรมชาติ",
+      "step2_desc": "ผู้เข้าร่วมสามารผสมภาษาอังกฤษ ญี่ปุ่น และจีนได้อย่างอิสระ",
+      "step3": "ความชัดเจนทันที",
+      "step3_desc": "ทุกคนเห็นคำบันทึกและการแปลในภาษาที่ตนต้องการ",
+      "mockup": {
+        "header": "การถอดเสียงสด",
+        "text1_original": "We need to finalize the Q3 budget.",
+        "text1_trans1": "我們需要敲定第三季度的預算。",
+        "text1_trans2": "第3四半期の予算を確定する必要があります。",
+        "text2_original": "Understood. My team is ready.",
+        "text2_trans1": "了解。我的團隊已經準備好了。",
+        "text2_trans2": "了解です。私のチームは準備ができています。"
+      }
+    },
+    "feature_main": {
+      "title": "พูดได้อย่างอิสระ เราเข้าใจคุณ",
+      "desc": "เครื่องยนต์ใหม่ของ SeaMeet ตรวจจับการสลับภาษาได้ทันที ไม่ว่าทีมของคุณจะพูดคำว่า 'Revenue' กลางประโยคภาษาจีน หรือสลับเป็นภาษาญี่ปุ่นสำหรับข้อความสั้นๆ เราบันทึกทุกคำ",
+      "card1_title": "การจดจำสามภาษา",
+      "card1_desc": "ตรวจจับภาษาจีนกลาง (TW/CN) ภาษาญี่ปุ่น และภาษาอังกฤษพร้อมกันในสตรีมเสียงเดียว",
+      "card2_title": "การแปลเป้าหมายคู่",
+      "card2_desc": "แปลคำบันทึกสดเป็นสองภาษาที่แตกต่างกันในเวลาเดียวกันสำหรับทีมที่หลากหลาย",
+      "card3_title": "เข้าใจบริบท",
+      "card3_desc": "AI ของเราเข้าใจบริบทธุรกิจข้ามวัฒนธรรมเพื่อให้แน่ใจว่า 'sales' ไม่ถูกแปลว่า 'ลดราคา'"
+    },
+    "diagram": {
+      "title": "ความก้าวหน้าหลัก: เครื่องยนต์ตรวจจับพร้อมกัน",
+      "input_zh": "ภาษาจีน (เสียง)",
+      "input_jp": "ภาษาญี่ปุ่น (เสียง)",
+      "input_en": "ภาษาอังกฤษ (เสียง)",
+      "core": "แกน AI สามภาษา",
+      "output": "สตรีมข้อความรวม",
+      "output_text1": "Hello everyone. My",
+      "output_highlight": "revenue",
+      "output_text2": "has also increased.",
+      "output_text3": "Understood. My team is ready.",
+      "feat1_title": "การจดจำพร้อมกัน",
+      "feat1_desc": "ระบบประมวลผลข้อมูลเข้า CN, JP และ EN พร้อมกันโดยไม่ต้องสลับด้วยตนเอง",
+      "feat2_title": "การผสานรวมอย่างราบรื่น",
+      "feat2_desc": "ระบุและแท็กภาษาปัจจุบันของผู้พูดโดยอัตโนมัติแบบเรียลไทม์"
+    },
+    "diagram2": {
+      "title": "การแปลพร้อมกันหลังจากการจดจำ",
+      "source_title": "แหล่งที่มา: ข้อความผสม (จ/ญ/อ)",
+      "source_text1": "Hello everyone. My",
+      "source_highlight": "revenue",
+      "source_text2": "has also increased.",
+      "source_text3": "Understood. My team is ready.",
+      "core_title": "แกนการแปล AI",
+      "trans_a": "การแปล A: ภาษาจีนตัวเต็ม",
+      "trans_a_text": "大家平安。我的營收也增加了。了解。我的團隊已經準備好了。",
+      "trans_b": "การแปล B: ภาษาญี่ปุ่น",
+      "trans_b_text": "皆さん、こんにちは。私の収益も増加しました。了解です。私のチームは準備ができています。",
+      "trans_c": "การแปล C: ภาษาอังกฤษ",
+      "trans_c_text": "Hello everyone. My revenue has also increased. Understood. My team is ready.",
+      "desc_1_title": "เอาต์พุตหลายภาษา",
+      "desc_1_text": "ระบบไม่เพียงแค่ถอดเสียงแต่ยังแปลเป็นสองภาษาอื่นพร้อมกัน",
+      "desc_2_title": "ความเข้าใจสากล",
+      "desc_2_text": "ไม่ว่าผู้พูดจะใช้ภาษาจีน ญี่ปุ่น หรืออังกฤษ ทุกคนมองเห็นเนื้อหาในภาษาของตน"
+    },
+    "table": {
+      "title": "ดูว่าทุกคนเข้าใจอย่างไร",
+      "subtitle": "ผู้เข้าร่วมแต่ละคนเห็นบทสนทนาในภาษาที่ตนต้องการ ไม่ว่าจะพูดอะไร",
+      "col_speaker": "ภาษาของผู้พูด",
+      "col_view_en": "มุมมองผู้ใช้ภาษาอังกฤษ",
+      "col_view_zh": "มุมมองผู้ใช้ภาษาจีน",
+      "col_view_jp": "มุมมองผู้ใช้ภาษาญี่ปุ่น",
+      "label_original": "ต้นฉบับ",
+      "label_translation": "การแปล",
+      "row1_speaker": "ภาษาอังกฤษ",
+      "row1_en_text": "Let's review the Q1 results.",
+      "row1_zh_text": "讓我們回顧一下第一季度的結果。",
+      "row1_jp_text": "第1四半期の結果を確認しましょう。",
+      "row2_speaker": "ภาษาจีน",
+      "row2_en_text": "The data looks very promising.",
+      "row2_zh_text": "數據看起來很有希望。",
+      "row2_jp_text": "データは有望に見えます。",
+      "row3_speaker": "ภาษาญี่ปุ่น",
+      "row3_en_text": "I agree. Let's proceed.",
+      "row3_zh_text": "我同意。讓我們繼續吧。",
+      "row3_jp_text": "賛成です。進めましょう。"
+    },
+    "cta_section": {
+      "title": "พร้อมที่จะทลายอุปสรรคทางภาษา?",
+      "desc": "เข้าร่วมกับทีมนับพันที่ใช้ SeaMeet เพื่อปิดการขายข้ามแปซิฟิก",
+      "button": "เริ่มทดลองใช้ฟรี"
+    },
+    "featuresPage": {
+      "title": "การถอดเสียงสามภาษา จีน-ญี่ปุ่น-อังกฤษ",
+      "description": "AI แห่งแรกของโลกที่ถอดเสียงและแปลบทสนทนาที่ผสมผสานกันเป็นภาษาจีน ญี่ปุ่น และอังกฤษแบบเรียลไทม์พร้อมกัน",
+      "benefits": [
+        "การจดจำสามภาษาพร้อมกัน",
+        "การตรวจจับภาษาอัตโนมัติ",
+        "การแปลแบบเรียลไทม์เป็นทั้งสามภาษา",
+        "รองรับการสลับภาษา"
+      ]
     }
   }
 }
