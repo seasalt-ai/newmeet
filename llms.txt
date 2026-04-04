@@ -1,0 +1,304 @@
+# SeaMeet MCP Server -- LLM Reference
+# Generated: 2026-02-24T16:17:14.335Z
+#
+# Auto-generated from src/main/agent/mcp/tools-registry.js
+# Do not edit manually -- run: npm run mcp:generate-llm-txt
+# Live endpoint: http://localhost:3741/llm.txt  (app must be running)
+
+## Architecture
+
+SeaMeet is an Electron desktop app for recording audio/video from meetings.
+The MCP server exposes SeaMeet capabilities to Claude as 15 tools.
+
+  Claude Agent SDK
+    \-- spawns mcp-server.js via stdio (StdioServerTransport)
+         \-- HTTP bridge -> http://127.0.0.1:<port>/mcp-bridge/*
+              \-- bridge-routes.js (Electron main process)
+                   |-- RecordingFileManager  (file I/O, metadata)
+                   |-- AssetBundleManager    (artifacts, manifests)
+                   |-- SettingsManager       (user preferences)
+                   \-- IPC -> renderer        (recording/screenshot)
+
+agent-server.js (Express) hosts:
+  GET  /llm.txt          -- this document (no auth)
+  GET  /agent/health     -- health check (no auth)
+  POST /agent/chat       -- Claude SSE stream
+  *    /mcp-bridge/*     -- MCP bridge (requires X-Bridge-Secret)
+
+Port: primary 3741, automatic fallback to 3742 -> 3743 if already in use.
+The actual bound port is stored in appState.agentServerPort.
+
+Bridge auth: every /mcp-bridge/* request must include:
+  X-Bridge-Secret: <SEAMEET_BRIDGE_SECRET>
+
+Credentials file written to $TMPDIR/seameet-mcp-bridge.json on app startup:
+  { port, secret, pid, startedAt }
+Inspector: npm run mcp:inspect  (reads credentials automatically)
+
+Subprocess environment: mcp-server.js is spawned with ONLY two env vars --
+  SEAMEET_BRIDGE_PORT  -- actual bound port (may differ from 3741)
+  SEAMEET_BRIDGE_SECRET -- shared secret for bridge auth
+PATH and other env vars from the parent process are NOT inherited.
+
+## Error Codes
+
+  401  Unauthorized        -- X-Bridge-Secret header missing or wrong
+  400  Bad Request         -- required parameter missing or invalid
+  403  Access Denied       -- filePath is outside the save directory (path traversal blocked)
+  503  Service Unavailable -- manager not initialised (RecordingFileManager / AssetBundleManager)
+                            or main window destroyed (IPC tools)
+  504  Gateway Timeout     -- IPC round-trip to renderer timed out
+  501  Not Implemented     -- analyze-media requires Layer B (Gemini) deployment
+  500  Internal Error      -- unexpected server-side error
+
+## Tools (15)
+
+### seameet_list_recordings
+
+List recordings and screenshots with metadata. Optionally filter by media type, date range, or limit the number of results. Each entry includes: filePath, name, type, timestamp, durationMilliSeconds, hasVideo, videoMetadata (codec/width/height/frameRate), audioCodec, events (user-marked timestamps), sourceAppName, sourceLabel, imageMetadata (for screenshots), and SeaMeet meeting IDs.
+
+Parameters:
+  type  string (recording | screenshot | microphone | all)  -- Filter by media type. Omit or use "all" to return everything.
+  dateFrom  string  -- ISO 8601 date-time -- only include recordings at or after this time.
+  dateTo  string  -- ISO 8601 date-time -- only include recordings at or before this time.
+  limit  number  -- Maximum number of results to return. Default: 50.
+Returns: { defaultSaveDirectory, recordings } where each recording has
+  { filePath, name, type, timestamp, durationMilliSeconds, hasVideo,
+    videoMetadata?: { codec, width, height, frameRate },
+    audioCodec?, events?: [{ label, timeSeconds }],
+    sourceAppName?, sourceLabel?, imageMetadata? }
+Note: type values -- "recording" (video/webm), "screenshot" (image), "microphone" (audio-only).
+
+### seameet_get_artifact
+
+Read a specific AI-generated artifact from an asset bundle. Common artifact keys: "summary" (meeting summary markdown), "transcription" (SRT + speaker labels JSON), "action-items" (JSON array), "chapters" (JSON), "key-decisions" (JSON), "description" (screenshot description), "ocr-text" (screenshot OCR).
+
+Parameters:
+  filePath [required]  string  -- Absolute path to the original recording or screenshot file.
+  key [required]  string  -- Artifact key (e.g., "summary", "transcription", "action-items").
+
+### seameet_get_asset_bundle
+
+Get the full asset bundle manifest for a recording or screenshot. The manifest lists all available artifacts (generated summaries, transcriptions, etc.) and chat session history.
+
+Parameters:
+  filePath [required]  string  -- Absolute path to the original recording or screenshot file.
+
+### seameet_save_artifact
+
+Save a generated artifact to an asset bundle. Use this to persist AI-generated content such as email drafts, meeting notes, mind maps, or custom summaries alongside the original recording.
+
+Parameters:
+  filePath [required]  string  -- Absolute path to the original recording or screenshot file.
+  artifactKey [required]  string  -- Logical key for this artifact, e.g. "email-draft", "mindmap", "custom-summary".
+  content [required]  string  -- String content to write to the artifact file.
+  mimeType [required]  string  -- MIME type of the content, e.g. "text/markdown", "application/json".
+  generatedBy [required]  string (claude | gemini | seameet-stt | user)  -- Who generated this artifact.
+  extension  string  -- File extension including dot, e.g. ".md", ".json", ".txt". Default: ".txt".
+  modelUsed  string  -- Optional model identifier, e.g. "claude-sonnet-4-5".
+  tokenCost  number  -- Optional token cost incurred to generate this artifact.
+  description  string  -- Optional human-readable description of what this artifact contains.
+
+### seameet_start_recording
+
+Start recording in SeaMeet. Pass "source" to specify what to record: - source: "microphone" -> record audio (microphone) only - source: "screen" -> record screen video + microphone audio - source: "both" -> record microphone + screen video together If "source" is omitted or unclear, the tool returns a needsClarification response with a suggested question to ask the user.
+
+Parameters:
+  source  string (microphone | screen | both)  -- "microphone" = audio only, no video; "screen" = screen video + microphone audio; "both" = screen video + microphone + system/speaker audio. Omit to trigger a needsClarification response with clickable choices.
+Note: IPC round-trip to renderer -- times out after 15 s if renderer has no handler.
+  send channel:  agent-start-recording
+  reply channel: agent-recording-started
+
+### seameet_stop_recording
+
+Stop the current recording in SeaMeet. Returns the file path of the saved recording.
+
+Parameters: none
+Note: IPC round-trip to renderer -- times out after 30 s (file save may take time).
+  send channel:  agent-stop-recording
+  reply channel: agent-recording-stopped
+
+### seameet_take_screenshot
+
+Capture a screenshot using SeaMeet's screenshot pipeline. Returns the file path of the saved screenshot.
+
+Parameters: none
+Note: IPC round-trip to renderer -- times out after 15 s if renderer has no handler.
+  send channel:  agent-take-screenshot
+  reply channel: agent-screenshot-taken
+
+### seameet_rename_file
+
+Rename a recording or screenshot file with a meaningful name. The file extension is preserved. Handles naming collisions automatically.
+
+Parameters:
+  filePath [required]  string  -- Absolute path to the file to rename.
+  newName [required]  string  -- New base name for the file (without extension).
+  fileTimestampSuffix  string  -- Optional timestamp suffix to preserve in the filename (13-14 digits).
+Security: newName must not contain path separators or "..".
+Returns: response passed through from RecordingFileManager.renameRecordingFile()
+  { success, newFilePath }
+
+### seameet_list_files
+
+List files in the SeaMeet recording save directory (or a specified directory). Returns file names and absolute paths.
+
+Parameters:
+  dir  string  -- Directory to list. Defaults to the SeaMeet save directory.
+Returns: files array where each item has { name, path, extension }
+Note: returns files only -- subdirectories are excluded.
+      Returns empty array (not an error) if the directory does not exist.
+
+### seameet_get_settings
+
+Get current SeaMeet app settings including the default save directory, microphone gain, and app recording permissions.
+
+Parameters: none
+Returns: { defaultSaveDirectory, microphoneGain, appPermissions, recordingFormat, language }
+
+### seameet_search_text
+
+Search across all asset bundle text content (summaries, transcriptions, action items). Returns a list of files whose artifact content contains the query string.
+
+Parameters:
+  query [required]  string  -- Text to search for (case-insensitive substring match).
+  limit  number  -- Maximum number of results to return. Default: 10.
+Returns: results array where each item has { assetId, filePath, artifactKey, snippet }
+  snippet -- excerpt centred around the first match (?60 chars before + match + ?140 chars after)
+Note: at most one result per recording file even if multiple artifacts match.
+
+### seameet_analyze_media
+
+Send a recording or screenshot to Gemini for AI analysis. NOTE: This feature requires Layer B (Gemini backend) deployment and is not yet available.
+
+Parameters:
+  filePath [required]  string  -- Absolute path to the media file to analyze.
+  prompt  string  -- Optional analysis prompt or instructions for Gemini.
+
+### seameet_recording_status
+
+Get the current recording state -- whether a recording is active, paused, elapsed time, and whether video is included. Use this to check recording progress before a summary is available.
+
+Parameters: none
+Returns: { isRecording, isPaused, isVideoRecording, elapsedMs, recordingStartTime }
+Note: Synchronous read from FloaterStateManager -- no IPC round-trip.
+
+### seameet_pause_recording
+
+Pause the current audio recording. IMPORTANT: Only microphone/audio-only recordings can be paused. Video (screen capture) recordings cannot be paused -- this tool returns an error if the active recording includes video.
+
+Parameters: none
+Note: audio-only recordings only; returns 400 for video recordings or when nothing is recording.
+  send channel:  agent-pause-recording
+  reply channel: agent-recording-paused
+
+### seameet_resume_recording
+
+Resume a paused audio recording. Returns an error if no recording is currently paused.
+
+Parameters: none
+Note: returns 400 if no recording is currently paused.
+  send channel:  agent-resume-recording
+  reply channel: agent-recording-resumed
+
+## HTTP Bridge Endpoints
+
+Base:    http://127.0.0.1:<SEAMEET_BRIDGE_PORT>/
+Header:  X-Bridge-Secret: <SEAMEET_BRIDGE_SECRET>
+
+  GET   /mcp-bridge/list-recordings?type=&dateFrom=&dateTo=&limit=  # all params optional
+         response: { success, defaultSaveDirectory, recordings: [{ name, filePath, type, timestamp, duration?, size? }] }
+  GET   /mcp-bridge/get-artifact?filePath=&key=
+         response: { success, filePath, key, content }
+  POST  /mcp-bridge/save-artifact
+         body:     { filePath, artifactKey, content, mimeType, generatedBy, extension?, modelUsed?, tokenCost?, description? }
+         response: { success, filePath, artifactKey }
+  GET   /mcp-bridge/get-asset-bundle?filePath=
+         response: { success, manifest: { artifacts: { [key]: { ... } }, chatSessions: [...] } }
+  POST  /mcp-bridge/start-recording  # IPC round-trip to renderer -- 15 s timeout
+         body:     { source? }
+         response: { success, filePath? }
+  POST  /mcp-bridge/stop-recording  # IPC round-trip to renderer -- 30 s timeout (file save may take time)
+         body:     {}
+         response: { success, filePath }
+  POST  /mcp-bridge/take-screenshot  # IPC round-trip to renderer -- 15 s timeout
+         body:     {}
+         response: { success, filePath }
+  POST  /mcp-bridge/rename-file  # newName must not contain path separators or ".."
+         body:     { filePath, newName, fileTimestampSuffix? }
+         response: { success, newFilePath }
+  GET   /mcp-bridge/list-files?dir=  # dir defaults to save directory; files only (no subdirs); empty array if dir missing
+         response: { success, dir, files: [{ name, path, extension }] }
+  GET   /mcp-bridge/get-settings
+         response: { success, settings: { defaultSaveDirectory, microphoneGain, appPermissions, recordingFormat, language } }
+  GET   /mcp-bridge/search-text?query=&limit=  # at most one match per recording file
+         response: { success, query, results: [{ assetId, filePath, artifactKey, snippet }] }
+  POST  /mcp-bridge/analyze-media  # stub -- returns 501; use Gemini pipeline through SeaMeet UI instead
+         body:     { filePath, prompt? }
+         response: { success: false, error }
+  GET   /mcp-bridge/get-recording-status
+         response: { success, isRecording, isPaused, isVideoRecording, elapsedMs, recordingStartTime }
+  POST  /mcp-bridge/pause-recording  # audio-only recordings; 400 if video recording active or nothing recording
+         body:     {}
+         response: { success }
+  POST  /mcp-bridge/resume-recording  # 400 if not currently paused
+         body:     {}
+         response: { success }
+
+## IPC Channels  (renderer integration)
+
+The IPC-backed tools communicate with the renderer via ipcMain/ipcRenderer.
+Renderer must listen for the send channel and reply on the reply channel.
+
+  Tool                      Send channel              Reply channel
+  seameet_start_recording   agent-start-recording     agent-recording-started
+  seameet_stop_recording    agent-stop-recording      agent-recording-stopped
+  seameet_take_screenshot   agent-take-screenshot     agent-screenshot-taken
+  seameet_pause_recording   agent-pause-recording     agent-recording-paused
+  seameet_resume_recording  agent-resume-recording    agent-recording-resumed
+
+Reply payload for start-recording / take-screenshot: { filePath? }
+Reply payload for stop-recording:                     { filePath }
+Reply payload for pause-recording / resume-recording: {}
+
+## Artifact Keys  (use with seameet_get_artifact key=)
+
+  summary        -- Meeting summary (Markdown)
+  transcription  -- Speaker-labeled transcript (JSON with SRT)
+  action-items   -- Action items (JSON array)
+  chapters       -- Chapter list (JSON)
+  key-decisions  -- Key decisions (JSON)
+  description    -- Screenshot description (plain text)
+  ocr-text       -- Screenshot OCR output (plain text)
+
+## Common Usage Patterns
+
+List all recordings:
+  seameet_list_recordings()
+
+List only screenshots from today:
+  seameet_list_recordings(type="screenshot", dateFrom="2026-02-23T00:00:00Z")
+
+Read a meeting summary:
+  seameet_get_artifact(filePath="/path/to/meeting.webm", key="summary")
+
+Search across all meetings:
+  seameet_search_text(query="budget discussion")
+  -> returns snippet showing where the match was found in each file
+
+Save a generated artifact:
+  seameet_save_artifact(
+    filePath="/path/to/meeting.webm",
+    artifactKey="email-draft",
+    content="...",
+    mimeType="text/markdown",
+    generatedBy="claude"
+  )
+
+Check what artifacts already exist for a file:
+  seameet_get_asset_bundle(filePath="/path/to/meeting.webm")
+  -> inspect manifest.artifacts keys before calling seameet_get_artifact
+
+Get the save directory path:
+  seameet_get_settings()
+  -> use settings.defaultSaveDirectory to construct file paths

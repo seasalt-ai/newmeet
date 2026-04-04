@@ -1,0 +1,979 @@
+<!DOCTYPE html><html lang="en" dir="ltr"> <head><!-- Google Tag Manager --><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NCR9N2B7');
+  </script><!-- End Google Tag Manager --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Astro v5.13.4"><!-- Basic Meta Tags --><title>Performance Optimization | Troubleshooting &amp; Best Practices | SeaMeet Wiki</title><meta name="description" content="Optimize SeaMeet for your hardware. Balance quality vs performance, enable hardware acceleration, and manage system resources effectively."><meta name="keywords" content="AI meeting assistant, meeting copilot, meeting transcription, automated meeting notes, AI notetaker, meeting productivity, video conferencing tools"><meta name="author" content="SeaMeet Team"><meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><link rel="canonical" href="https://seameet.ai/en/desktop-app/wiki/troubleshooting/performance-optimization/"><!-- Hreflang tags for multilingual SEO --><link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="zh-CN" href="https://seameet.ai/zh-CN/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="ar" href="https://seameet.ai/ar/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="es" href="https://seameet.ai/es/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="fa" href="https://seameet.ai/fa/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="fil" href="https://seameet.ai/fil/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="fr" href="https://seameet.ai/fr/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="hi" href="https://seameet.ai/hi/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="id" href="https://seameet.ai/id/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="ja" href="https://seameet.ai/ja/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="ms" href="https://seameet.ai/ms/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="pl" href="https://seameet.ai/pl/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="pt" href="https://seameet.ai/pt/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="ru" href="https://seameet.ai/ru/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="ta" href="https://seameet.ai/ta/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="th" href="https://seameet.ai/th/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="vi" href="https://seameet.ai/vi/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="de" href="https://seameet.ai/de/desktop-app/wiki/troubleshooting/performance-optimization"><link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/troubleshooting/performance-optimization"><!-- Open Graph / Facebook --><meta property="og:type" content="article"><meta property="og:title" content="Performance Optimization | Troubleshooting &#38; Best Practices | SeaMeet Wiki"><meta property="og:description" content="Optimize SeaMeet for your hardware. Balance quality vs performance, enable hardware acceleration, and manage system resources effectively."><meta property="og:image" content="https://seameet.ai/images/hero-dashboard.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Performance Optimization | Troubleshooting &#38; Best Practices | SeaMeet Wiki"><meta property="og:url" content="https://seameet.ai/en/desktop-app/wiki/troubleshooting/performance-optimization/"><meta property="og:site_name" content="SeaMeet"><meta property="og:locale" content="en"><!-- Article specific Open Graph --><meta property="article:published_time" content="2026-02-01T00:00:00.000Z"><meta property="article:modified_time" content="2026-02-01T00:00:00.000Z"><meta property="article:author" content="SeaMeet Team"><meta property="article:section" content="Troubleshooting &#38; Best Practices"><meta property="article:tag" content="SeaMeet"><meta property="article:tag" content="Documentation"><meta property="article:tag" content="Troubleshooting &#38; Best Practices"><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@seameet_ai"><meta name="twitter:creator" content="@seameet_ai"><meta name="twitter:title" content="Performance Optimization | Troubleshooting &#38; Best Practices | SeaMeet Wiki"><meta name="twitter:description" content="Optimize SeaMeet for your hardware. Balance quality vs performance, enable hardware acceleration, and manage system resources effectively."><meta name="twitter:image" content="https://seameet.ai/images/hero-dashboard.png"><meta name="twitter:image:alt" content="Performance Optimization | Troubleshooting &#38; Best Practices | SeaMeet Wiki"><!-- Additional SEO Meta Tags --><meta name="theme-color" content="#0D9488"><meta name="msapplication-TileColor" content="#0D9488"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="SeaMeet"><!-- DNS Prefetch for Performance --><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//fonts.gstatic.com"><link rel="dns-prefetch" href="//api.fontshare.com"><link rel="dns-prefetch" href="//www.google-analytics.com"><!-- Fonts: Satoshi (display), Plus Jakarta Sans (body), Geist Mono (code/data) --><link rel="preconnect" href="https://api.fontshare.com" crossorigin><link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet"><!-- Favicon and Icons --><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><!-- Structured Data --><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://seameet.ai/en/desktop-app/wiki/troubleshooting/performance-optimization/","name":"Performance Optimization | Troubleshooting & Best Practices | SeaMeet Wiki","description":"Optimize SeaMeet for your hardware. Balance quality vs performance, enable hardware acceleration, and manage system resources effectively.","url":"https://seameet.ai/en/desktop-app/wiki/troubleshooting/performance-optimization/","inLanguage":"en","isPartOf":{"@type":"WebSite","@id":"https://seameet.ai/#website","name":"SeaMeet","url":"https://seameet.ai"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://seameet.ai/en"},{"@type":"ListItem","position":2,"name":"Desktop App","item":"https://seameet.ai/en/desktop-app"},{"@type":"ListItem","position":3,"name":"Wiki","item":"https://seameet.ai/en/desktop-app/wiki"},{"@type":"ListItem","position":4,"name":"Troubleshooting","item":"https://seameet.ai/en/desktop-app/wiki/troubleshooting"},{"@type":"ListItem","position":5,"name":"Performance Optimization","item":"https://seameet.ai/en/desktop-app/wiki/troubleshooting/performance-optimization"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Performance Optimization","description":"Optimize SeaMeet for your hardware. Balance quality vs performance, enable hardware acceleration, and manage system resources effectively.","author":{"@type":"Organization","name":"SeaMeet Team"},"datePublished":"2026-02-01T00:00:00.000Z","dateModified":"2026-02-01T00:00:00.000Z","publisher":{"@type":"Organization","name":"SeaMeet","logo":{"@type":"ImageObject","url":"https://seameet.ai/images/hero-dashboard.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://seameet.ai/en/desktop-app/wiki/troubleshooting/performance-optimization/"},"articleSection":"Troubleshooting & Best Practices","about":{"@type":"SoftwareApplication","name":"SeaMeet","applicationCategory":"BusinessApplication"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://seameet.ai/#organization","name":"SeaMeet","alternateName":"SeaMeet Copilot by Seasalt.ai","description":"Agentic Meeting Copilot built for high-efficiency individuals and high-performance teams. SeaMeet is your 24/7 AI Meeting Copilot that records, transcribes, summarizes, and provides insights to make every meeting effective.","url":"https://seameet.ai","logo":{"@type":"ImageObject","url":"https://seameet.ai/images/hero-dashboard.png","width":1200,"height":630},"foundingDate":"2020","founder":{"@type":"Organization","name":"Seasalt.ai"},"sameAs":["https://www.youtube.com/@seasaltai","https://www.linkedin.com/company/seasalt-ai/","https://twitter.com/SeasaltAI","https://discord.gg/VgAWg3c7rU"]}</script><!-- MailerLite Universal --><script src="/js/mailerlite.js" defer></script><!-- End MailerLite Universal --><!-- UTM Tracking and External Link Enhancement --><script>
+    // 初始化 dataLayer 如果不存在
+    window.dataLayer = window.dataLayer || [];
+  </script><link rel="stylesheet" href="/_astro/_slug_.yZ-VTh2r.css">
+<link rel="stylesheet" href="/_astro/_app_.NLne-Mhi.css"></head> <body class="min-h-screen bg-white flex flex-col"> <!-- Google Tag Manager (noscript) --> <noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCR9N2B7" height="0" width="0" style="display:none;visibility:hidden"></iframe> </noscript> <!-- End Google Tag Manager (noscript) --> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var l=(n,t)=>{let i=async()=>{await(await n())()},e=typeof t.value=="object"?t.value:void 0,s={timeout:e==null?void 0:e.timeout};"requestIdleCallback"in window?window.requestIdleCallback(i,s):setTimeout(i,s.timeout||200)};(self.Astro||(self.Astro={})).idle=l;window.dispatchEvent(new Event("astro:idle"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="Z1hO0OP" prefix="r23" component-url="/_astro/NavigationWrapper.QAnhwak0.js" component-export="default" renderer-url="/_astro/client.cVMPzRaF.js" props="{&quot;lang&quot;:[0,&quot;en&quot;],&quot;demoUrl&quot;:[0,&quot;https://calendar.app.google/GcdRQv1DVoiDaoCT6/&quot;],&quot;cloudMode&quot;:[0,false],&quot;translations&quot;:[0,{&quot;nav&quot;:[0,{&quot;announcement&quot;:[0,{&quot;tripleTrack&quot;:[0,&quot;New: the World&#39;s First Triple-Track Translation Engine!&quot;],&quot;trilingualTranscription&quot;:[0,&quot;🌏 World&#39;s First: Chinese-Japanese-English Trilingual Transcription AI&quot;],&quot;learnMore&quot;:[0,&quot;Learn More&quot;]}],&quot;home&quot;:[0,&quot;Home&quot;],&quot;features&quot;:[0,&quot;Features&quot;],&quot;solutions&quot;:[0,{&quot;sales&quot;:[0,&quot;Sales Teams&quot;],&quot;marketing&quot;:[0,&quot;Marketing&quot;],&quot;recruiting&quot;:[0,&quot;Recruiting&quot;],&quot;allSolutions&quot;:[0,&quot;All Solutions&quot;]}],&quot;channels&quot;:[0,{&quot;googleMeet&quot;:[0,&quot;Google Meet&quot;],&quot;microsoftTeams&quot;:[0,&quot;Microsoft Teams&quot;],&quot;discord&quot;:[0,&quot;Discord&quot;],&quot;twilio&quot;:[0,&quot;Twilio&quot;],&quot;cloudPbx&quot;:[0,&quot;Cloud PBX&quot;],&quot;audioFiles&quot;:[0,&quot;Audio Files&quot;],&quot;inPerson&quot;:[0,&quot;In-Person&quot;]}],&quot;pricing&quot;:[0,&quot;Pricing&quot;],&quot;enterprise&quot;:[0,&quot;Enterprise&quot;],&quot;company&quot;:[0,&quot;Company&quot;],&quot;about&quot;:[0,&quot;About&quot;],&quot;blog&quot;:[0,&quot;Blog&quot;],&quot;contact&quot;:[0,&quot;Contact&quot;],&quot;login&quot;:[0,&quot;Login&quot;],&quot;signup&quot;:[0,&quot;Sign Up&quot;],&quot;getStarted&quot;:[0,&quot;Get Started&quot;],&quot;tryForFree&quot;:[0,&quot;Try for Free&quot;],&quot;schedulDemo&quot;:[0,&quot;Schedule Demo&quot;],&quot;bookDemo&quot;:[0,&quot;Book Demo&quot;],&quot;whyAgentic&quot;:[0,&quot;Why Agentic&quot;],&quot;whyTeamPlan&quot;:[0,&quot;Why Team Plan&quot;],&quot;resources&quot;:[0,&quot;Resources&quot;],&quot;help&quot;:[0,&quot;FAQ&quot;],&quot;support&quot;:[0,&quot;Support&quot;],&quot;mobile&quot;:[0,{&quot;language&quot;:[0,&quot;Language&quot;]}],&quot;featuresLabel&quot;:[0,&quot;Features&quot;],&quot;channelsLabel&quot;:[0,&quot;Channels&quot;],&quot;solutionsLabel&quot;:[0,&quot;Solutions&quot;],&quot;download&quot;:[0,&quot;Download&quot;],&quot;wiki&quot;:[0,&quot;Wiki&quot;],&quot;cloud&quot;:[0,&quot;SeaMeet Cloud →&quot;],&quot;record&quot;:[0,&quot;Record&quot;],&quot;compare&quot;:[0,&quot;Compare&quot;],&quot;banner&quot;:[0,&quot;SeaMeet Desktop is here — Record everything, miss nothing. Download free →&quot;],&quot;featureAllFeatures&quot;:[0,&quot;All Features&quot;],&quot;featureSepDesktop&quot;:[0,&quot;Desktop App&quot;],&quot;featureSepCloud&quot;:[0,&quot;Cloud Product&quot;],&quot;featureRecordingModes&quot;:[0,&quot;Recording Modes&quot;],&quot;featureFlashback&quot;:[0,&quot;Flashback&quot;],&quot;featureAutoDetection&quot;:[0,&quot;Auto-Detection&quot;],&quot;featureAiTranscription&quot;:[0,&quot;AI Transcription&quot;],&quot;featureAiExtraction&quot;:[0,&quot;AI Extraction&quot;],&quot;featureAiAgent&quot;:[0,&quot;AI Agent&quot;],&quot;featureAiSkills&quot;:[0,&quot;AI Skills&quot;],&quot;featureScreenshotOcr&quot;:[0,&quot;Screenshot OCR&quot;],&quot;featureMcpServer&quot;:[0,&quot;MCP Server&quot;],&quot;featurePrivacy&quot;:[0,&quot;Privacy &amp; Security&quot;],&quot;featureCrossPlatform&quot;:[0,&quot;Cross-Platform&quot;],&quot;recordSepVideo&quot;:[0,&quot;Video Conferencing&quot;],&quot;recordSepMessaging&quot;:[0,&quot;Messaging Apps&quot;]}],&quot;featuresPage&quot;:[0,{&quot;meta&quot;:[0,{&quot;title&quot;:[0,&quot;SeaMeet Features | AI Meeting Assistant, Transcription &amp; Collaboration Tools&quot;],&quot;description&quot;:[0,&quot;Discover SeaMeet&#39;s powerful AI features: real-time transcription, smart summaries, action item detection, meeting analytics, multi-language support, and seamless integrations.&quot;],&quot;keywords&quot;:[0,&quot;AI meeting assistant features, real-time transcription, meeting summaries, action item detection, meeting analytics, multi-language transcription, video conferencing AI, meeting productivity tools, smart meeting recorder&quot;]}],&quot;hero&quot;:[0,{&quot;title&quot;:[0,&quot;Powerful Features for&quot;],&quot;titleHighlight&quot;:[0,&quot;Productive Meetings&quot;],&quot;subtitle&quot;:[0,&quot;Discover how SeaMeet&#39;s advanced AI and intuitive design work together to transform your meeting experience.&quot;]}],&quot;sections&quot;:[0,{&quot;individual&quot;:[0,{&quot;title&quot;:[0,&quot;Features for Individuals&quot;]}],&quot;team&quot;:[0,{&quot;title&quot;:[0,&quot;Features for Teams&quot;]}],&quot;channels&quot;:[0,{&quot;title&quot;:[0,&quot;Universal Meeting Intelligence&quot;],&quot;subtitle&quot;:[0,&quot;One platform for every conversation, every channel, every format.&quot;],&quot;platforms&quot;:[0,&quot;Google Meet • Microsoft Teams • Discord • Twilio • VoIP • Audio Files • In-Person&quot;],&quot;meta&quot;:[0,{&quot;title&quot;:[0,&quot;SeaMeet Channels | Universal Meeting Intelligence Platform&quot;],&quot;description&quot;:[0,&quot;Connect SeaMeet to all your meeting platforms and communication channels. Universal intelligence across Google Meet, Microsoft Teams, Discord, Twilio, and more.&quot;],&quot;keywords&quot;:[0,&quot;meeting channels, universal meeting platform, Google Meet integration, Microsoft Teams integration, Discord meetings, Twilio integration, multi-platform meeting intelligence&quot;]}]}]}],&quot;individualFeatures&quot;:[0,{&quot;allFeatures&quot;:[0,{&quot;title&quot;:[0,&quot;All Features&quot;],&quot;description&quot;:[0,&quot;Explore all SeaMeet features in one comprehensive overview&quot;],&quot;benefits&quot;:[1,[[0,&quot;Complete feature overview&quot;],[0,&quot;Individual and team capabilities&quot;],[0,&quot;Detailed feature comparisons&quot;]]]}],&quot;aiAssistant&quot;:[0,{&quot;title&quot;:[0,&quot;AI Meeting Assistant&quot;],&quot;description&quot;:[0,&quot;Your intelligent copilot that joins meetings automatically with custom templates&quot;],&quot;benefits&quot;:[1,[[0,&quot;Auto-join meetings with Google Calendar integration&quot;],[0,&quot;Customizable meeting summary templates&quot;],[0,&quot;Real-time action item detection&quot;],[0,&quot;Smart meeting insights and analytics&quot;],[0,&quot;Context-aware follow-up suggestions&quot;]]]}],&quot;transcription&quot;:[0,{&quot;title&quot;:[0,&quot;Real-time Transcription &amp; Controls&quot;],&quot;description&quot;:[0,&quot;Industry-leading 95%+ accuracy with live meeting controls&quot;],&quot;benefits&quot;:[1,[[0,&quot;95%+ transcription accuracy&quot;],[0,&quot;Real-time language switching during meetings&quot;],[0,&quot;Live transcript editing and corrections&quot;],[0,&quot;Advanced speaker identification (2-6 people optimal)&quot;],[0,&quot;Support a mixture of multiple language speaking&quot;]]]}],&quot;audioUpload&quot;:[0,{&quot;title&quot;:[0,&quot;Audio Upload &amp; Processing&quot;],&quot;description&quot;:[0,&quot;Process recordings from any source with offline capabilities&quot;],&quot;benefits&quot;:[1,[[0,&quot;Support for MP3, WAV, M4A, AAC, FLAC, OGG, OPUS formats&quot;],[0,&quot;Offline meeting transcription capabilities&quot;],[0,&quot;Retrospective meeting analysis&quot;],[0,&quot;Podcast and interview transcription&quot;],[0,&quot;External recording processing&quot;]]]}],&quot;speakerId&quot;:[0,{&quot;title&quot;:[0,&quot;Speaker Identification&quot;],&quot;description&quot;:[0,&quot;Advanced AI-powered speaker recognition for organized transcripts&quot;],&quot;benefits&quot;:[1,[[0,&quot;Automatic speaker detection and labeling&quot;],[0,&quot;Custom speaker name assignment&quot;],[0,&quot;Voice pattern recognition&quot;],[0,&quot;Optimal performance with 2-6 speakers&quot;],[0,&quot;Seamless multi-participant meeting tracking&quot;]]]}],&quot;languageSwitching&quot;:[0,{&quot;title&quot;:[0,&quot;Language Switching&quot;],&quot;description&quot;:[0,&quot;Dynamic language support with real-time switching capabilities&quot;],&quot;benefits&quot;:[1,[[0,&quot;Real-time language switching during meetings&quot;],[0,&quot;Support a mixture of multiple language speaking&quot;],[0,&quot;Languages: English (US, Singapore), Spanish (Spain, Latin America), French, German, Polish, Danish, Traditional Chinese, Cantonese (Hong Kong Traditional, Simplified), Japanese, Korean, Vietnamese, Thai, Hindi&quot;],[0,&quot;Automatic language detection&quot;],[0,&quot;Multilingual participant support&quot;]]]}],&quot;customizedSummary&quot;:[0,{&quot;title&quot;:[0,&quot;Customized Summary&quot;],&quot;description&quot;:[0,&quot;AI-powered meeting summaries tailored to your specific needs&quot;],&quot;benefits&quot;:[1,[[0,&quot;Custom summary templates&quot;],[0,&quot;Intelligent content extraction&quot;],[0,&quot;Key decision highlighting&quot;],[0,&quot;Action item identification&quot;],[0,&quot;Personalized summary formats&quot;]]]}],&quot;topicsSummary&quot;:[0,{&quot;title&quot;:[0,&quot;Topics Summary&quot;],&quot;description&quot;:[0,&quot;Organized discussion topics with AI-driven categorization&quot;],&quot;benefits&quot;:[1,[[0,&quot;Automatic topic detection and categorization&quot;],[0,&quot;Discussion thread organization&quot;],[0,&quot;Key point extraction&quot;],[0,&quot;Topic timeline tracking&quot;],[0,&quot;Structured meeting insights&quot;]]]}],&quot;actionTodos&quot;:[0,{&quot;title&quot;:[0,&quot;Action Items&quot;],&quot;description&quot;:[0,&quot;Automatic detection and tracking of action items and todos&quot;],&quot;benefits&quot;:[1,[[0,&quot;Automatic action item detection&quot;],[0,&quot;Task assignment and tracking&quot;],[0,&quot;Deadline identification&quot;],[0,&quot;Follow-up reminders&quot;],[0,&quot;Team accountability features&quot;]]]}],&quot;autoJoin&quot;:[0,{&quot;title&quot;:[0,&quot;Auto Join Meetings&quot;],&quot;description&quot;:[0,&quot;Seamless meeting participation with Google Calendar integration&quot;],&quot;benefits&quot;:[1,[[0,&quot;Google Calendar integration&quot;],[0,&quot;Automatic meeting detection&quot;],[0,&quot;One-click meeting joining&quot;],[0,&quot;Calendar synchronization&quot;],[0,&quot;Smart scheduling assistance&quot;]]]}],&quot;autoShare&quot;:[0,{&quot;title&quot;:[0,&quot;Auto Share&quot;],&quot;description&quot;:[0,&quot;Intelligent meeting distribution with configurable sharing rules&quot;],&quot;benefits&quot;:[1,[[0,&quot;Automated meeting distribution&quot;],[0,&quot;Configurable sharing rules&quot;],[0,&quot;Team-specific sharing policies&quot;],[0,&quot;Multiple distribution channels&quot;],[0,&quot;Secure content sharing&quot;]]]}],&quot;meetingLabels&quot;:[0,{&quot;title&quot;:[0,&quot;Meeting Labels&quot;],&quot;description&quot;:[0,&quot;Organize and categorize meetings with intelligent labeling system&quot;],&quot;benefits&quot;:[1,[[0,&quot;Custom meeting labels and tags&quot;],[0,&quot;Automatic categorization&quot;],[0,&quot;Search and filter capabilities&quot;],[0,&quot;Meeting organization system&quot;],[0,&quot;Team collaboration enhancement&quot;]]]}],&quot;meetingTranslation&quot;:[0,{&quot;meta&quot;:[0,{&quot;title&quot;:[0,&quot;Real-time Meeting Translation | SeaMeet&quot;],&quot;description&quot;:[0,&quot;Experience the world&#39;s first Triple-Track Translation Engine. Get highly accurate real-time captions in 2 formal languages and 1 creative flavor.&quot;]}],&quot;title&quot;:[0,&quot;Real-time Translation&quot;],&quot;description&quot;:[0,&quot;Don&#39;t choose between productivity and personality. SeaMeet processes speech in real-time, delivering up to three parallel translation streams.&quot;],&quot;benefits&quot;:[1,[[0,&quot;Triple-Track Translation Engine&quot;],[0,&quot;Formal Business Languages&quot;],[0,&quot;Creative &#39;Spice&#39; Modes&quot;]]]}]}],&quot;teamFeatures&quot;:[0,{&quot;agenticCopilot&quot;:[0,{&quot;title&quot;:[0,&quot;Agentic Copilot&quot;],&quot;description&quot;:[0,&quot;AI-driven assistant for team productivity and insights&quot;],&quot;benefits&quot;:[1,[[0,&quot;Automated task generation&quot;],[0,&quot;Insightful meeting analytics&quot;],[0,&quot;Personalized AI interaction&quot;],[0,&quot;Workflow automation&quot;],[0,&quot;Improved team efficiency&quot;]]]}],&quot;executiveInsights&quot;:[0,{&quot;title&quot;:[0,&quot;Daily Executive Insights&quot;],&quot;description&quot;:[0,&quot;Daily summaries and KPIs for team leaders&quot;],&quot;benefits&quot;:[1,[[0,&quot;Daily summary reports&quot;],[0,&quot;Key performance indicators&quot;],[0,&quot;Executive dashboards&quot;],[0,&quot;Customizable insights&quot;],[0,&quot;Strategic planning assists&quot;]]]}],&quot;fineTuneSpeech&quot;:[0,{&quot;title&quot;:[0,&quot;Fine Tune Speech Model&quot;],&quot;description&quot;:[0,&quot;Customization of speech models for specific needs&quot;],&quot;benefits&quot;:[1,[[0,&quot;Custom acoustic modeling&quot;],[0,&quot;Enhanced speech recognition&quot;],[0,&quot;Industry-specific tuning&quot;],[0,&quot;Improvement of transcription accuracy&quot;],[0,&quot;Support for diverse accents&quot;]]]}],&quot;workspaceManagement&quot;:[0,{&quot;title&quot;:[0,&quot;Workspace Management&quot;],&quot;description&quot;:[0,&quot;Comprehensive workspace organization for teams and projects&quot;],&quot;benefits&quot;:[1,[[0,&quot;Team workspace creation&quot;],[0,&quot;Project-based organization&quot;],[0,&quot;Member permission management&quot;],[0,&quot;Collaborative meeting spaces&quot;],[0,&quot;Enterprise workspace controls&quot;]]]}],&quot;collaboration&quot;:[0,{&quot;title&quot;:[0,&quot;Collaboration Tools&quot;],&quot;description&quot;:[0,&quot;Advanced team collaboration features for productive meetings&quot;],&quot;benefits&quot;:[1,[[0,&quot;Real-time collaboration features&quot;],[0,&quot;Team workspace management&quot;],[0,&quot;Shared meeting notes&quot;],[0,&quot;Collaborative editing capabilities&quot;],[0,&quot;Team communication enhancement&quot;]]]}]}],&quot;channels&quot;:[0,{&quot;meta&quot;:[0,{&quot;title&quot;:[0,&quot;Meeting Channels | SeaMeet - All Platforms Supported&quot;],&quot;description&quot;:[0,&quot;SeaMeet works across all major meeting platforms. From Google Meet to Microsoft Teams, Discord to in-person meetings - we&#39;ve got you covered.&quot;],&quot;keywords&quot;:[0,&quot;meeting platforms, Google Meet integration, Microsoft Teams support, Discord meetings, Twilio integration, video conferencing, meeting channels&quot;]}],&quot;googleMeet&quot;:[0,{&quot;title&quot;:[0,&quot;Google Meet&quot;],&quot;description&quot;:[0,&quot;Full feature support with Chrome extension&quot;],&quot;status&quot;:[0,&quot;Available&quot;]}],&quot;microsoftTeams&quot;:[0,{&quot;title&quot;:[0,&quot;Microsoft Teams&quot;],&quot;description&quot;:[0,&quot;Enterprise integration and collaboration&quot;],&quot;status&quot;:[0,&quot;Available&quot;]}],&quot;discord&quot;:[0,{&quot;title&quot;:[0,&quot;Discord&quot;],&quot;description&quot;:[0,&quot;Voice channel recording for communities&quot;],&quot;status&quot;:[0,&quot;Available&quot;]}],&quot;twilio&quot;:[0,{&quot;title&quot;:[0,&quot;Twilio&quot;],&quot;description&quot;:[0,&quot;Contact center and programmable voice&quot;],&quot;status&quot;:[0,&quot;Available&quot;]}],&quot;cloudPbx&quot;:[0,{&quot;title&quot;:[0,&quot;Cloud PBX&quot;],&quot;description&quot;:[0,&quot;Enterprise VoIP and unified communications&quot;],&quot;status&quot;:[0,&quot;Available&quot;]}],&quot;audioFiles&quot;:[0,{&quot;title&quot;:[0,&quot;Audio Files&quot;],&quot;description&quot;:[0,&quot;Upload MP3, WAV, M4A and more&quot;],&quot;status&quot;:[0,&quot;Available&quot;]}],&quot;inPerson&quot;:[0,{&quot;title&quot;:[0,&quot;In-Person&quot;],&quot;description&quot;:[0,&quot;Hybrid meetings with speaker ID&quot;],&quot;status&quot;:[0,&quot;Available&quot;]}]}],&quot;common&quot;:[0,{&quot;learnMore&quot;:[0,&quot;Learn More&quot;],&quot;keyBenefits&quot;:[0,&quot;Key Benefits:&quot;],&quot;tryFree&quot;:[0,&quot;Try Free&quot;],&quot;seeDemo&quot;:[0,&quot;See Demo&quot;]}],&quot;cta&quot;:[0,{&quot;title&quot;:[0,&quot;Ready to Experience These Features?&quot;],&quot;subtitle&quot;:[0,&quot;Start your free trial and see the difference SeaMeet makes&quot;],&quot;signUpForFree&quot;:[0,&quot;Sign Up For Free&quot;],&quot;scheduleExecutiveDemo&quot;:[0,&quot;Schedule Executive Demo&quot;]}]}]}]}" ssr client="idle" opts="{&quot;name&quot;:&quot;NavigationWrapper&quot;,&quot;value&quot;:true}" await-children><a href="/en/desktop-app/download" class="block bg-ink text-white text-center py-2 px-4 text-sm font-medium font-satoshi hover:bg-ink/90 transition-colors">SeaMeet Desktop is here — Record everything, miss nothing. Download free →</a><nav class="bg-white/95 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-16"><a href="/en/" class="flex items-center space-x-2"><img src="/images/seameet_logo.png" alt="SeaMeet" class="h-6 sm:h-8 w-auto"/></a><div class="hidden md:flex items-center space-x-8"><div class="relative dropdown-container"><button class="flex items-center space-x-1 text-sm font-medium text-ink hover:text-teal transition-colors py-3"><span>Features</span><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"></path></svg></button></div><div class="relative dropdown-container"><button class="flex items-center space-x-1 text-sm font-medium text-ink hover:text-teal transition-colors py-3"><span>Record</span><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"></path></svg></button></div><a href="/en/desktop-app/download" class="text-sm font-medium text-ink hover:text-teal transition-colors py-3">Download</a><a href="/en/desktop-app/pricing" class="text-sm font-medium text-ink hover:text-teal transition-colors py-3">Pricing</a><a href="/en/desktop-app/compare" class="text-sm font-medium text-ink hover:text-teal transition-colors py-3">Compare</a><a href="/en/desktop-app/wiki" class="text-sm font-medium text-ink hover:text-teal transition-colors py-3">Wiki</a><a href="/en/blog" class="text-sm font-medium text-ink hover:text-teal transition-colors py-3">Blog</a></div><div class="hidden md:flex items-center space-x-4"><div class="relative dropdown-container"><button class="flex items-center space-x-1 text-sm text-gray-700 hover:text-teal transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg><span class="font-medium">EN</span><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"></path></svg></button></div><a href="/en/" class="inline-flex items-center justify-center whitespace-nowrap font-medium border border-gray-200 bg-white shadow-sm hover:bg-gray-100 hover:text-gray-900 h-8 rounded-md px-3 text-xs transition-colors">SeaMeet Cloud →</a><a href="/en/desktop-app/download" class="inline-flex items-center justify-center whitespace-nowrap font-satoshi font-700 text-white shadow bg-ink hover:bg-ink/90 h-8 rounded-md px-4 text-xs transition-colors">Download</a></div><div class="md:hidden"><button class="text-gray-700 hover:text-teal transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div></div></div></nav><!--astro:end--></astro-island> <main class="flex-1">  <div class="min-h-screen bg-white"> <div class="max-w-7xl mx-auto"> <div class="flex"> <!-- Sidebar --> <aside class="hidden lg:block w-64 flex-shrink-0 border-r border-gray-200 min-h-screen"> <div class="sticky top-16 overflow-y-auto h-[calc(100vh-4rem)] py-6 px-4"> <nav class="space-y-1"> <a href="/en/wiki/" class="flex items-center px-3 py-2 text-sm font-medium rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> <svg class="mr-3 h-5 w-5 flex-shrink-0 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path> </svg>
+Wiki Home
+</a> </nav> <div class="mt-6"> <div class="mb-4"> <div class="flex items-center px-3 py-2"> <script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><astro-island uid="2uFMYe" prefix="r14" component-url="/_astro/WikiIcon.BGApJAj4.js" component-export="WikiIcon" renderer-url="/_astro/client.cVMPzRaF.js" props="{&quot;name&quot;:[0,&quot;Rocket&quot;],&quot;color&quot;:[0,&quot;#3B82F6&quot;],&quot;className&quot;:[0,&quot;mr-2&quot;],&quot;size&quot;:[0,20]}" ssr client="load" opts="{&quot;name&quot;:&quot;WikiIcon&quot;,&quot;value&quot;:true}" await-children><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket flex-shrink-0 mr-2" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg><!--astro:end--></astro-island> <span class="text-sm font-semibold text-gray-900">Getting Started</span> </div> <div class="ml-7 mt-1 space-y-1"> <a href="/en/wiki/getting-started/welcome-to-seameet/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Welcome to SeaMeet </a><a href="/en/wiki/getting-started/your-first-recording/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Your First Recording </a> </div> </div><div class="mb-4"> <div class="flex items-center px-3 py-2"> <astro-island uid="1QBnv2" prefix="r15" component-url="/_astro/WikiIcon.BGApJAj4.js" component-export="WikiIcon" renderer-url="/_astro/client.cVMPzRaF.js" props="{&quot;name&quot;:[0,&quot;Mic&quot;],&quot;color&quot;:[0,&quot;#10B981&quot;],&quot;className&quot;:[0,&quot;mr-2&quot;],&quot;size&quot;:[0,20]}" ssr client="load" opts="{&quot;name&quot;:&quot;WikiIcon&quot;,&quot;value&quot;:true}" await-children><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mic flex-shrink-0 mr-2" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg><!--astro:end--></astro-island> <span class="text-sm font-semibold text-gray-900">Core Recording</span> </div> <div class="ml-7 mt-1 space-y-1"> <a href="/en/wiki/core-recording/audio-recording-explained/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Audio Recording Explained </a><a href="/en/wiki/core-recording/video-recording-explained/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Video Recording Explained </a><a href="/en/wiki/core-recording/understanding-file-formats/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Understanding File Formats </a><a href="/en/wiki/core-recording/screenshot-feature/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Screenshot Feature </a> </div> </div><div class="mb-4"> <div class="flex items-center px-3 py-2"> <astro-island uid="Z1GT1XT" prefix="r16" component-url="/_astro/WikiIcon.BGApJAj4.js" component-export="WikiIcon" renderer-url="/_astro/client.cVMPzRaF.js" props="{&quot;name&quot;:[0,&quot;Zap&quot;],&quot;color&quot;:[0,&quot;#F59E0B&quot;],&quot;className&quot;:[0,&quot;mr-2&quot;],&quot;size&quot;:[0,20]}" ssr client="load" opts="{&quot;name&quot;:&quot;WikiIcon&quot;,&quot;value&quot;:true}" await-children><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap flex-shrink-0 mr-2" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg><!--astro:end--></astro-island> <span class="text-sm font-semibold text-gray-900">Advanced Features</span> </div> <div class="ml-7 mt-1 space-y-1"> <a href="/en/wiki/advanced-features/flashback-recording/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Flashback Recording - Your Personal Time Machine </a><a href="/en/wiki/advanced-features/auto-detection/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Auto-Detection - Never Miss a Meeting Again </a> </div> </div><div class="mb-4"> <div class="flex items-center px-3 py-2"> <astro-island uid="19yOaR" prefix="r17" component-url="/_astro/WikiIcon.BGApJAj4.js" component-export="WikiIcon" renderer-url="/_astro/client.cVMPzRaF.js" props="{&quot;name&quot;:[0,&quot;Folder&quot;],&quot;color&quot;:[0,&quot;#8B5CF6&quot;],&quot;className&quot;:[0,&quot;mr-2&quot;],&quot;size&quot;:[0,20]}" ssr client="load" opts="{&quot;name&quot;:&quot;WikiIcon&quot;,&quot;value&quot;:true}" await-children><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder flex-shrink-0 mr-2" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg><!--astro:end--></astro-island> <span class="text-sm font-semibold text-gray-900">Managing Recordings</span> </div> <div class="ml-7 mt-1 space-y-1"> <a href="/en/wiki/managing-recordings/your-recording-library/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Your Recording Library </a><a href="/en/wiki/managing-recordings/playback-features/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Playback Features - Listening and Watching Your Recordings </a><a href="/en/wiki/managing-recordings/importing-files/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Importing Files - Bringing External Recordings into SeaMeet </a> </div> </div><div class="mb-4"> <div class="flex items-center px-3 py-2"> <astro-island uid="Z1xoyFG" prefix="r18" component-url="/_astro/WikiIcon.BGApJAj4.js" component-export="WikiIcon" renderer-url="/_astro/client.cVMPzRaF.js" props="{&quot;name&quot;:[0,&quot;Layout&quot;],&quot;color&quot;:[0,&quot;#EC4899&quot;],&quot;className&quot;:[0,&quot;mr-2&quot;],&quot;size&quot;:[0,20]}" ssr client="load" opts="{&quot;name&quot;:&quot;WikiIcon&quot;,&quot;value&quot;:true}" await-children><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panels-top-left flex-shrink-0 mr-2" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg><!--astro:end--></astro-island> <span class="text-sm font-semibold text-gray-900">Interface &amp; Controls</span> </div> <div class="ml-7 mt-1 space-y-1"> <a href="/en/wiki/interface-controls/main-interface/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> The Main Interface - A Complete Tour of SeaMeet&#39;s UI </a><a href="/en/wiki/interface-controls/the-floater/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> The Floater - Your Floating Command Center </a><a href="/en/wiki/interface-controls/keyboard-shortcuts/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Keyboard Shortcuts - Mastering SeaMeet&#39;s Hotkeys </a> </div> </div><div class="mb-4"> <div class="flex items-center px-3 py-2"> <astro-island uid="Z17IhLI" prefix="r19" component-url="/_astro/WikiIcon.BGApJAj4.js" component-export="WikiIcon" renderer-url="/_astro/client.cVMPzRaF.js" props="{&quot;name&quot;:[0,&quot;Settings&quot;],&quot;color&quot;:[0,&quot;#6366F1&quot;],&quot;className&quot;:[0,&quot;mr-2&quot;],&quot;size&quot;:[0,20]}" ssr client="load" opts="{&quot;name&quot;:&quot;WikiIcon&quot;,&quot;value&quot;:true}" await-children><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings flex-shrink-0 mr-2" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg><!--astro:end--></astro-island> <span class="text-sm font-semibold text-gray-900">Settings</span> </div> <div class="ml-7 mt-1 space-y-1"> <a href="/en/wiki/settings/settings-overview/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Settings Overview </a><a href="/en/wiki/settings/storage-settings/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Storage Settings </a><a href="/en/wiki/settings/audio-settings/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Audio Settings </a><a href="/en/wiki/settings/video-settings/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Video Settings </a><a href="/en/wiki/settings/flashback-settings/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Flashback Settings </a><a href="/en/wiki/settings/auto-recording-settings/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Auto-Recording Settings </a><a href="/en/wiki/settings/language-appearance/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Language &amp; Appearance </a> </div> </div><div class="mb-4"> <div class="flex items-center px-3 py-2"> <astro-island uid="28sth2" prefix="r20" component-url="/_astro/WikiIcon.BGApJAj4.js" component-export="WikiIcon" renderer-url="/_astro/client.cVMPzRaF.js" props="{&quot;name&quot;:[0,&quot;Wrench&quot;],&quot;color&quot;:[0,&quot;#EF4444&quot;],&quot;className&quot;:[0,&quot;mr-2&quot;],&quot;size&quot;:[0,20]}" ssr client="load" opts="{&quot;name&quot;:&quot;WikiIcon&quot;,&quot;value&quot;:true}" await-children><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench flex-shrink-0 mr-2" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg><!--astro:end--></astro-island> <span class="text-sm font-semibold text-gray-900">Troubleshooting &amp; Best Practices</span> </div> <div class="ml-7 mt-1 space-y-1"> <a href="/en/wiki/troubleshooting/common-issues-solutions/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Common Issues &amp; Solutions </a><a href="/en/wiki/troubleshooting/best-practices/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Best Practices </a><a href="/en/wiki/troubleshooting/performance-optimization/" class="block px-3 py-1 text-sm rounded-md bg-blue-50 text-blue-700 font-medium"> Performance Optimization </a> </div> </div><div class="mb-4"> <div class="flex items-center px-3 py-2"> <astro-island uid="1dqv2G" prefix="r21" component-url="/_astro/WikiIcon.BGApJAj4.js" component-export="WikiIcon" renderer-url="/_astro/client.cVMPzRaF.js" props="{&quot;name&quot;:[0,&quot;Cpu&quot;],&quot;color&quot;:[0,&quot;#14B8A6&quot;],&quot;className&quot;:[0,&quot;mr-2&quot;],&quot;size&quot;:[0,20]}" ssr client="load" opts="{&quot;name&quot;:&quot;WikiIcon&quot;,&quot;value&quot;:true}" await-children><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu flex-shrink-0 mr-2" aria-hidden="true"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M15 2v2"></path><path d="M15 20v2"></path><path d="M2 15h2"></path><path d="M2 9h2"></path><path d="M20 15h2"></path><path d="M20 9h2"></path><path d="M9 2v2"></path><path d="M9 20v2"></path></svg><!--astro:end--></astro-island> <span class="text-sm font-semibold text-gray-900">Technical Deep Dive</span> </div> <div class="ml-7 mt-1 space-y-1"> <a href="/en/wiki/technical/how-seameet-works/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> How SeaMeet Works (Technical) </a><a href="/en/wiki/technical/platform-differences/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Platform Differences </a><a href="/en/wiki/technical/glossary/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Glossary of Terms </a> </div> </div><div class="mb-4"> <div class="flex items-center px-3 py-2"> <astro-island uid="ok3Wk" prefix="r22" component-url="/_astro/WikiIcon.BGApJAj4.js" component-export="WikiIcon" renderer-url="/_astro/client.cVMPzRaF.js" props="{&quot;name&quot;:[0,&quot;Sparkles&quot;],&quot;color&quot;:[0,&quot;#8B5CF6&quot;],&quot;className&quot;:[0,&quot;mr-2&quot;],&quot;size&quot;:[0,20]}" ssr client="load" opts="{&quot;name&quot;:&quot;WikiIcon&quot;,&quot;value&quot;:true}" await-children><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles flex-shrink-0 mr-2" aria-hidden="true"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path><path d="M5 3v4"></path><path d="M19 17v4"></path><path d="M3 5h4"></path><path d="M17 19h4"></path></svg><!--astro:end--></astro-island> <span class="text-sm font-semibold text-gray-900">AI Features</span> </div> <div class="ml-7 mt-1 space-y-1"> <a href="/en/wiki/ai-features/live-transcription/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Live Transcription - Words on the Screen as You Speak </a><a href="/en/wiki/ai-features/ai-extraction/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> AI Extraction - Let SeaMeet Do the Note-Taking </a><a href="/en/wiki/ai-features/editing-ai-results/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Editing AI Results - Getting the Details Right </a><a href="/en/wiki/ai-features/subscription-billing/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> Subscription &amp; Billing - Unlocking SeaMeet AI </a><a href="/en/wiki/ai-features/byok-setup-guide/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> BYOK Setup Guide - Configuring Your AI Providers </a><a href="/en/wiki/ai-features/copilot-provider/" class="block px-3 py-1 text-sm rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"> GitHub Copilot Provider - Using Copilot as Your AI Agent </a> </div> </div> </div> </div> </aside> <!-- Main Content --> <main class="flex-1 min-w-0"> <div class="py-8 px-4 sm:px-6 lg:px-8">  <div class="max-w-3xl mx-auto">  <nav class="flex items-center text-sm text-gray-500 mb-6"> <a href="/en/desktop-app/wiki/" class="hover:text-gray-900">Wiki</a> <span class="mx-2">/</span> <span class> <a href="/en/desktop-app/wiki/troubleshooting/" class="hover:text-gray-900">Troubleshooting &amp; Best Practices</a> </span>  <span class="mx-2">/</span> <span class="text-gray-900 font-medium">Performance Optimization</span>  </nav> <article>  <h1 class="text-4xl font-bold text-gray-900 mb-6">Performance Optimization</h1> <div class="prose prose-lg max-w-none"> <astro-island uid="1FEYCD" prefix="r13" component-url="/_astro/MarkdownRenderer.CuXusXs_.js" component-export="default" renderer-url="/_astro/client.cVMPzRaF.js" props="{&quot;content&quot;:[0,&quot;\n# Chapter 23: Performance Optimization\n\n## Introduction\n\nRecording audio and video is demanding work for your computer. It requires processing power, memory, storage speed, and system resources. When everything works well, you get smooth, high-quality recordings. When resources are stretched thin, you get stuttering, dropped frames, and frustration. This chapter is your guide to optimizing SeaMeet and your system for peak recording performance.\n\nWhether you&#39;re on a high-end workstation or a modest laptop, these optimization techniques will help you get the best possible results without upgrading hardware.\n\n---\n\n## Chapter Objectives\n\nAfter reading this chapter, you will be able to:\n- Optimize SeaMeet settings for your hardware\n- Balance quality vs. performance effectively\n- Identify and resolve performance bottlenecks\n- Optimize your operating system for recording\n- Use hardware acceleration effectively\n- Manage system resources during recording\n- Troubleshoot performance-related issues\n\n---\n\n## Understanding Recording Performance\n\n### What Makes Recording Demanding?\n\nRecording requires your computer to:\n\n1. **Capture video frames** (30-60 times per second)\n2. **Capture audio samples** (44,100-48,000 times per second)\n3. **Compress video** in real-time (encode to H.264/H.265)\n4. **Write to disk** continuously (sustained write speeds)\n5. **Manage memory** for buffers and processing\n\n**Resource Usage by Recording Type:**\n\n| Recording Type | CPU | RAM | Disk | GPU |\n|----------------|-----|-----|------|-----|\n| Audio Only | Low | Low | Low | None |\n| 720p 30fps | Medium | Medium | Medium | Low |\n| 1080p 60fps | High | High | High | Medium |\n| 4K 60fps | Very High | Very High | Very High | High |\n\n**The Bottleneck Principle:**\nYour recording performance is limited by your weakest component. Identify and address bottlenecks.\n\n---\n\n## Part 1: SeaMeet Settings Optimization\n\n### The Performance Triangle\n\nBalance three factors:\n```\n        QUALITY\n         /\\\n        /  \\\n       /    \\\n      /      \\\n     /        \\\n    /__________\\\nPERFORMANCE  FILE SIZE\n```\n\nYou can optimize for any two, but not all three:\n- High Quality + Good Performance = Large Files\n- High Quality + Small Files = Poor Performance\n- Good Performance + Small Files = Lower Quality\n\n---\n\n### Optimization Level 1: Audio-Only (Maximum Performance)\n\n**When to Use:**\n- Very old computers\n- When running other heavy apps\n- Battery-powered devices (saves power)\n- When video isn&#39;t needed\n\n**Settings:**\n```\nRecording Mode: Audio Only\nAudio Format: MP3 (128-192 kbps)\nSample Rate: 44.1 kHz\nMicrophone: Default device\nAuto-gain: ON\n```\n\n**Resource Usage:**\n- CPU: 2-5%\n- RAM: 50-100 MB\n- Disk: 1 MB/minute\n- Battery: Minimal impact\n\n**Result:**\nCan record on virtually any computer made in the last 10 years.\n\n---\n\n### Optimization Level 2: Light Video (Balanced)\n\n**When to Use:**\n- Standard business recordings\n- Laptops and mid-range computers\n- When storage space matters\n- Good quality with manageable resources\n\n**Settings:**\n```\nRecording Mode: Window or Region\nResolution: 720p (1280×720)\nFrame Rate: 30 fps\nHardware Acceleration: ON (if available)\nQuality Preset: Balanced\nVideo Format: MP4 (H.264)\nAudio: MP3 128 kbps\n```\n\n**Resource Usage:**\n- CPU: 10-20% (with hardware accel: 5-10%)\n- RAM: 200-300 MB\n- Disk: 75-150 MB/minute\n- Battery: Moderate impact\n\n**Result:**\nWorks well on most computers from 2015+.\n\n---\n\n### Optimization Level 3: High Quality (Demanding)\n\n**When to Use:**\n- Professional productions\n- Modern gaming computers\n- When quality is paramount\n- Desktop workstations\n\n**Settings:**\n```\nRecording Mode: Fullscreen\nResolution: 1080p (1920×1080)\nFrame Rate: 60 fps\nHardware Acceleration: ON (essential)\nQuality Preset: High Quality\nVideo Format: MP4 (H.264 high bitrate)\nAudio: WAV or high-bitrate MP3\n```\n\n**Resource Usage:**\n- CPU: 20-40% (with hardware accel: 10-20%)\n- RAM: 400-600 MB\n- Disk: 300-500 MB/minute\n- Battery: High impact\n\n**Result:**\nRequires modern hardware (2018+) for smooth operation.\n\n---\n\n### Optimization Level 4: Maximum Quality (Very Demanding)\n\n**When to Use:**\n- Professional studios\n- Content creation\n- When only the best will do\n- High-end workstations\n\n**Settings:**\n```\nRecording Mode: Fullscreen\nResolution: 1440p or 4K\nFrame Rate: 60 fps\nHardware Acceleration: ON (required)\nQuality Preset: Maximum Quality\nVideo Format: MP4 (H.265 for efficiency)\nAudio: WAV (uncompressed)\n```\n\n**Resource Usage:**\n- CPU: 40-70% (with hardware accel: 20-40%)\n- RAM: 800 MB - 2 GB\n- Disk: 600 MB - 1 GB/minute\n- Battery: Very high impact (desktop recommended)\n\n**Result:**\nRequires high-end hardware. Desktop with dedicated GPU recommended.\n\n---\n\n## Part 2: Hardware Acceleration Deep Dive\n\n### What Is Hardware Acceleration?\n\nInstead of using your CPU (processor) to encode video, hardware acceleration uses your GPU (graphics card) or specialized encoding hardware.\n\n**Without Hardware Acceleration:**\n```\nCPU: Encode video + Run applications + Operating system\n     ↓\nHigh CPU usage, potential slowdowns\n```\n\n**With Hardware Acceleration:**\n```\nCPU: Run applications + Operating system\nGPU: Encode video\n     ↓\nBalanced load, better performance\n```\n\n---\n\n### Types of Hardware Acceleration\n\n**NVIDIA NVENC:**\n- Available on: GTX 600 series and newer\n- Quality: Excellent\n- Performance: Very efficient\n- Recommendation: Enable if available\n\n**AMD VCE (Video Coding Engine):**\n- Available on: Radeon HD 7000 series and newer\n- Quality: Good\n- Performance: Efficient\n- Recommendation: Enable if available\n\n**Intel Quick Sync:**\n- Available on: 2nd gen Core processors (2011+) and newer\n- Quality: Good\n- Performance: Efficient\n- Recommendation: Enable on laptops and desktops with Intel graphics\n\n**Apple VideoToolbox (macOS):**\n- Available on: All modern Macs\n- Quality: Excellent\n- Performance: Optimized for macOS\n- Recommendation: Always enable on Mac\n\n---\n\n### How to Enable and Verify\n\n**Enabling:**\n```\nSettings → Video → Check \&quot;Use hardware acceleration\&quot;\n```\n\n**Verifying It&#39;s Working:**\n1. Enable hardware acceleration\n2. Start recording\n3. Open Task Manager (Windows) or Activity Monitor (macOS)\n4. Check CPU usage during recording\n5. With hardware acceleration: CPU should be 10-20%\n6. Without hardware acceleration: CPU may be 30-50%\n\n**What to Do If Not Available:**\n- Update graphics drivers\n- Check if your GPU supports encoding\n- Consider upgrading if you do heavy recording\n\n---\n\n### When NOT to Use Hardware Acceleration\n\nRare cases where software (CPU) encoding is better:\n\n1. **Quality Concerns:**\n   - Some hardware encoders produce slightly lower quality\n   - Test both ways and compare\n   - For archival, CPU encoding may be better\n\n2. **Compatibility Issues:**\n   - Very old hardware acceleration may have bugs\n   - Try disabling if you see artifacts\n\n3. **Multi-Pass Encoding:**\n   - Some advanced encoding only works on CPU\n   - SeaMeet usually uses single-pass for real-time\n\n**Recommendation:**\nEnable hardware acceleration by default. Disable only if you encounter specific quality issues.\n\n---\n\n## Part 3: System Optimization\n\n### Windows Optimization\n\n**1. Power Settings:**\n```\nControl Panel → Power Options\n→ Select \&quot;High Performance\&quot; or \&quot;Balanced\&quot;\n→ Never use \&quot;Power Saver\&quot; when recording\n```\n\n**2. Game Mode (Windows 10/11):**\n```\nSettings → Gaming → Game Mode\n→ Turn ON\n→ Prioritizes recording/game applications\n```\n\n**3. Disable Visual Effects:**\n```\nSystem → Advanced System Settings → Performance Settings\n→ Select \&quot;Adjust for best performance\&quot;\n→ Or manually disable animations\n```\n\n**4. Background Apps:**\n```\nSettings → Privacy → Background Apps\n→ Turn off apps you don&#39;t need\n→ Reduces resource competition\n```\n\n**5. Startup Programs:**\n```\nTask Manager → Startup tab\n→ Disable unnecessary startup programs\n→ Frees up RAM and CPU\n```\n\n---\n\n### macOS Optimization\n\n**1. Energy Settings:**\n```\nSystem Preferences → Energy Saver\n→ Set Computer Sleep to \&quot;Never\&quot; when recording\n→ Disable \&quot;Put hard disks to sleep\&quot;\n```\n\n**2. Disable Spotlight Indexing:**\n```\nDuring recording, Spotlight can cause stutters\nSystem Preferences → Spotlight → Privacy\n→ Add your recordings folder to prevent indexing\n```\n\n**3. Close Unnecessary Apps:**\n```\nActivity Monitor shows resource usage\n→ Close apps using high CPU or RAM\n→ Especially browsers with many tabs\n```\n\n**4. Update macOS:**\n```\nSystem Preferences → Software Update\n→ Keep macOS updated for best performance\n```\n\n---\n\n### Storage Optimization\n\n**The Storage Speed Hierarchy:**\n\n1. **NVMe SSD** (fastest)\n   - Speed: 2000-7000 MB/s\n   - Best for: 4K recording, professional work\n\n2. **SATA SSD** (fast)\n   - Speed: 400-600 MB/s\n   - Best for: 1080p recording, general use\n\n3. **External SSD** (good)\n   - Speed: 300-500 MB/s (USB 3.0)\n   - Best for: 720p recording, backups\n\n4. **Internal HDD** (slow)\n   - Speed: 100-200 MB/s\n   - Best for: Audio only, archival\n\n5. **External HDD** (slowest)\n   - Speed: 50-150 MB/s\n   - Best for: Backup only, not recording\n\n**Required Write Speeds:**\n\n| Recording Type | Minimum Speed | Recommended |\n|----------------|---------------|-------------|\n| Audio Only | 1 MB/s | Any drive |\n| 720p 30fps | 10 MB/s | SSD |\n| 1080p 30fps | 20 MB/s | SSD |\n| 1080p 60fps | 40 MB/s | Fast SSD |\n| 4K 60fps | 100 MB/s | NVMe SSD |\n\n**Optimization Tips:**\n\n1. **Record to SSD:**\n   - Internal SSD is best\n   - External SSD via USB 3.0 is good\n   - Avoid recording to external HDD\n\n2. **Don&#39;t Record to System Drive (if possible):**\n   - Separate recording drive from OS drive\n   - Prevents competition for disk access\n   - Example: C: = Windows, D: = Recordings\n\n3. **Keep 20% Free Space:**\n   - SSDs slow down when full\n   - HDDs need space for optimal performance\n   - Prevents recording failures\n\n---\n\n## Part 4: Memory Management\n\n### Understanding RAM Usage\n\n**SeaMeet Memory Components:**\n\n1. **Application:** ~100-150 MB\n2. **Video Recording Buffer:** ~100-300 MB\n3. **Flashback Buffer:** ~100-600 MB (if enabled)\n4. **Audio Processing:** ~20-50 MB\n5. **System Overhead:** ~50-100 MB\n\n**Total Typical Usage:** 300-800 MB\n\n**RAM Recommendations:**\n\n| System RAM | Recording Capability | Recommendation |\n|------------|---------------------|----------------|\n| 4 GB | Audio only, light video | Disable Flashback, low quality |\n| 8 GB | Standard 720p/1080p | Balanced settings |\n| 16 GB | High quality 1080p/1440p | All features enabled |\n| 32 GB+ | Maximum quality, multiple features | Unlimited capability |\n\n---\n\n### Memory Optimization Techniques\n\n**1. Close Memory-Hungry Apps:**\n```\nBefore recording, close:\n- Chrome/Firefox (especially with many tabs)\n- Photoshop, Premiere, After Effects\n- Slack, Discord, Teams (if not needed)\n- Spotify, music apps\n- Any unnecessary background apps\n```\n\n**2. Disable Flashback When Not Needed:**\n```\nSettings → Flashback → Disable\n→ Saves 100-600 MB RAM\n→ Re-enable when needed\n```\n\n**3. Reduce Flashback Buffer:**\n```\nSettings → Flashback → Buffer Duration\n→ Reduce from 120s to 60s or 30s\n→ Saves 100-400 MB RAM\n```\n\n**4. Use Low-Memory Mode:**\n```\nSettings → Flashback → Enable low-memory mode\n→ Reduces quality but maintains functionality\n→ Significant RAM savings\n```\n\n**5. Restart Before Long Sessions:**\n```\nRestart computer before important recording\n→ Clears memory leaks\n→ Frees up fragmented RAM\n→ Fresh start = better performance\n```\n\n---\n\n## Part 5: CPU Optimization\n\n### Understanding CPU Load\n\n**CPU Usage by Recording Task:**\n\n| Task | CPU Usage (Software) | CPU Usage (Hardware Accel) |\n|------|---------------------|---------------------------|\n| Audio encoding | 2-5% | 2-5% |\n| 720p H.264 | 15-25% | 5-10% |\n| 1080p H.264 | 30-50% | 10-20% |\n| 4K H.264 | 60-80% | 25-40% |\n| 4K H.265 | 70-90% | 30-50% |\n\n**The CPU Threshold:**\nIf total CPU usage hits 90-100%, you&#39;ll get:\n- Frame drops\n- Stuttering\n- Encoding errors\n- System unresponsiveness\n\n**Target:** Keep CPU under 70% during recording.\n\n---\n\n### Reducing CPU Load\n\n**1. Enable Hardware Acceleration:**\n```\n#1 way to reduce CPU load\nSettings → Video → Enable hardware acceleration\n→ Offloads encoding to GPU\n→ 50-70% reduction in CPU usage\n```\n\n**2. Lower Resolution:**\n```\n720p uses 50% less CPU than 1080p\n480p uses 75% less CPU than 1080p\n```\n\n**3. Reduce Frame Rate:**\n```\n30fps uses 50% less CPU than 60fps\nOnly use 60fps if you need smooth motion\n```\n\n**4. Change Quality Preset:**\n```\nSettings → Video → Quality Preset\n→ \&quot;Fast\&quot; uses less CPU than \&quot;High Quality\&quot;\n→ Trade-off: slightly larger files\n```\n\n**5. Change Video Format:**\n```\nH.264 is easier to encode than H.265\nUse H.264 if CPU is struggling\n```\n\n---\n\n## Part 6: Battery Optimization (Laptops)\n\n### Recording on Battery Power\n\n**The Challenge:**\nRecording is power-hungry. Battery life will be significantly reduced.\n\n**Typical Battery Impact:**\n\n| Recording Type | Battery Life Reduction |\n|----------------|----------------------|\n| Audio only | 10-15% faster drain |\n| 720p 30fps | 30-40% faster drain |\n| 1080p 60fps | 50-70% faster drain |\n| 4K 60fps | 70-90% faster drain |\n\n**Practical Example:**\n- Normal laptop battery: 8 hours\n- Recording 1080p 60fps: 3-4 hours\n- Recording 4K 60fps: 1-2 hours\n\n---\n\n### Battery-Saving Strategies\n\n**1. Use Optimal Settings:**\n```\nResolution: 720p (not 1080p)\nFrame rate: 30fps (not 60fps)\nHardware acceleration: ON (more efficient than CPU)\nDisable Flashback (saves power)\nAudio format: MP3 (not WAV)\n```\n\n**2. Lower Screen Brightness:**\n```\nScreen is a major power draw\nLower to 50-70% while recording\n```\n\n**3. Disable Keyboard Backlight:**\n```\nSmall savings, but every bit helps\n```\n\n**4. Close Unnecessary Apps:**\n```\nEach app uses power\nClose everything not needed\n```\n\n**5. Use Power Saver (Carefully):**\n```\nWindows: Power Saver mode\n→ Reduces performance but extends battery\n→ Only for audio or 720p recording\n→ NOT for high-quality video (will cause issues)\n```\n\n**6. Plug In When Possible:**\n```\nBest solution: use AC power\nNo compromises needed\nFull performance available\n```\n\n---\n\n## Part 7: Troubleshooting Performance Issues\n\n### Problem: Recording Stutters or Drops Frames\n\n**Symptoms:**\n- Video playback is jerky\n- Skipped frames visible\n- Motion not smooth\n\n**Diagnosis Steps:**\n\n1. **Check CPU Usage:**\n   - Task Manager → Performance → CPU\n   - If at 90-100% during recording → CPU bottleneck\n\n2. **Check Disk Usage:**\n   - Task Manager → Performance → Disk\n   - If at 100% → Storage bottleneck\n\n3. **Check Temperature:**\n   - Overheating causes throttling\n   - Use HWiNFO or similar to check temps\n   - CPU over 85°C = thermal throttling\n\n**Solutions by Cause:**\n\n**CPU Bottleneck:**\n- Enable hardware acceleration\n- Reduce resolution\n- Reduce frame rate\n- Change quality preset to \&quot;Fast\&quot;\n- Close other applications\n\n**Storage Bottleneck:**\n- Record to SSD instead of HDD\n- Record to internal drive instead of external\n- Reduce video quality (smaller files = less writing)\n- Ensure drive has free space\n\n**Thermal Throttling:**\n- Clean laptop/desktop fans\n- Use cooling pad (laptops)\n- Lower room temperature\n- Reduce recording quality to generate less heat\n\n---\n\n### Problem: Audio Glitches or Dropouts\n\n**Symptoms:**\n- Audio cuts out briefly\n- Popping or clicking sounds\n- Audio out of sync\n\n**Causes and Solutions:**\n\n**Buffer Underrun:**\n```\nCause: CPU can&#39;t process audio fast enough\nSolution:\n- Close CPU-heavy apps\n- Increase audio buffer size (if available)\n- Disable audio effects/noise reduction\n- Use hardware acceleration\n```\n\n**USB Issues:**\n```\nCause: USB microphone bandwidth/interference\nSolution:\n- Try different USB port\n- Use USB 2.0 port (not 3.0) for audio devices\n- Update USB drivers\n- Disconnect other USB devices\n```\n\n**Driver Issues:**\n```\nCause: Outdated or corrupted audio drivers\nSolution:\n- Update audio drivers\n- Restart audio service:\n  Windows: services.msc → Windows Audio → Restart\n```\n\n---\n\n### Problem: High Latency During Recording\n\n**Symptoms:**\n- Delay between action and recording\n- Mouse trails behind cursor\n- Laggy interface\n\n**Solutions:**\n\n1. **Enable Hardware Acceleration:**\n   - Reduces encoding latency\n\n2. **Lower Quality Settings:**\n   - Less processing = lower latency\n\n3. **Use Game Mode (Windows):**\n   - Prioritizes SeaMeet\n\n4. **Disable Windows Defender Real-Time Scanning:**\n   ```\n   Temporarily during recording:\n   Settings → Update &amp; Security → Windows Security\n   → Virus &amp; threat protection → Manage settings\n   → Turn off Real-time protection\n   → Turn back on after recording\n   ```\n\n5. **Close Background Apps:**\n   - Especially cloud sync (OneDrive, Dropbox)\n   - Pause antivirus scans\n   - Close browsers\n\n---\n\n## Part 8: Advanced Optimization\n\n### Multi-Monitor Considerations\n\n**Performance Impact:**\nRecording multiple monitors = 2× or 3× the resource usage\n\n**Optimization:**\n1. Record only the monitor you need\n2. Lower resolution if recording multiple displays\n3. Disable unused monitors during recording\n4. Use window/region mode instead of fullscreen all monitors\n\n---\n\n### Network Recording (Advanced)\n\n**Recording to Network Drives:**\n\n**Pros:**\n- Centralized storage\n- Automatic backup\n- Accessible from multiple computers\n\n**Cons:**\n- Network latency affects recording\n- Requires stable, fast connection\n- Higher chance of recording failure\n\n**Requirements:**\n- Gigabit Ethernet (not WiFi)\n- Stable network (no drops)\n- Server with good write performance\n- 720p or lower resolution recommended\n\n**Optimization:**\n1. Record locally first\n2. Auto-sync to network after recording\n3. Use software like Syncthing or Resilio Sync\n\n---\n\n### Encoding for Streaming Platforms\n\n**If uploading to YouTube, Vimeo, etc.:**\n\n**YouTube Recommended Settings:**\n```\nResolution: 1080p or 4K\nFrame rate: 30 or 60 fps\nCodec: H.264\nBitrate:\n  - 1080p: 8 Mbps\n  - 4K: 35-45 Mbps\nAudio: AAC 128-384 kbps\n```\n\n**Why Optimize for Platform:**\n- YouTube re-encodes everything anyway\n- Matching their specs reduces re-encoding artifacts\n- Faster upload and processing\n\n**SeaMeet Settings for YouTube:**\n```\n1080p, 30fps, H.264, ~10 Mbps bitrate\n```\n\n---\n\n## Part 9: Performance Monitoring Tools\n\n### Built-in Tools\n\n**Windows Task Manager:**\n```\nCtrl + Shift + Esc\nShows:\n- CPU usage (should be &lt;70%)\n- Memory usage (should be &lt;80%)\n- Disk usage (should be &lt;80%)\n- GPU usage (shows hardware acceleration working)\n```\n\n**macOS Activity Monitor:**\n```\nApplications → Utilities → Activity Monitor\nOr: Cmd + Space → type \&quot;Activity Monitor\&quot;\n```\n\n---\n\n### Third-Party Tools\n\n**For Deep Analysis:**\n\n**HWiNFO (Windows - Free):**\n- Detailed hardware monitoring\n- Temperature tracking\n- Identifies thermal throttling\n\n**Intel Power Gadget (Mac/Windows - Free):**\n- Real-time CPU frequency\n- Shows if CPU is throttling\n\n**iStat Menus (Mac - Paid):**\n- Menu bar system monitoring\n- Quick overview of all resources\n\n**Process Explorer (Windows - Free):**\n- Advanced task manager\n- See exactly what&#39;s using resources\n\n---\n\n## Summary: The Optimization Checklist\n\n### Before Every Recording Session:\n\n```\nPERFORMANCE CHECKLIST\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n☐ Restart computer (for important recordings)\n☐ Enable hardware acceleration (if available)\n☐ Record to SSD (not HDD)\n☐ Close unnecessary applications\n☐ Disable cloud sync temporarily\n☐ Check available storage space\n☐ Set appropriate quality for your hardware\n☐ Disable Flashback if not needed\n☐ Test recording for 30 seconds\n☐ Monitor CPU/RAM during test\n☐ Ready to record!\n```\n\n---\n\n### Optimization Quick Reference\n\n**For Low-End Systems (4GB RAM, older CPU):**\n```\nAudio only, or 480p 30fps\nHardware accel: ON if available\nNo Flashback\nRecord to internal drive\nClose all other apps\n```\n\n**For Mid-Range Systems (8GB RAM, modern CPU):**\n```\n720p 30fps, or 1080p with hardware accel\nBalanced quality preset\n60-second Flashback buffer\nRecord to SSD\nModerate background apps okay\n```\n\n**For High-End Systems (16GB+ RAM, dedicated GPU):**\n```\n1080p 60fps or 1440p\nHardware accel: ON\nHigh quality preset\n120-second Flashback\nAny storage location\nMultiple apps can run\n```\n\n**For Laptops on Battery:**\n```\n720p 30fps maximum\nHardware accel: ON\nDisable Flashback\nLower screen brightness\nClose all unnecessary apps\nPlug in when possible\n```\n\n---\n\n## Chapter Checklist\n\nBefore moving on, you should be able to:\n\n- [ ] Identify your system&#39;s bottleneck (CPU, RAM, storage, or GPU)\n- [ ] Enable and verify hardware acceleration is working\n- [ ] Optimize settings for your hardware level\n- [ ] Balance quality vs. performance effectively\n- [ ] Troubleshoot stuttering and frame drops\n- [ ] Optimize laptop battery usage\n- [ ] Monitor system resources during recording\n- [ ] Know when to lower quality vs. when to upgrade hardware\n\n**Performance Master!** ⚡ Your system is now optimized for smooth, high-quality recordings.\n&quot;],&quot;lang&quot;:[0,&quot;en&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;MarkdownRenderer&quot;,&quot;value&quot;:true}" await-children><div class="markdown-content"><h1 class="text-4xl font-bold text-gray-900 mb-6">Chapter 23: Performance Optimization</h1>
+<h2 id="introduction" class="text-2xl font-bold text-gray-900 mt-8 mb-4 scroll-mt-24 group flex items-center">Introduction<a href="#introduction" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p class="text-gray-700 mb-4 leading-relaxed">Recording audio and video is demanding work for your computer. It requires processing power, memory, storage speed, and system resources. When everything works well, you get smooth, high-quality recordings. When resources are stretched thin, you get stuttering, dropped frames, and frustration. This chapter is your guide to optimizing SeaMeet and your system for peak recording performance.</p>
+<p class="text-gray-700 mb-4 leading-relaxed">Whether you&#x27;re on a high-end workstation or a modest laptop, these optimization techniques will help you get the best possible results without upgrading hardware.</p>
+<hr class="my-8 border-gray-200"/>
+<h2 id="chapter-objectives" class="text-2xl font-bold text-gray-900 mt-8 mb-4 scroll-mt-24 group flex items-center">Chapter Objectives<a href="#chapter-objectives" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p class="text-gray-700 mb-4 leading-relaxed">After reading this chapter, you will be able to:</p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Optimize SeaMeet settings for your hardware</li>
+<li class="mb-2">Balance quality vs. performance effectively</li>
+<li class="mb-2">Identify and resolve performance bottlenecks</li>
+<li class="mb-2">Optimize your operating system for recording</li>
+<li class="mb-2">Use hardware acceleration effectively</li>
+<li class="mb-2">Manage system resources during recording</li>
+<li class="mb-2">Troubleshoot performance-related issues</li>
+</ul>
+<hr class="my-8 border-gray-200"/>
+<h2 id="understanding-recording-performance" class="text-2xl font-bold text-gray-900 mt-8 mb-4 scroll-mt-24 group flex items-center">Understanding Recording Performance<a href="#understanding-recording-performance" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="what-makes-recording-demanding" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">What Makes Recording Demanding?<a href="#what-makes-recording-demanding" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed">Recording requires your computer to:</p>
+<ol class="list-decimal list-inside mb-4 text-gray-700">
+<li class="mb-2"><strong class="font-bold text-gray-900">Capture video frames</strong> (30-60 times per second)</li>
+<li class="mb-2"><strong class="font-bold text-gray-900">Capture audio samples</strong> (44,100-48,000 times per second)</li>
+<li class="mb-2"><strong class="font-bold text-gray-900">Compress video</strong> in real-time (encode to H.264/H.265)</li>
+<li class="mb-2"><strong class="font-bold text-gray-900">Write to disk</strong> continuously (sustained write speeds)</li>
+<li class="mb-2"><strong class="font-bold text-gray-900">Manage memory</strong> for buffers and processing</li>
+</ol>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Resource Usage by Recording Type:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Recording Type</th><th>CPU</th><th>RAM</th><th>Disk</th><th>GPU</th></tr></thead><tbody><tr><td>Audio Only</td><td>Low</td><td>Low</td><td>Low</td><td>None</td></tr><tr><td>720p 30fps</td><td>Medium</td><td>Medium</td><td>Medium</td><td>Low</td></tr><tr><td>1080p 60fps</td><td>High</td><td>High</td><td>High</td><td>Medium</td></tr><tr><td>4K 60fps</td><td>Very High</td><td>Very High</td><td>Very High</td><td>High</td></tr></tbody></table>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">The Bottleneck Principle:</strong>
+Your recording performance is limited by your weakest component. Identify and address bottlenecks.</p>
+<hr class="my-8 border-gray-200"/>
+<h2 id="part-1-seameet-settings-optimization" class="text-2xl font-bold text-gray-900 mt-8 mb-4 scroll-mt-24 group flex items-center">Part 1: SeaMeet Settings Optimization<a href="#part-1-seameet-settings-optimization" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="the-performance-triangle" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">The Performance Triangle<a href="#the-performance-triangle" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed">Balance three factors:</p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">        QUALITY
+         /\
+        /  \
+       /    \
+      /      \
+     /        \
+    /__________\
+PERFORMANCE  FILE SIZE
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed">You can optimize for any two, but not all three:</p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">High Quality + Good Performance = Large Files</li>
+<li class="mb-2">High Quality + Small Files = Poor Performance</li>
+<li class="mb-2">Good Performance + Small Files = Lower Quality</li>
+</ul>
+<hr class="my-8 border-gray-200"/>
+<h3 id="optimization-level-1-audio-only-maximum-performance" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Optimization Level 1: Audio-Only (Maximum Performance)<a href="#optimization-level-1-audio-only-maximum-performance" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">When to Use:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Very old computers</li>
+<li class="mb-2">When running other heavy apps</li>
+<li class="mb-2">Battery-powered devices (saves power)</li>
+<li class="mb-2">When video isn&#x27;t needed</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Settings:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Recording Mode: Audio Only
+Audio Format: MP3 (128-192 kbps)
+Sample Rate: 44.1 kHz
+Microphone: Default device
+Auto-gain: ON
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Resource Usage:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">CPU: 2-5%</li>
+<li class="mb-2">RAM: 50-100 MB</li>
+<li class="mb-2">Disk: 1 MB/minute</li>
+<li class="mb-2">Battery: Minimal impact</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Result:</strong>
+Can record on virtually any computer made in the last 10 years.</p>
+<hr class="my-8 border-gray-200"/>
+<h3 id="optimization-level-2-light-video-balanced" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Optimization Level 2: Light Video (Balanced)<a href="#optimization-level-2-light-video-balanced" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">When to Use:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Standard business recordings</li>
+<li class="mb-2">Laptops and mid-range computers</li>
+<li class="mb-2">When storage space matters</li>
+<li class="mb-2">Good quality with manageable resources</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Settings:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Recording Mode: Window or Region
+Resolution: 720p (1280×720)
+Frame Rate: 30 fps
+Hardware Acceleration: ON (if available)
+Quality Preset: Balanced
+Video Format: MP4 (H.264)
+Audio: MP3 128 kbps
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Resource Usage:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">CPU: 10-20% (with hardware accel: 5-10%)</li>
+<li class="mb-2">RAM: 200-300 MB</li>
+<li class="mb-2">Disk: 75-150 MB/minute</li>
+<li class="mb-2">Battery: Moderate impact</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Result:</strong>
+Works well on most computers from 2015+.</p>
+<hr class="my-8 border-gray-200"/>
+<h3 id="optimization-level-3-high-quality-demanding" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Optimization Level 3: High Quality (Demanding)<a href="#optimization-level-3-high-quality-demanding" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">When to Use:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Professional productions</li>
+<li class="mb-2">Modern gaming computers</li>
+<li class="mb-2">When quality is paramount</li>
+<li class="mb-2">Desktop workstations</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Settings:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Recording Mode: Fullscreen
+Resolution: 1080p (1920×1080)
+Frame Rate: 60 fps
+Hardware Acceleration: ON (essential)
+Quality Preset: High Quality
+Video Format: MP4 (H.264 high bitrate)
+Audio: WAV or high-bitrate MP3
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Resource Usage:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">CPU: 20-40% (with hardware accel: 10-20%)</li>
+<li class="mb-2">RAM: 400-600 MB</li>
+<li class="mb-2">Disk: 300-500 MB/minute</li>
+<li class="mb-2">Battery: High impact</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Result:</strong>
+Requires modern hardware (2018+) for smooth operation.</p>
+<hr class="my-8 border-gray-200"/>
+<h3 id="optimization-level-4-maximum-quality-very-demanding" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Optimization Level 4: Maximum Quality (Very Demanding)<a href="#optimization-level-4-maximum-quality-very-demanding" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">When to Use:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Professional studios</li>
+<li class="mb-2">Content creation</li>
+<li class="mb-2">When only the best will do</li>
+<li class="mb-2">High-end workstations</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Settings:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Recording Mode: Fullscreen
+Resolution: 1440p or 4K
+Frame Rate: 60 fps
+Hardware Acceleration: ON (required)
+Quality Preset: Maximum Quality
+Video Format: MP4 (H.265 for efficiency)
+Audio: WAV (uncompressed)
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Resource Usage:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">CPU: 40-70% (with hardware accel: 20-40%)</li>
+<li class="mb-2">RAM: 800 MB - 2 GB</li>
+<li class="mb-2">Disk: 600 MB - 1 GB/minute</li>
+<li class="mb-2">Battery: Very high impact (desktop recommended)</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Result:</strong>
+Requires high-end hardware. Desktop with dedicated GPU recommended.</p>
+<hr class="my-8 border-gray-200"/>
+<h2 id="part-2-hardware-acceleration-deep-dive" class="text-2xl font-bold text-gray-900 mt-8 mb-4 scroll-mt-24 group flex items-center">Part 2: Hardware Acceleration Deep Dive<a href="#part-2-hardware-acceleration-deep-dive" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="what-is-hardware-acceleration" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">What Is Hardware Acceleration?<a href="#what-is-hardware-acceleration" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed">Instead of using your CPU (processor) to encode video, hardware acceleration uses your GPU (graphics card) or specialized encoding hardware.</p>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Without Hardware Acceleration:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">CPU: Encode video + Run applications + Operating system
+     ↓
+High CPU usage, potential slowdowns
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">With Hardware Acceleration:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">CPU: Run applications + Operating system
+GPU: Encode video
+     ↓
+Balanced load, better performance
+</code></pre>
+<hr class="my-8 border-gray-200"/>
+<h3 id="types-of-hardware-acceleration" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Types of Hardware Acceleration<a href="#types-of-hardware-acceleration" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">NVIDIA NVENC:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Available on: GTX 600 series and newer</li>
+<li class="mb-2">Quality: Excellent</li>
+<li class="mb-2">Performance: Very efficient</li>
+<li class="mb-2">Recommendation: Enable if available</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">AMD VCE (Video Coding Engine):</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Available on: Radeon HD 7000 series and newer</li>
+<li class="mb-2">Quality: Good</li>
+<li class="mb-2">Performance: Efficient</li>
+<li class="mb-2">Recommendation: Enable if available</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Intel Quick Sync:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Available on: 2nd gen Core processors (2011+) and newer</li>
+<li class="mb-2">Quality: Good</li>
+<li class="mb-2">Performance: Efficient</li>
+<li class="mb-2">Recommendation: Enable on laptops and desktops with Intel graphics</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Apple VideoToolbox (macOS):</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Available on: All modern Macs</li>
+<li class="mb-2">Quality: Excellent</li>
+<li class="mb-2">Performance: Optimized for macOS</li>
+<li class="mb-2">Recommendation: Always enable on Mac</li>
+</ul>
+<hr class="my-8 border-gray-200"/>
+<h3 id="how-to-enable-and-verify" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">How to Enable and Verify<a href="#how-to-enable-and-verify" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Enabling:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Settings → Video → Check &quot;Use hardware acceleration&quot;
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Verifying It&#x27;s Working:</strong></p>
+<ol class="list-decimal list-inside mb-4 text-gray-700">
+<li class="mb-2">Enable hardware acceleration</li>
+<li class="mb-2">Start recording</li>
+<li class="mb-2">Open Task Manager (Windows) or Activity Monitor (macOS)</li>
+<li class="mb-2">Check CPU usage during recording</li>
+<li class="mb-2">With hardware acceleration: CPU should be 10-20%</li>
+<li class="mb-2">Without hardware acceleration: CPU may be 30-50%</li>
+</ol>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">What to Do If Not Available:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Update graphics drivers</li>
+<li class="mb-2">Check if your GPU supports encoding</li>
+<li class="mb-2">Consider upgrading if you do heavy recording</li>
+</ul>
+<hr class="my-8 border-gray-200"/>
+<h3 id="when-not-to-use-hardware-acceleration" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">When NOT to Use Hardware Acceleration<a href="#when-not-to-use-hardware-acceleration" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed">Rare cases where software (CPU) encoding is better:</p>
+<ol class="list-decimal list-inside mb-4 text-gray-700">
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Quality Concerns:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Some hardware encoders produce slightly lower quality</li>
+<li class="mb-2">Test both ways and compare</li>
+<li class="mb-2">For archival, CPU encoding may be better</li>
+</ul>
+</li>
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Compatibility Issues:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Very old hardware acceleration may have bugs</li>
+<li class="mb-2">Try disabling if you see artifacts</li>
+</ul>
+</li>
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Multi-Pass Encoding:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Some advanced encoding only works on CPU</li>
+<li class="mb-2">SeaMeet usually uses single-pass for real-time</li>
+</ul>
+</li>
+</ol>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Recommendation:</strong>
+Enable hardware acceleration by default. Disable only if you encounter specific quality issues.</p>
+<hr class="my-8 border-gray-200"/>
+<h2 id="part-3-system-optimization" class="text-2xl font-bold text-gray-900 mt-8 mb-4 scroll-mt-24 group flex items-center">Part 3: System Optimization<a href="#part-3-system-optimization" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="windows-optimization" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Windows Optimization<a href="#windows-optimization" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">1. Power Settings:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Control Panel → Power Options
+→ Select &quot;High Performance&quot; or &quot;Balanced&quot;
+→ Never use &quot;Power Saver&quot; when recording
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">2. Game Mode (Windows 10/11):</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Settings → Gaming → Game Mode
+→ Turn ON
+→ Prioritizes recording/game applications
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">3. Disable Visual Effects:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">System → Advanced System Settings → Performance Settings
+→ Select &quot;Adjust for best performance&quot;
+→ Or manually disable animations
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">4. Background Apps:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Settings → Privacy → Background Apps
+→ Turn off apps you don&#x27;t need
+→ Reduces resource competition
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">5. Startup Programs:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Task Manager → Startup tab
+→ Disable unnecessary startup programs
+→ Frees up RAM and CPU
+</code></pre>
+<hr class="my-8 border-gray-200"/>
+<h3 id="macos-optimization" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">macOS Optimization<a href="#macos-optimization" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">1. Energy Settings:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">System Preferences → Energy Saver
+→ Set Computer Sleep to &quot;Never&quot; when recording
+→ Disable &quot;Put hard disks to sleep&quot;
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">2. Disable Spotlight Indexing:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">During recording, Spotlight can cause stutters
+System Preferences → Spotlight → Privacy
+→ Add your recordings folder to prevent indexing
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">3. Close Unnecessary Apps:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Activity Monitor shows resource usage
+→ Close apps using high CPU or RAM
+→ Especially browsers with many tabs
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">4. Update macOS:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">System Preferences → Software Update
+→ Keep macOS updated for best performance
+</code></pre>
+<hr class="my-8 border-gray-200"/>
+<h3 id="storage-optimization" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Storage Optimization<a href="#storage-optimization" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">The Storage Speed Hierarchy:</strong></p>
+<ol class="list-decimal list-inside mb-4 text-gray-700">
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">NVMe SSD</strong> (fastest)</p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Speed: 2000-7000 MB/s</li>
+<li class="mb-2">Best for: 4K recording, professional work</li>
+</ul>
+</li>
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">SATA SSD</strong> (fast)</p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Speed: 400-600 MB/s</li>
+<li class="mb-2">Best for: 1080p recording, general use</li>
+</ul>
+</li>
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">External SSD</strong> (good)</p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Speed: 300-500 MB/s (USB 3.0)</li>
+<li class="mb-2">Best for: 720p recording, backups</li>
+</ul>
+</li>
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Internal HDD</strong> (slow)</p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Speed: 100-200 MB/s</li>
+<li class="mb-2">Best for: Audio only, archival</li>
+</ul>
+</li>
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">External HDD</strong> (slowest)</p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Speed: 50-150 MB/s</li>
+<li class="mb-2">Best for: Backup only, not recording</li>
+</ul>
+</li>
+</ol>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Required Write Speeds:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Recording Type</th><th>Minimum Speed</th><th>Recommended</th></tr></thead><tbody><tr><td>Audio Only</td><td>1 MB/s</td><td>Any drive</td></tr><tr><td>720p 30fps</td><td>10 MB/s</td><td>SSD</td></tr><tr><td>1080p 30fps</td><td>20 MB/s</td><td>SSD</td></tr><tr><td>1080p 60fps</td><td>40 MB/s</td><td>Fast SSD</td></tr><tr><td>4K 60fps</td><td>100 MB/s</td><td>NVMe SSD</td></tr></tbody></table>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Optimization Tips:</strong></p>
+<ol class="list-decimal list-inside mb-4 text-gray-700">
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Record to SSD:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Internal SSD is best</li>
+<li class="mb-2">External SSD via USB 3.0 is good</li>
+<li class="mb-2">Avoid recording to external HDD</li>
+</ul>
+</li>
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Don&#x27;t Record to System Drive (if possible):</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Separate recording drive from OS drive</li>
+<li class="mb-2">Prevents competition for disk access</li>
+<li class="mb-2">Example: C: = Windows, D: = Recordings</li>
+</ul>
+</li>
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Keep 20% Free Space:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">SSDs slow down when full</li>
+<li class="mb-2">HDDs need space for optimal performance</li>
+<li class="mb-2">Prevents recording failures</li>
+</ul>
+</li>
+</ol>
+<hr class="my-8 border-gray-200"/>
+<h2 id="part-4-memory-management" class="text-2xl font-bold text-gray-900 mt-8 mb-4 scroll-mt-24 group flex items-center">Part 4: Memory Management<a href="#part-4-memory-management" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="understanding-ram-usage" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Understanding RAM Usage<a href="#understanding-ram-usage" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">SeaMeet Memory Components:</strong></p>
+<ol class="list-decimal list-inside mb-4 text-gray-700">
+<li class="mb-2"><strong class="font-bold text-gray-900">Application:</strong> ~100-150 MB</li>
+<li class="mb-2"><strong class="font-bold text-gray-900">Video Recording Buffer:</strong> ~100-300 MB</li>
+<li class="mb-2"><strong class="font-bold text-gray-900">Flashback Buffer:</strong> ~100-600 MB (if enabled)</li>
+<li class="mb-2"><strong class="font-bold text-gray-900">Audio Processing:</strong> ~20-50 MB</li>
+<li class="mb-2"><strong class="font-bold text-gray-900">System Overhead:</strong> ~50-100 MB</li>
+</ol>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Total Typical Usage:</strong> 300-800 MB</p>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">RAM Recommendations:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>System RAM</th><th>Recording Capability</th><th>Recommendation</th></tr></thead><tbody><tr><td>4 GB</td><td>Audio only, light video</td><td>Disable Flashback, low quality</td></tr><tr><td>8 GB</td><td>Standard 720p/1080p</td><td>Balanced settings</td></tr><tr><td>16 GB</td><td>High quality 1080p/1440p</td><td>All features enabled</td></tr><tr><td>32 GB+</td><td>Maximum quality, multiple features</td><td>Unlimited capability</td></tr></tbody></table>
+<hr class="my-8 border-gray-200"/>
+<h3 id="memory-optimization-techniques" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Memory Optimization Techniques<a href="#memory-optimization-techniques" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">1. Close Memory-Hungry Apps:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Before recording, close:
+- Chrome/Firefox (especially with many tabs)
+- Photoshop, Premiere, After Effects
+- Slack, Discord, Teams (if not needed)
+- Spotify, music apps
+- Any unnecessary background apps
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">2. Disable Flashback When Not Needed:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Settings → Flashback → Disable
+→ Saves 100-600 MB RAM
+→ Re-enable when needed
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">3. Reduce Flashback Buffer:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Settings → Flashback → Buffer Duration
+→ Reduce from 120s to 60s or 30s
+→ Saves 100-400 MB RAM
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">4. Use Low-Memory Mode:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Settings → Flashback → Enable low-memory mode
+→ Reduces quality but maintains functionality
+→ Significant RAM savings
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">5. Restart Before Long Sessions:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Restart computer before important recording
+→ Clears memory leaks
+→ Frees up fragmented RAM
+→ Fresh start = better performance
+</code></pre>
+<hr class="my-8 border-gray-200"/>
+<h2 id="part-5-cpu-optimization" class="text-2xl font-bold text-gray-900 mt-8 mb-4 scroll-mt-24 group flex items-center">Part 5: CPU Optimization<a href="#part-5-cpu-optimization" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="understanding-cpu-load" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Understanding CPU Load<a href="#understanding-cpu-load" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">CPU Usage by Recording Task:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Task</th><th>CPU Usage (Software)</th><th>CPU Usage (Hardware Accel)</th></tr></thead><tbody><tr><td>Audio encoding</td><td>2-5%</td><td>2-5%</td></tr><tr><td>720p H.264</td><td>15-25%</td><td>5-10%</td></tr><tr><td>1080p H.264</td><td>30-50%</td><td>10-20%</td></tr><tr><td>4K H.264</td><td>60-80%</td><td>25-40%</td></tr><tr><td>4K H.265</td><td>70-90%</td><td>30-50%</td></tr></tbody></table>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">The CPU Threshold:</strong>
+If total CPU usage hits 90-100%, you&#x27;ll get:</p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Frame drops</li>
+<li class="mb-2">Stuttering</li>
+<li class="mb-2">Encoding errors</li>
+<li class="mb-2">System unresponsiveness</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Target:</strong> Keep CPU under 70% during recording.</p>
+<hr class="my-8 border-gray-200"/>
+<h3 id="reducing-cpu-load" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Reducing CPU Load<a href="#reducing-cpu-load" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">1. Enable Hardware Acceleration:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">#1 way to reduce CPU load
+Settings → Video → Enable hardware acceleration
+→ Offloads encoding to GPU
+→ 50-70% reduction in CPU usage
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">2. Lower Resolution:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">720p uses 50% less CPU than 1080p
+480p uses 75% less CPU than 1080p
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">3. Reduce Frame Rate:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">30fps uses 50% less CPU than 60fps
+Only use 60fps if you need smooth motion
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">4. Change Quality Preset:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Settings → Video → Quality Preset
+→ &quot;Fast&quot; uses less CPU than &quot;High Quality&quot;
+→ Trade-off: slightly larger files
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">5. Change Video Format:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">H.264 is easier to encode than H.265
+Use H.264 if CPU is struggling
+</code></pre>
+<hr class="my-8 border-gray-200"/>
+<h2 id="part-6-battery-optimization-laptops" class="text-2xl font-bold text-gray-900 mt-8 mb-4 scroll-mt-24 group flex items-center">Part 6: Battery Optimization (Laptops)<a href="#part-6-battery-optimization-laptops" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="recording-on-battery-power" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Recording on Battery Power<a href="#recording-on-battery-power" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">The Challenge:</strong>
+Recording is power-hungry. Battery life will be significantly reduced.</p>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Typical Battery Impact:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Recording Type</th><th>Battery Life Reduction</th></tr></thead><tbody><tr><td>Audio only</td><td>10-15% faster drain</td></tr><tr><td>720p 30fps</td><td>30-40% faster drain</td></tr><tr><td>1080p 60fps</td><td>50-70% faster drain</td></tr><tr><td>4K 60fps</td><td>70-90% faster drain</td></tr></tbody></table>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Practical Example:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Normal laptop battery: 8 hours</li>
+<li class="mb-2">Recording 1080p 60fps: 3-4 hours</li>
+<li class="mb-2">Recording 4K 60fps: 1-2 hours</li>
+</ul>
+<hr class="my-8 border-gray-200"/>
+<h3 id="battery-saving-strategies" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Battery-Saving Strategies<a href="#battery-saving-strategies" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">1. Use Optimal Settings:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Resolution: 720p (not 1080p)
+Frame rate: 30fps (not 60fps)
+Hardware acceleration: ON (more efficient than CPU)
+Disable Flashback (saves power)
+Audio format: MP3 (not WAV)
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">2. Lower Screen Brightness:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Screen is a major power draw
+Lower to 50-70% while recording
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">3. Disable Keyboard Backlight:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Small savings, but every bit helps
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">4. Close Unnecessary Apps:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Each app uses power
+Close everything not needed
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">5. Use Power Saver (Carefully):</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Windows: Power Saver mode
+→ Reduces performance but extends battery
+→ Only for audio or 720p recording
+→ NOT for high-quality video (will cause issues)
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">6. Plug In When Possible:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Best solution: use AC power
+No compromises needed
+Full performance available
+</code></pre>
+<hr class="my-8 border-gray-200"/>
+<h2 id="part-7-troubleshooting-performance-issues" class="text-2xl font-bold text-gray-900 mt-8 mb-4 scroll-mt-24 group flex items-center">Part 7: Troubleshooting Performance Issues<a href="#part-7-troubleshooting-performance-issues" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="problem-recording-stutters-or-drops-frames" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Problem: Recording Stutters or Drops Frames<a href="#problem-recording-stutters-or-drops-frames" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Symptoms:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Video playback is jerky</li>
+<li class="mb-2">Skipped frames visible</li>
+<li class="mb-2">Motion not smooth</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Diagnosis Steps:</strong></p>
+<ol class="list-decimal list-inside mb-4 text-gray-700">
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Check CPU Usage:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Task Manager → Performance → CPU</li>
+<li class="mb-2">If at 90-100% during recording → CPU bottleneck</li>
+</ul>
+</li>
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Check Disk Usage:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Task Manager → Performance → Disk</li>
+<li class="mb-2">If at 100% → Storage bottleneck</li>
+</ul>
+</li>
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Check Temperature:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Overheating causes throttling</li>
+<li class="mb-2">Use HWiNFO or similar to check temps</li>
+<li class="mb-2">CPU over 85°C = thermal throttling</li>
+</ul>
+</li>
+</ol>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Solutions by Cause:</strong></p>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">CPU Bottleneck:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Enable hardware acceleration</li>
+<li class="mb-2">Reduce resolution</li>
+<li class="mb-2">Reduce frame rate</li>
+<li class="mb-2">Change quality preset to &quot;Fast&quot;</li>
+<li class="mb-2">Close other applications</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Storage Bottleneck:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Record to SSD instead of HDD</li>
+<li class="mb-2">Record to internal drive instead of external</li>
+<li class="mb-2">Reduce video quality (smaller files = less writing)</li>
+<li class="mb-2">Ensure drive has free space</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Thermal Throttling:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Clean laptop/desktop fans</li>
+<li class="mb-2">Use cooling pad (laptops)</li>
+<li class="mb-2">Lower room temperature</li>
+<li class="mb-2">Reduce recording quality to generate less heat</li>
+</ul>
+<hr class="my-8 border-gray-200"/>
+<h3 id="problem-audio-glitches-or-dropouts" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Problem: Audio Glitches or Dropouts<a href="#problem-audio-glitches-or-dropouts" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Symptoms:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Audio cuts out briefly</li>
+<li class="mb-2">Popping or clicking sounds</li>
+<li class="mb-2">Audio out of sync</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Causes and Solutions:</strong></p>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Buffer Underrun:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Cause: CPU can&#x27;t process audio fast enough
+Solution:
+- Close CPU-heavy apps
+- Increase audio buffer size (if available)
+- Disable audio effects/noise reduction
+- Use hardware acceleration
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">USB Issues:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Cause: USB microphone bandwidth/interference
+Solution:
+- Try different USB port
+- Use USB 2.0 port (not 3.0) for audio devices
+- Update USB drivers
+- Disconnect other USB devices
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Driver Issues:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Cause: Outdated or corrupted audio drivers
+Solution:
+- Update audio drivers
+- Restart audio service:
+  Windows: services.msc → Windows Audio → Restart
+</code></pre>
+<hr class="my-8 border-gray-200"/>
+<h3 id="problem-high-latency-during-recording" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Problem: High Latency During Recording<a href="#problem-high-latency-during-recording" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Symptoms:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Delay between action and recording</li>
+<li class="mb-2">Mouse trails behind cursor</li>
+<li class="mb-2">Laggy interface</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Solutions:</strong></p>
+<ol class="list-decimal list-inside mb-4 text-gray-700">
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Enable Hardware Acceleration:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Reduces encoding latency</li>
+</ul>
+</li>
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Lower Quality Settings:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Less processing = lower latency</li>
+</ul>
+</li>
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Use Game Mode (Windows):</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Prioritizes SeaMeet</li>
+</ul>
+</li>
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Disable Windows Defender Real-Time Scanning:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Temporarily during recording:
+Settings → Update &amp; Security → Windows Security
+→ Virus &amp; threat protection → Manage settings
+→ Turn off Real-time protection
+→ Turn back on after recording
+</code></pre>
+</li>
+<li class="mb-2">
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Close Background Apps:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Especially cloud sync (OneDrive, Dropbox)</li>
+<li class="mb-2">Pause antivirus scans</li>
+<li class="mb-2">Close browsers</li>
+</ul>
+</li>
+</ol>
+<hr class="my-8 border-gray-200"/>
+<h2 id="part-8-advanced-optimization" class="text-2xl font-bold text-gray-900 mt-8 mb-4 scroll-mt-24 group flex items-center">Part 8: Advanced Optimization<a href="#part-8-advanced-optimization" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="multi-monitor-considerations" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Multi-Monitor Considerations<a href="#multi-monitor-considerations" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Performance Impact:</strong>
+Recording multiple monitors = 2× or 3× the resource usage</p>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Optimization:</strong></p>
+<ol class="list-decimal list-inside mb-4 text-gray-700">
+<li class="mb-2">Record only the monitor you need</li>
+<li class="mb-2">Lower resolution if recording multiple displays</li>
+<li class="mb-2">Disable unused monitors during recording</li>
+<li class="mb-2">Use window/region mode instead of fullscreen all monitors</li>
+</ol>
+<hr class="my-8 border-gray-200"/>
+<h3 id="network-recording-advanced" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Network Recording (Advanced)<a href="#network-recording-advanced" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Recording to Network Drives:</strong></p>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Pros:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Centralized storage</li>
+<li class="mb-2">Automatic backup</li>
+<li class="mb-2">Accessible from multiple computers</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Cons:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Network latency affects recording</li>
+<li class="mb-2">Requires stable, fast connection</li>
+<li class="mb-2">Higher chance of recording failure</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Requirements:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Gigabit Ethernet (not WiFi)</li>
+<li class="mb-2">Stable network (no drops)</li>
+<li class="mb-2">Server with good write performance</li>
+<li class="mb-2">720p or lower resolution recommended</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Optimization:</strong></p>
+<ol class="list-decimal list-inside mb-4 text-gray-700">
+<li class="mb-2">Record locally first</li>
+<li class="mb-2">Auto-sync to network after recording</li>
+<li class="mb-2">Use software like Syncthing or Resilio Sync</li>
+</ol>
+<hr class="my-8 border-gray-200"/>
+<h3 id="encoding-for-streaming-platforms" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Encoding for Streaming Platforms<a href="#encoding-for-streaming-platforms" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">If uploading to YouTube, Vimeo, etc.:</strong></p>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">YouTube Recommended Settings:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Resolution: 1080p or 4K
+Frame rate: 30 or 60 fps
+Codec: H.264
+Bitrate:
+  - 1080p: 8 Mbps
+  - 4K: 35-45 Mbps
+Audio: AAC 128-384 kbps
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Why Optimize for Platform:</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">YouTube re-encodes everything anyway</li>
+<li class="mb-2">Matching their specs reduces re-encoding artifacts</li>
+<li class="mb-2">Faster upload and processing</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">SeaMeet Settings for YouTube:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">1080p, 30fps, H.264, ~10 Mbps bitrate
+</code></pre>
+<hr class="my-8 border-gray-200"/>
+<h2 id="part-9-performance-monitoring-tools" class="text-2xl font-bold text-gray-900 mt-8 mb-4 scroll-mt-24 group flex items-center">Part 9: Performance Monitoring Tools<a href="#part-9-performance-monitoring-tools" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="built-in-tools" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Built-in Tools<a href="#built-in-tools" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Windows Task Manager:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Ctrl + Shift + Esc
+Shows:
+- CPU usage (should be &lt;70%)
+- Memory usage (should be &lt;80%)
+- Disk usage (should be &lt;80%)
+- GPU usage (shows hardware acceleration working)
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">macOS Activity Monitor:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Applications → Utilities → Activity Monitor
+Or: Cmd + Space → type &quot;Activity Monitor&quot;
+</code></pre>
+<hr class="my-8 border-gray-200"/>
+<h3 id="third-party-tools" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Third-Party Tools<a href="#third-party-tools" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">For Deep Analysis:</strong></p>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">HWiNFO (Windows - Free):</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Detailed hardware monitoring</li>
+<li class="mb-2">Temperature tracking</li>
+<li class="mb-2">Identifies thermal throttling</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Intel Power Gadget (Mac/Windows - Free):</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Real-time CPU frequency</li>
+<li class="mb-2">Shows if CPU is throttling</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">iStat Menus (Mac - Paid):</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Menu bar system monitoring</li>
+<li class="mb-2">Quick overview of all resources</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Process Explorer (Windows - Free):</strong></p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2">Advanced task manager</li>
+<li class="mb-2">See exactly what&#x27;s using resources</li>
+</ul>
+<hr class="my-8 border-gray-200"/>
+<h2 id="summary-the-optimization-checklist" class="text-2xl font-bold text-gray-900 mt-8 mb-4 scroll-mt-24 group flex items-center">Summary: The Optimization Checklist<a href="#summary-the-optimization-checklist" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="before-every-recording-session" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Before Every Recording Session:<a href="#before-every-recording-session" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">PERFORMANCE CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+☐ Restart computer (for important recordings)
+☐ Enable hardware acceleration (if available)
+☐ Record to SSD (not HDD)
+☐ Close unnecessary applications
+☐ Disable cloud sync temporarily
+☐ Check available storage space
+☐ Set appropriate quality for your hardware
+☐ Disable Flashback if not needed
+☐ Test recording for 30 seconds
+☐ Monitor CPU/RAM during test
+☐ Ready to record!
+</code></pre>
+<hr class="my-8 border-gray-200"/>
+<h3 id="optimization-quick-reference" class="text-xl font-bold text-gray-900 mt-6 mb-3 scroll-mt-24 group flex items-center">Optimization Quick Reference<a href="#optimization-quick-reference" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">For Low-End Systems (4GB RAM, older CPU):</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">Audio only, or 480p 30fps
+Hardware accel: ON if available
+No Flashback
+Record to internal drive
+Close all other apps
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">For Mid-Range Systems (8GB RAM, modern CPU):</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">720p 30fps, or 1080p with hardware accel
+Balanced quality preset
+60-second Flashback buffer
+Record to SSD
+Moderate background apps okay
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">For High-End Systems (16GB+ RAM, dedicated GPU):</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">1080p 60fps or 1440p
+Hardware accel: ON
+High quality preset
+120-second Flashback
+Any storage location
+Multiple apps can run
+</code></pre>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">For Laptops on Battery:</strong></p>
+<pre><code class="bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono">720p 30fps maximum
+Hardware accel: ON
+Disable Flashback
+Lower screen brightness
+Close all unnecessary apps
+Plug in when possible
+</code></pre>
+<hr class="my-8 border-gray-200"/>
+<h2 id="chapter-checklist" class="text-2xl font-bold text-gray-900 mt-8 mb-4 scroll-mt-24 group flex items-center">Chapter Checklist<a href="#chapter-checklist" class="ml-2 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer text-gray-400 hover:text-blue-600" title="Copy link to this section"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p class="text-gray-700 mb-4 leading-relaxed">Before moving on, you should be able to:</p>
+<ul class="list-disc list-inside mb-4 text-gray-700">
+<li class="mb-2"><input type="checkbox" disabled=""/> Identify your system&#x27;s bottleneck (CPU, RAM, storage, or GPU)</li>
+<li class="mb-2"><input type="checkbox" disabled=""/> Enable and verify hardware acceleration is working</li>
+<li class="mb-2"><input type="checkbox" disabled=""/> Optimize settings for your hardware level</li>
+<li class="mb-2"><input type="checkbox" disabled=""/> Balance quality vs. performance effectively</li>
+<li class="mb-2"><input type="checkbox" disabled=""/> Troubleshoot stuttering and frame drops</li>
+<li class="mb-2"><input type="checkbox" disabled=""/> Optimize laptop battery usage</li>
+<li class="mb-2"><input type="checkbox" disabled=""/> Monitor system resources during recording</li>
+<li class="mb-2"><input type="checkbox" disabled=""/> Know when to lower quality vs. when to upgrade hardware</li>
+</ul>
+<p class="text-gray-700 mb-4 leading-relaxed"><strong class="font-bold text-gray-900">Performance Master!</strong> ⚡ Your system is now optimized for smooth, high-quality recordings.</p></div><!--astro:end--></astro-island> </div>  <div class="mt-12 pt-6 border-t border-gray-200"> <p class="text-sm text-gray-500"> Published: <time datetime="Sun Feb 01 2026 00:00:00 GMT+0000 (Coordinated Universal Time)">2/1/2026</time> </p> </div>  <div class="mt-8 flex justify-between"> <a href="/en/desktop-app/wiki/troubleshooting/best-practices/" class="flex items-center text-blue-600 hover:text-blue-800"> <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path> </svg> <div> <div class="text-xs text-gray-500">Previous</div> <div class="font-medium">Best Practices</div> </div> </a> <a href="/en/desktop-app/wiki/technical/how-seameet-works/" class="flex items-center text-right text-blue-600 hover:text-blue-800"> <div> <div class="text-xs text-gray-500">Technical Deep Dive →</div> <div class="font-medium">How SeaMeet Works (Technical)</div> </div> <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path> </svg> </a> </div> </article> </div>  </div> </main> <!-- Table of Contents (optional) --> <aside class="hidden xl:block w-64 flex-shrink-0"> <div class="sticky top-20 overflow-y-auto h-[calc(100vh-6rem)] py-4 px-4"> <h4 class="text-sm font-medium text-gray-900 mb-3">On this page</h4> <nav class="space-y-1"> <a href="#introduction" class="block text-sm text-gray-600 hover:text-gray-900"> Introduction </a><a href="#chapter-objectives" class="block text-sm text-gray-600 hover:text-gray-900"> Chapter Objectives </a><a href="#understanding-recording-performance" class="block text-sm text-gray-600 hover:text-gray-900"> Understanding Recording Performance </a><a href="#what-makes-recording-demanding" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> What Makes Recording Demanding? </a><a href="#part-1-seameet-settings-optimization" class="block text-sm text-gray-600 hover:text-gray-900"> Part 1: SeaMeet Settings Optimization </a><a href="#the-performance-triangle" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> The Performance Triangle </a><a href="#optimization-level-1-audio-only-maximum-performance" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Optimization Level 1: Audio-Only (Maximum Performance) </a><a href="#optimization-level-2-light-video-balanced" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Optimization Level 2: Light Video (Balanced) </a><a href="#optimization-level-3-high-quality-demanding" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Optimization Level 3: High Quality (Demanding) </a><a href="#optimization-level-4-maximum-quality-very-demanding" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Optimization Level 4: Maximum Quality (Very Demanding) </a><a href="#part-2-hardware-acceleration-deep-dive" class="block text-sm text-gray-600 hover:text-gray-900"> Part 2: Hardware Acceleration Deep Dive </a><a href="#what-is-hardware-acceleration" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> What Is Hardware Acceleration? </a><a href="#types-of-hardware-acceleration" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Types of Hardware Acceleration </a><a href="#how-to-enable-and-verify" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> How to Enable and Verify </a><a href="#when-not-to-use-hardware-acceleration" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> When NOT to Use Hardware Acceleration </a><a href="#part-3-system-optimization" class="block text-sm text-gray-600 hover:text-gray-900"> Part 3: System Optimization </a><a href="#windows-optimization" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Windows Optimization </a><a href="#macos-optimization" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> macOS Optimization </a><a href="#storage-optimization" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Storage Optimization </a><a href="#part-4-memory-management" class="block text-sm text-gray-600 hover:text-gray-900"> Part 4: Memory Management </a><a href="#understanding-ram-usage" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Understanding RAM Usage </a><a href="#memory-optimization-techniques" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Memory Optimization Techniques </a><a href="#part-5-cpu-optimization" class="block text-sm text-gray-600 hover:text-gray-900"> Part 5: CPU Optimization </a><a href="#understanding-cpu-load" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Understanding CPU Load </a><a href="#reducing-cpu-load" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Reducing CPU Load </a><a href="#part-6-battery-optimization-laptops" class="block text-sm text-gray-600 hover:text-gray-900"> Part 6: Battery Optimization (Laptops) </a><a href="#recording-on-battery-power" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Recording on Battery Power </a><a href="#battery-saving-strategies" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Battery-Saving Strategies </a><a href="#part-7-troubleshooting-performance-issues" class="block text-sm text-gray-600 hover:text-gray-900"> Part 7: Troubleshooting Performance Issues </a><a href="#problem-recording-stutters-or-drops-frames" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Problem: Recording Stutters or Drops Frames </a><a href="#problem-audio-glitches-or-dropouts" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Problem: Audio Glitches or Dropouts </a><a href="#problem-high-latency-during-recording" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Problem: High Latency During Recording </a><a href="#part-8-advanced-optimization" class="block text-sm text-gray-600 hover:text-gray-900"> Part 8: Advanced Optimization </a><a href="#multi-monitor-considerations" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Multi-Monitor Considerations </a><a href="#network-recording-advanced" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Network Recording (Advanced) </a><a href="#encoding-for-streaming-platforms" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Encoding for Streaming Platforms </a><a href="#part-9-performance-monitoring-tools" class="block text-sm text-gray-600 hover:text-gray-900"> Part 9: Performance Monitoring Tools </a><a href="#built-in-tools" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Built-in Tools </a><a href="#third-party-tools" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Third-Party Tools </a><a href="#summary-the-optimization-checklist" class="block text-sm text-gray-600 hover:text-gray-900"> Summary: The Optimization Checklist </a><a href="#before-every-recording-session" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Before Every Recording Session: </a><a href="#optimization-quick-reference" class="block text-sm text-gray-500 hover:text-gray-700 pl-3"> Optimization Quick Reference </a><a href="#chapter-checklist" class="block text-sm text-gray-600 hover:text-gray-900"> Chapter Checklist </a> </nav> </div> </aside> </div> </div> </div>  </main> <astro-island uid="ZoxvPn" prefix="r24" component-url="/_astro/DesktopFooterWrapper.DWSXvAzu.js" component-export="default" renderer-url="/_astro/client.cVMPzRaF.js" props="{&quot;lang&quot;:[0,&quot;en&quot;],&quot;translations&quot;:[0,{&quot;cloudCrossSell&quot;:[0,&quot;Need a meeting bot that auto-joins your calls?&quot;],&quot;cloudCrossSellCta&quot;:[0,&quot;Try SeaMeet Cloud →&quot;],&quot;product&quot;:[0,&quot;Product&quot;],&quot;resources&quot;:[0,&quot;Resources&quot;],&quot;company&quot;:[0,&quot;Company&quot;],&quot;legal&quot;:[0,&quot;Legal&quot;],&quot;brandDesc&quot;:[0,&quot;The desktop app that records your meetings everywhere — then uses AI to handle everything after.&quot;],&quot;madeBy&quot;:[0,&quot;A product of Seasalt.ai&quot;],&quot;allRightsReserved&quot;:[0,&quot;All rights reserved.&quot;],&quot;privacyLink&quot;:[0,&quot;Privacy&quot;],&quot;termsLink&quot;:[0,&quot;Terms&quot;],&quot;columnProduct&quot;:[0,&quot;Product&quot;],&quot;columnFeatures&quot;:[0,&quot;Features&quot;],&quot;columnResources&quot;:[0,&quot;Resources&quot;],&quot;columnWorksWith&quot;:[0,&quot;Works With&quot;],&quot;columnCompany&quot;:[0,&quot;Company&quot;],&quot;linkDownload&quot;:[0,&quot;Download&quot;],&quot;linkPricing&quot;:[0,&quot;Pricing&quot;],&quot;linkCompare&quot;:[0,&quot;Compare&quot;],&quot;linkAutoDetection&quot;:[0,&quot;Auto-Detection&quot;],&quot;linkFlashback&quot;:[0,&quot;Flashback&quot;],&quot;linkAiSkills&quot;:[0,&quot;AI Skills&quot;],&quot;linkRecording&quot;:[0,&quot;Recording&quot;],&quot;linkAiAgent&quot;:[0,&quot;AI Agent&quot;],&quot;linkAllFeatures&quot;:[0,&quot;All Features&quot;],&quot;linkWiki&quot;:[0,&quot;Wiki&quot;],&quot;linkBlog&quot;:[0,&quot;Blog&quot;],&quot;linkFaq&quot;:[0,&quot;FAQ&quot;],&quot;linkAbout&quot;:[0,&quot;About&quot;],&quot;linkContact&quot;:[0,&quot;Contact&quot;],&quot;linkPrivacyPolicy&quot;:[0,&quot;Privacy Policy&quot;],&quot;linkTermsOfService&quot;:[0,&quot;Terms of Service&quot;]}]}" ssr client="idle" opts="{&quot;name&quot;:&quot;DesktopFooterWrapper&quot;,&quot;value&quot;:true}" await-children><footer class="bg-ink"><div class="max-w-site mx-auto px-6 pt-16 pb-8"><div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8"><div class="lg:col-span-4"><a href="/en/" class="inline-block mb-5"><img src="/images/seameet_logo.png" alt="SeaMeet" class="h-7 w-auto brightness-0 invert"/></a><p class="font-jakarta text-sm text-neutral-400 leading-relaxed mb-6 max-w-xs">The desktop app that records your meetings everywhere — then uses AI to handle everything after.</p><div class="space-y-1 mb-6"><p class="font-jakarta text-xs text-neutral-500">A product of Seasalt.ai</p><a href="mailto:info@seasalt.ai" class="font-jakarta text-xs text-neutral-500 hover:text-teal transition-colors">info@seasalt.ai</a></div><div class="flex items-center space-x-4"><a href="https://www.linkedin.com/company/seasalt-ai/" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-teal transition-colors" aria-label="LinkedIn"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a><a href="https://www.youtube.com/@seasaltai" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-teal transition-colors" aria-label="YouTube"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a><a href="https://twitter.com/SeasaltAI" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-teal transition-colors" aria-label="Twitter"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a><a href="https://discord.gg/VgAWg3c7rU" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-teal transition-colors" aria-label="Discord"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.333-.947 2.418-2.157 2.418z"></path></svg></a></div></div><div class="lg:col-span-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8"><div><h3 class="font-satoshi font-bold text-sm text-white uppercase tracking-wider mb-4">Product</h3><ul class="space-y-3"><li><a href="/en/desktop-app/download" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">Download</a></li><li><a href="/en/desktop-app/pricing" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">Pricing</a></li><li><a href="/en/desktop-app/compare" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">Compare</a></li></ul></div><div><h3 class="font-satoshi font-bold text-sm text-white uppercase tracking-wider mb-4">Features</h3><ul class="space-y-3"><li><a href="/en/desktop-app/features/auto-detection" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">Auto-Detection</a></li><li><a href="/en/desktop-app/features/flashback" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">Flashback</a></li><li><a href="/en/desktop-app/features/ai-skills" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">AI Skills</a></li><li><a href="/en/desktop-app/features/recording" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">Recording</a></li><li><a href="/en/desktop-app/features/ai-agent" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">AI Agent</a></li><li><a href="/en/desktop-app/features" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">All Features</a></li></ul></div><div><h3 class="font-satoshi font-bold text-sm text-white uppercase tracking-wider mb-4">Resources</h3><ul class="space-y-3"><li><a href="/en/desktop-app/wiki" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">Wiki</a></li><li><a href="/en/blog" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">Blog</a></li><li><a href="/en/faq" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">FAQ</a></li></ul></div><div><h3 class="font-satoshi font-bold text-sm text-white uppercase tracking-wider mb-4">Works With</h3><ul class="space-y-3"><li><a href="/en/desktop-app/record/whatsapp" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" class="" fill="currentColor" role="img" aria-label="whatsapp icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>WhatsApp</a></li><li><a href="/en/desktop-app/record/line" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" class="" fill="currentColor" role="img" aria-label="line icon"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"></path></svg>Line</a></li><li><a href="/en/desktop-app/record/zoom" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" class="" fill="currentColor" role="img" aria-label="zoom icon"><path d="M5.033 14.649H.743a.74.74 0 0 1-.686-.458.74.74 0 0 1 .16-.808L3.19 10.41H1.06A1.06 1.06 0 0 1 0 9.35h3.957c.301 0 .57.18.686.458a.74.74 0 0 1-.161.808L1.51 13.59h2.464c.585 0 1.06.475 1.06 1.06zM24 11.338c0-1.14-.927-2.066-2.066-2.066-.61 0-1.158.265-1.537.686a2.061 2.061 0 0 0-1.536-.686c-1.14 0-2.066.926-2.066 2.066v3.311a1.06 1.06 0 0 0 1.06-1.06v-2.251a1.004 1.004 0 0 1 2.013 0v2.251c0 .586.474 1.06 1.06 1.06v-3.311a1.004 1.004 0 0 1 2.012 0v2.251c0 .586.475 1.06 1.06 1.06zM16.265 12a2.728 2.728 0 1 1-5.457 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0zm-4.82 0a2.728 2.728 0 1 1-5.458 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0z"></path></svg>Zoom</a></li><li><a href="/en/desktop-app/record/microsoft-teams" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" class="" fill="currentColor" role="img" aria-label="microsoft-teams icon"><path d="M20.625 8.25h-6.75a1.125 1.125 0 0 0-1.125 1.125v6.75a1.125 1.125 0 0 0 1.125 1.125h6.75A1.125 1.125 0 0 0 21.75 16.125v-6.75A1.125 1.125 0 0 0 20.625 8.25zm-2.25 6.375h-1.5v-3h-1.125v-1.5h3.75v1.5h-1.125v3zM17.25 6.75a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5zm4.5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm1.125 2.25a1.875 1.875 0 0 0-1.125-.375v6.75c0 .967-.487 1.82-1.23 2.327A6.754 6.754 0 0 1 13.5 24a6.75 6.75 0 0 1-6.75-6.75v-.375H3.375A1.125 1.125 0 0 1 2.25 15.75V9.375A1.125 1.125 0 0 1 3.375 8.25H10.5a3.37 3.37 0 0 0-.75 2.121v6.879A4.5 4.5 0 0 0 13.5 21.75a4.5 4.5 0 0 0 4.5-4.5v-.375h3.75a1.875 1.875 0 0 0 1.125-3.375zM6 6.75a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5zM8.25 15V9.75h-1.5v1.875H5.25V9.75h-1.5V15h1.5v-1.875h1.5V15h1.5z"></path></svg>Teams</a></li><li><a href="/en/desktop-app/record/discord" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" class="" fill="currentColor" role="img" aria-label="discord icon"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"></path></svg>Discord</a></li><li><a href="/en/desktop-app/record/wechat" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" class="" fill="currentColor" role="img" aria-label="wechat icon"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982z"></path></svg>WeChat</a></li><li><a href="/en/desktop-app/record/google-meet" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" class="" fill="currentColor" role="img" aria-label="google-meet icon"><path d="M5.53 2.13 0 7.75h5.53zm.398 0v5.62h7.608v3.65l5.47-4.45c-.014-1.22.031-2.25-.025-3.46-.148-1.09-1.287-1.47-2.236-1.36zM23.1 4.32c-.802.295-1.358.995-2.047 1.49-2.506 2.05-4.982 4.12-7.468 6.19 3.025 2.59 6.04 5.18 9.065 7.76 1.218.671 1.428-.814 1.328-1.64v-13a.828.828 0 0 0-.877-.825zM.038 8.15v7.7h5.53v-7.7zm13.577 8.1H6.008v5.62c3.864-.006 7.737.011 11.58-.009 1.02-.07 1.618-1.12 1.468-2.07v-2.51l-5.47-4.68v3.65zm-13.577 0c.02 1.44-.041 2.88.033 4.31.162.948 1.158 1.43 2.047 1.31h3.464v-5.62z"></path></svg>Google Meet</a></li><li><a href="/en/desktop-app/record/slack" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" class="" fill="currentColor" role="img" aria-label="slack icon"><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zm1.27 0a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.833 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zm0 1.27a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.833a2.528 2.528 0 0 1 2.522-2.521h6.312zm10.122 2.521a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.833a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.833zm-1.268 0a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.311zm-2.523 10.122a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.523v-2.522h2.52zm0-1.268a2.527 2.527 0 0 1-2.52-2.523 2.527 2.527 0 0 1 2.52-2.52h6.313A2.528 2.528 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"></path></svg>Slack</a></li><li><a href="/en/desktop-app/record/telegram" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" class="" fill="currentColor" role="img" aria-label="telegram icon"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"></path></svg>Telegram</a></li><li><a href="/en/desktop-app/record/signal" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" class="" fill="currentColor" role="img" aria-label="signal icon"><path d="M12 0q-.934 0-1.83.139l.17 1.111a11 11 0 0 1 3.32 0l.172-1.111A12 12 0 0 0 12 0M9.152.34A12 12 0 0 0 5.77 1.742l.584.961a10.8 10.8 0 0 1 3.066-1.27zm5.696 0-.268 1.094a10.8 10.8 0 0 1 3.066 1.27l.584-.962A12 12 0 0 0 14.848.34M12 2.25a9.75 9.75 0 0 0-8.539 14.459c.074.134.1.292.064.441l-1.013 4.338 4.338-1.013a.62.62 0 0 1 .441.064A9.7 9.7 0 0 0 12 21.75c5.385 0 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25m-7.092.068a12 12 0 0 0-2.59 2.59l.909.664a11 11 0 0 1 2.345-2.345zm14.184 0-.664.909a11 11 0 0 1 2.345 2.345l.909-.664a12 12 0 0 0-2.59-2.59M1.742 5.77A12 12 0 0 0 .34 9.152l1.094.268a10.8 10.8 0 0 1 1.269-3.066zm20.516 0-.961.584a10.8 10.8 0 0 1 1.27 3.066l1.093-.268a12 12 0 0 0-1.402-3.383M.138 10.168A12 12 0 0 0 0 12q0 .934.139 1.83l1.111-.17A11 11 0 0 1 1.125 12q0-.848.125-1.66zm23.723.002-1.111.17q.125.812.125 1.66c0 .848-.042 1.12-.125 1.66l1.111.172a12.1 12.1 0 0 0 0-3.662M1.434 14.58l-1.094.268a12 12 0 0 0 .96 2.591l-.265 1.14 1.096.255.36-1.539-.188-.365a10.8 10.8 0 0 1-.87-2.35m21.133 0a10.8 10.8 0 0 1-1.27 3.067l.962.584a12 12 0 0 0 1.402-3.383zm-1.793 3.848a11 11 0 0 1-2.345 2.345l.664.909a12 12 0 0 0 2.59-2.59zm-19.959 1.1L.357 21.48a1.8 1.8 0 0 0 2.162 2.161l1.954-.455-.256-1.095-1.953.455a.675.675 0 0 1-.81-.81l.454-1.954zm16.832 1.769a10.8 10.8 0 0 1-3.066 1.27l.268 1.093a12 12 0 0 0 3.382-1.402zm-10.94.213-1.54.36.256 1.095 1.139-.266c.814.415 1.683.74 2.591.961l.268-1.094a10.8 10.8 0 0 1-2.35-.869zm3.634 1.24-.172 1.111a12.1 12.1 0 0 0 3.662 0l-.17-1.111q-.812.125-1.66.125a11 11 0 0 1-1.66-.125"></path></svg>Signal</a></li><li><a href="/en/desktop-app/record/webex" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" class="" fill="currentColor" role="img" aria-label="webex icon"><path d="M21.78 7.376c.512 1.181.032 2.644-1.11 3.106-2.157.888-3-1.295-3-1.295-.236-.55-.727-1.496-1.335-1.496-.204 0-.503 0-.94.844-.229.443-.434 1.185-.616 1.84l-.09.32c-.373-1.587-.821-3.454-1.536-4.816-.195-.38-.42-.74-.673-1.08a5.135 5.135 0 0 1 1.743-1.337 4.891 4.891 0 0 1 2.112-.463c1.045 0 2.765.338 4.227 2.227.167.206.317.424.448.654.278.441.52.904.726 1.383l.043.113zM.02 8.4C-.15 7.105.8 5.845 1.953 5.755c1.794-.157 2.36 1.385 2.455 1.89l.022.137c.07.44.29 1.838.48 2.744.078.4.244 1.013.353 1.416l.006.022.026.092c.11.4.232.799.362 1.193.185.548.399 1.085.641 1.61.47.955.93 1.45 1.367 1.45.203 0 .512 0 .96-.878.283-.59.512-1.208.684-1.845.373 1.598.811 3.128 1.495 4.456.205.406.444.794.715 1.16a5.124 5.124 0 0 1-1.742 1.338 4.88 4.88 0 0 1-2.112.461c-1.548 0-3.727-.698-5.339-4.005a22.407 22.407 0 0 1-1.078-2.824 26.848 26.848 0 0 1-.693-2.656 48.56 48.56 0 0 1-.215-1.114C.191 9.603.074 8.872.02 8.4zm22.047-2.645-.202-.022h-.052c.222.392.421.797.597 1.215l.053.113c.322.76.346 1.614.068 2.391a3.079 3.079 0 0 1-1.552 1.749 2.93 2.93 0 0 1-1.228.28 3.115 3.115 0 0 1-.854-.135c-.299 1.182-.768 2.634-1.195 3.511-.427.877-.93 1.451-1.378 1.451-.192 0-.501 0-.95-.877a10.746 10.746 0 0 1-.683-1.845 38.722 38.722 0 0 1-.396-1.575 12.67 12.67 0 0 1-.136-.598l-.002-.01c-.406-1.778-.865-3.645-1.655-5.142A8.263 8.263 0 0 0 11.52 4.8a5.136 5.136 0 0 0-1.748-1.34A4.892 4.892 0 0 0 7.654 3c-1.036 0-2.754.338-4.217 2.228.466.223.867.562 1.164.984.305.433.499.933.565 1.458.076.563.256 1.654.47 2.688l.001.007c.021.11.042.221.073.342.126-.34.25-.642.38-.955l.112-.271.128-.293c.235-.55.726-1.496 1.324-1.496.213 0 .513 0 .95.844.296.606.532 1.239.706 1.89.138.507.276 1.047.394 1.587.04.148.07.296.101.444l.006.028c.427 1.879.875 3.69 1.644 5.187.159.317.34.622.545.911.15.215.31.422.48.62 1.27 1.45 2.733 1.8 3.843 1.8 1.548 0 3.738-.698 5.35-4.006.822-1.7 1.515-4.208 1.772-5.48.256-1.27.449-2.419.534-3.115.04-.307.023-.618-.051-.918-.075-.299-.205-.579-.382-.825a2.247 2.247 0 0 0-.653-.607 2.143 2.143 0 0 0-.826-.296z"></path></svg>Webex</a></li><li><a href="/en/desktop-app/record/skype" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" class="" fill="currentColor" role="img" aria-label="skype icon"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 .94.107 1.854.316 2.732A6.89 6.89 0 0 0 0 16.58a6.885 6.885 0 0 0 6.887 6.886c.66 0 1.297-.095 1.9-.27.84.188 1.714.293 2.613.293 6.621 0 11.988-5.367 11.988-11.988 0-.84-.087-1.66-.255-2.45A6.873 6.873 0 0 0 23.476 7.4 6.885 6.885 0 0 0 16.59.514a6.87 6.87 0 0 0-2.123.336A11.934 11.934 0 0 0 12.017 0zm.262 4.45c.98 0 1.858.168 2.633.504.775.336 1.375.82 1.8 1.454.425.633.637 1.337.637 2.11 0 .41-.148.77-.443 1.076a1.49 1.49 0 0 1-1.098.46c-.432 0-.79-.137-1.074-.41-.284-.274-.563-.688-.838-1.243-.313-.633-.633-1.104-.96-1.413-.326-.31-.838-.464-1.537-.464-.61 0-1.108.148-1.496.443-.387.295-.58.645-.58 1.05 0 .258.073.48.22.665.146.185.345.34.597.467.253.127.497.22.732.28.235.06.596.148 1.083.262.604.14 1.16.295 1.667.467a5.478 5.478 0 0 1 1.374.665c.4.274.717.62.95 1.04.234.42.35.93.35 1.533 0 .687-.197 1.31-.59 1.867-.394.558-.97.994-1.728 1.31-.758.314-1.652.472-2.684.472-1.25 0-2.277-.235-3.08-.705-.803-.47-1.373-1.06-1.71-1.77a3.22 3.22 0 0 1-.337-1.4c0-.413.155-.775.466-1.085.31-.31.693-.464 1.147-.464.387 0 .71.118.97.354.258.236.497.605.716 1.107.254.56.467.974.639 1.243.17.27.435.504.793.7.36.198.832.296 1.418.296.7 0 1.272-.166 1.715-.5.443-.333.664-.732.664-1.198 0-.378-.12-.688-.36-.93-.242-.24-.556-.43-.944-.57a16.46 16.46 0 0 0-1.516-.44 25.068 25.068 0 0 1-1.98-.556c-.587-.19-1.076-.423-1.47-.698a2.88 2.88 0 0 1-.94-1.06c-.22-.42-.33-.93-.33-1.526 0-.665.188-1.264.565-1.797.377-.533.928-.95 1.655-1.248.726-.3 1.58-.448 2.562-.448z"></path></svg>Skype</a></li><li><a href="/en/desktop-app/record/kakao-talk" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" class="" fill="currentColor" role="img" aria-label="kakao-talk icon"><path d="M22.125 0H1.875C.8394 0 0 .8394 0 1.875v20.25C0 23.1606.8394 24 1.875 24h20.25C23.1606 24 24 23.1606 24 22.125V1.875C24 .8394 23.1606 0 22.125 0zM12 18.75c-.591 0-1.1697-.0413-1.7317-.1209-.5626.3965-3.813 2.6797-4.1198 2.7225 0 0-.1258.0489-.2328-.0141s-.0876-.2282-.0876-.2282c.0322-.2198.8426-3.0183.992-3.5333-2.7452-1.36-4.5701-3.7686-4.5701-6.5135C2.25 6.8168 6.6152 3.375 12 3.375s9.75 3.4418 9.75 7.6875c0 4.2457-4.3652 7.6875-9.75 7.6875zM8.0496 9.8672h-.8777v3.3417c0 .2963-.2523.5372-.5625.5372s-.5625-.2409-.5625-.5372V9.8672h-.8777c-.3044 0-.552-.2471-.552-.5508s.2477-.5508.552-.5508h2.8804c.3044 0 .552.2471.552.5508s-.2477.5508-.552.5508zm10.9879 2.9566a.558.558 0 0 1 .108.4167.5588.5588 0 0 1-.2183.371.5572.5572 0 0 1-.3383.1135.558.558 0 0 1-.4493-.2236l-1.3192-1.7479-.1952.1952v1.2273a.5635.5635 0 0 1-.5627.5628.563.563 0 0 1-.5625-.5625V9.3281c0-.3102.2523-.5625.5625-.5625s.5625.2523.5625.5625v1.209l1.5694-1.5694c.0807-.0807.1916-.1252.312-.1252.1404 0 .2814.0606.3871.1661.0985.0984.1573.2251.1654.3566.0082.1327-.036.2542-.1241.3425l-1.2818 1.2817 1.3845 1.8344zm-8.3502-3.5023c-.095-.2699-.3829-.5475-.7503-.5557-.3663.0083-.6542.2858-.749.5551l-1.3455 3.5415c-.1708.5305-.0217.7272.1333.7988a.8568.8568 0 0 0 .3576.0776c.2346 0 .4139-.0952.4678-.2481l.2787-.7297 1.7152.0001.2785.7292c.0541.1532.2335.2484.4681.2484a.8601.8601 0 0 0 .3576-.0775c.1551-.0713.3041-.2681.1329-.7999l-1.3449-3.5398zm-1.3116 2.4433l.5618-1.5961.5618 1.5961H9.3757zm5.9056 1.3836c0 .2843-.2418.5156-.5391.5156h-1.8047c-.2973 0-.5391-.2314-.5391-.5156V9.3281c0-.3102.2576-.5625.5742-.5625s.5742.2523.5742.5625v3.3047h1.1953c.2974 0 .5392.2314.5392.5156z"></path></svg>KakaoTalk</a></li><li><a href="/en/desktop-app/record/viber" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" class="" fill="currentColor" role="img" aria-label="viber icon"><path d="M11.4 0C9.473.028 5.333.344 3.02 2.467 1.302 4.187.696 6.7.633 9.817.57 12.933.488 18.776 6.12 20.36h.003l-.004 2.416s-.037.977.61 1.177c.777.242 1.234-.5 1.98-1.302.407-.44.972-1.084 1.397-1.58 3.85.326 6.812-.416 7.15-.525.776-.252 5.176-.816 5.892-6.657.74-6.02-.36-9.83-2.34-11.546-.596-.55-3.006-2.3-8.375-2.323 0 0-.395-.025-1.037-.017zm.058 1.693c.545-.004.88.017.88.017 4.542.02 6.717 1.388 7.222 1.846 1.675 1.435 2.53 4.868 1.906 9.897v.002c-.604 4.878-4.174 5.184-4.832 5.395-.28.09-2.882.737-6.153.524 0 0-2.436 2.94-3.197 3.704-.12.12-.26.167-.352.144-.13-.033-.166-.188-.165-.414l.02-4.018c-4.762-1.32-4.485-6.292-4.43-8.895.054-2.604.543-4.738 1.996-6.173 1.96-1.773 5.474-2.018 7.11-2.03zm.38 2.602c-.167 0-.303.135-.304.302 0 .167.133.303.3.305 1.624.01 2.946.537 4.028 1.592 1.073 1.046 1.62 2.468 1.633 4.334.002.167.14.3.307.3.166-.002.3-.138.3-.304-.014-1.984-.618-3.596-1.816-4.764-1.19-1.16-2.692-1.753-4.447-1.765zm-3.96.695c-.19-.032-.4.005-.616.117l-.01.002c-.43.247-.816.562-1.146.932-.002.004-.006.004-.008.008-.267.323-.42.638-.46.948-.008.046-.01.093-.007.14 0 .136.022.27.065.4l.013.01c.135.48.473 1.276 1.205 2.604.42.768.903 1.5 1.446 2.186.27.344.56.673.87.984l.132.132c.31.308.64.6.984.87.686.543 1.418 1.027 2.186 1.447 1.328.733 2.126 1.07 2.604 1.206l.01.014c.13.042.265.064.402.063.046.002.092 0 .138-.008.31-.036.627-.19.948-.46.004 0 .003-.002.008-.005.37-.33.683-.72.93-1.148l.003-.01c.225-.432.15-.842-.18-1.12-.004 0-.698-.58-1.037-.83-.36-.255-.73-.492-1.113-.71-.51-.285-1.032-.106-1.248.174l-.447.564c-.23.283-.657.246-.657.246-3.12-.796-3.955-3.955-3.955-3.955s-.037-.426.248-.656l.563-.448c.277-.215.456-.737.17-1.248-.217-.383-.454-.756-.71-1.115-.25-.34-.826-1.033-.83-1.035-.137-.165-.31-.265-.502-.297zm4.49.88c-.158.002-.29.124-.3.282-.01.167.115.312.282.324 1.16.085 2.017.466 2.645 1.15.63.688.93 1.524.906 2.57-.002.168.13.306.3.31.166.003.305-.13.31-.297.025-1.175-.334-2.193-1.067-2.994-.74-.81-1.777-1.253-3.05-1.346h-.024zm.463 1.63c-.16.002-.29.127-.3.287-.008.167.12.31.288.32.523.028.875.175 1.113.422.24.245.388.62.416 1.164.01.167.15.295.318.287.167-.008.295-.15.287-.317-.03-.644-.215-1.178-.58-1.557-.367-.378-.893-.574-1.52-.607h-.018z"></path></svg>Viber</a></li></ul></div><div><h3 class="font-satoshi font-bold text-sm text-white uppercase tracking-wider mb-4">Company</h3><ul class="space-y-3"><li><a href="/en/about" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">About</a></li><li><a href="/en/contact" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">Contact</a></li><li><a href="/en/privacy" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">Privacy Policy</a></li><li><a href="/en/terms" class="font-jakarta text-sm text-neutral-400 hover:text-teal transition-colors flex items-center gap-1.5">Terms of Service</a></li></ul></div></div></div><div class="mt-12 pt-6 border-t border-neutral-800"><p class="font-jakarta text-sm text-neutral-500 text-center">Need a meeting bot that auto-joins your calls?<!-- --> <a href="/en/" class="text-teal hover:text-teal-hover transition-colors">Try SeaMeet Cloud →</a></p></div><div class="mt-6 pt-6 border-t border-neutral-800 flex flex-col sm:flex-row items-center justify-between gap-4"><p class="font-jakarta text-xs text-neutral-500">© 2020-<!-- -->2026<!-- --> Seasalt.ai. <!-- -->All rights reserved.</p><div class="flex items-center space-x-4"><a href="/en/privacy" class="font-jakarta text-xs text-neutral-500 hover:text-teal transition-colors">Privacy</a><span class="text-neutral-700">|</span><a href="/en/terms" class="font-jakarta text-xs text-neutral-500 hover:text-teal transition-colors">Terms</a></div></div></div></footer><!--astro:end--></astro-island> <!-- SeaChat Widget --> <astro-island uid="2c9nMR" prefix="r25" component-url="/_astro/SeaChatWidget.CwyetUB7.js" component-export="SeaChatWidget" renderer-url="/_astro/client.cVMPzRaF.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;SeaChatWidget&quot;,&quot;value&quot;:true}" await-children><div class="seachat-widget "><button id="sui-widget-btn" class="_widgetButton_1r74w_25" style="background-image:url(https://chat.seasalt.ai/api/v1/conversations/async/config/aecaf1a1e9fe46858975bad5f0d61f5d/webchat_widget_icon?1754605926711)" aria-label="Open chat widget"></button><button id="sui-webchat-btn" class="_webchatButton_1r74w_12" style="background-image:url(https://chat.seasalt.ai/api/v1/conversations/async/config/aecaf1a1e9fe46858975bad5f0d61f5d/webchat_widget_icon?1754605926711)" aria-label="Open chat"></button><iframe id="sui-webchat" src="https://chat.seasalt.ai/chat/aecaf1a1e9fe46858975bad5f0d61f5d" class="_webchatIframe_1r74w_43" title="SeaChat Support" style="display:none"></iframe><noscript>Powered by<!-- --> <a href="https://chat.seasalt.ai">SeaChat</a> from<!-- --> <a href="https://seasalt.ai" target="_blank" rel="noopener noreferrer">Seasalt.ai</a>.</noscript></div><!--astro:end--></astro-island> <!-- UTM Tracking Script --> <script src="/js/utm-tracking.js" defer></script> <!-- Mautic Tracking Script --> <script>
+    (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+        w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+        m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://m.seasalt.ai/mtc.js','mt');
+
+    mt('send', 'pageview');
+  </script> </body> </html>
