@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex, nofollow"><title>Sign-in successful — SeaMeet</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://api.fontshare.com" crossorigin><link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,900&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/_astro/_slug_.BlOn8_pq.css">
+<style>*,*:before,*:after{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:Plus Jakarta Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;background:#fff;color:#111318;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;-webkit-font-smoothing:antialiased}.card{max-width:480px;width:100%;text-align:center}.icon-wrap{width:56px;height:56px;margin:0 auto 24px;border-radius:50%;background:#e6f5f3;display:flex;align-items:center;justify-content:center}.icon-wrap.error{background:#fee2e2}.icon-wrap svg{width:28px;height:28px}h1{font-family:Satoshi,Plus Jakarta Sans,sans-serif;font-weight:900;font-size:32px;letter-spacing:-.04em;line-height:1.1;margin:0 0 12px;color:#111318}.multilingual{font-size:14px;font-weight:500;color:#6b7280;line-height:1.7;margin:0 0 28px}.multilingual span{display:inline-block;margin:0 6px}.message{font-size:16px;color:#6b7280;line-height:1.5;margin:0 0 24px}.error-message{font-size:14px;color:#b91c1c;background:#fef2f2;border:1px solid #FECACA;border-radius:8px;padding:12px 16px;margin:0 0 24px;text-align:left;font-family:Geist Mono,ui-monospace,monospace;word-break:break-word}.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;font-family:Satoshi,Plus Jakarta Sans,sans-serif;font-weight:700;font-size:14px;letter-spacing:.01em;border-radius:8px;cursor:pointer;text-decoration:none;border:1px solid transparent;transition:background .15s,color .15s,border-color .15s}.btn-primary{background:#111318;color:#fff;border-color:#111318}.btn-primary:hover{background:#0a0c0f}.btn-secondary{background:transparent;color:#111318;border-color:#e5e7eb}.btn-secondary:hover{border-color:#0d9488;color:#0d9488}.footnote{font-size:12px;color:#9ca3af;margin-top:28px;line-height:1.5}.footnote a{color:#0d9488;text-decoration:none}.footnote a:hover{text-decoration:underline}
+</style></head> <body> <div class="card" id="card"> <!-- Default state — gets replaced by script --> <div class="icon-wrap" id="icon-wrap"> <svg viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" id="icon"> <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path> <polyline points="22 4 12 14.01 9 11.01"></polyline> </svg> </div> <h1 id="title">Signing you in…</h1> <p class="multilingual" id="multilingual"> <span>登录成功</span> ·
+<span>登入成功</span> ·
+<span>サインイン成功</span> ·
+<span>로그인 성공</span> ·
+<span>Connexion réussie</span> ·
+<span>Inicio de sesión correcto</span> ·
+<span>Anmeldung erfolgreich</span> ·
+<span>تم تسجيل الدخول</span> </p> <p class="message" id="message">Opening SeaMeet on your desktop…</p> <div class="actions" id="actions"></div> <p class="footnote" id="footnote">You can close this tab.</p> </div> <script>
+    (function () {
+      var hash = window.location.hash || '';
+      var params = new URLSearchParams(hash.slice(1));
+      var iconWrap = document.getElementById('icon-wrap');
+      var icon = document.getElementById('icon');
+      var titleEl = document.getElementById('title');
+      var multilingualEl = document.getElementById('multilingual');
+      var messageEl = document.getElementById('message');
+      var actionsEl = document.getElementById('actions');
+      var footnoteEl = document.getElementById('footnote');
+
+      function setErrorIcon() {
+        iconWrap.classList.add('error');
+        icon.setAttribute('stroke', '#DC2626');
+        icon.innerHTML = '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line>';
+      }
+
+      function homeButton(label) {
+        var a = document.createElement('a');
+        a.href = '/';
+        a.className = 'btn btn-secondary';
+        a.textContent = label;
+        return a;
+      }
+
+      if (params.has('access_token')) {
+        // Success — fire the deep link
+        var deepLink = 'seameet://callback' + hash;
+        titleEl.textContent = 'Sign-in successful';
+        messageEl.textContent = 'Opening SeaMeet on your desktop…';
+
+        // Visible "Open SeaMeet" button as fallback if the auto-fire doesn't work
+        var openLink = document.createElement('a');
+        openLink.href = deepLink;
+        openLink.className = 'btn btn-primary';
+        openLink.id = 'open-seameet';
+        openLink.innerHTML = '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17H7A5 5 0 0 1 7 7h2"></path><path d="M15 7h2a5 5 0 0 1 0 10h-2"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg>Open SeaMeet';
+        actionsEl.appendChild(openLink);
+        actionsEl.appendChild(homeButton('Go to seameet.ai'));
+
+        // Fire the deep link via programmatic click (more reliable than window.location for custom protocols)
+        setTimeout(function () {
+          try {
+            openLink.click();
+          } catch (e) {
+            // Fallback: assignment
+            window.location.href = deepLink;
+          }
+        }, 200);
+
+        // Wipe tokens from the address bar so they don't linger
+        try {
+          history.replaceState(null, '', '/auth/success');
+        } catch (_) { /* ignore */ }
+
+        // Drift to homepage after a few seconds (button gives user explicit control)
+        var seconds = 5;
+        function renderCountdown() {
+          footnoteEl.innerHTML = 'You can close this tab. Redirecting to <a href="/">seameet.ai</a> in ' + seconds + ' second' + (seconds === 1 ? '' : 's') + '…';
+        }
+        renderCountdown();
+        var tick = setInterval(function () {
+          seconds -= 1;
+          if (seconds <= 0) {
+            clearInterval(tick);
+            window.location.replace('/');
+            return;
+          }
+          renderCountdown();
+        }, 1000);
+      } else if (params.has('error')) {
+        // OAuth error
+        setErrorIcon();
+        var errCode = params.get('error') || 'Unknown error';
+        var errDesc = params.get('error_description') || '';
+        titleEl.textContent = 'Sign-in failed';
+        multilingualEl.style.display = 'none';
+        messageEl.textContent = 'We couldn’t complete sign-in. Open SeaMeet and try again.';
+        var errBox = document.createElement('div');
+        errBox.className = 'error-message';
+        errBox.textContent = errDesc ? errCode + ': ' + errDesc : errCode;
+        messageEl.insertAdjacentElement('afterend', errBox);
+        actionsEl.appendChild(homeButton('Back to seameet.ai'));
+        footnoteEl.textContent = '';
+      } else {
+        // No hash — someone landed here directly without going through OAuth
+        titleEl.textContent = 'No sign-in data';
+        multilingualEl.style.display = 'none';
+        messageEl.textContent = 'Open SeaMeet and start sign-in from the app menu.';
+        actionsEl.appendChild(homeButton('Go to seameet.ai'));
+        footnoteEl.textContent = '';
+      }
+    })();
+  </script> </body> </html>
