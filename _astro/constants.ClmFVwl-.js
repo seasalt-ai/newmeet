@@ -1,0 +1,1 @@
+const a={HUBSPOT_DEMO:"https://calendar.app.google/GcdRQv1DVoiDaoCT6/",HUBSPOT_DEMO_ZH_TW:"https://calendar.app.google/3w9kgPpkjHKqgJsN7"},{HUBSPOT_DEMO:o,HUBSPOT_DEMO_ZH_TW:p}=a;export{o as H,p as a};

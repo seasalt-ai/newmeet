@@ -1,0 +1,1 @@
+const n="https://app.seameet.ai",o=e=>`${n}/?utm_source=${encodeURIComponent(e)}&utm_medium=web&utm_campaign=seameet_marketing`,t=e=>`${n}/signin?utm_source=${encodeURIComponent(e)}&utm_medium=web&utm_campaign=seameet_marketing`,s=e=>"/"+e+"/download",a=e=>"/"+e+"/pricing",m=e=>"/"+e+"/compare",c=e=>"/"+e+"/blog";export{c as b,m as c,s as d,a as p,o as r,t as s};
