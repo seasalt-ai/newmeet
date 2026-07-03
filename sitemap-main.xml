@@ -320,6 +320,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/how-to-record-a-google-meet/" />
   </url>
   <url>
+    <loc>https://seameet.ai/en/how-to-record-a-meeting-without-a-bot/</loc>
+    <lastmod>2026-07-03T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-record-a-meeting-without-a-bot/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/how-to-record-a-meeting-without-a-bot/" />
+  </url>
+  <url>
     <loc>https://seameet.ai/en/how-to-record-a-slack-huddle/</loc>
     <lastmod>2026-07-03T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -350,6 +358,14 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-record-a-zoom-meeting/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/how-to-record-a-zoom-meeting/" />
+  </url>
+  <url>
+    <loc>https://seameet.ai/en/how-to-transcribe-a-meeting-for-free/</loc>
+    <lastmod>2026-07-03T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-transcribe-a-meeting-for-free/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/how-to-transcribe-a-meeting-for-free/" />
   </url>
   <url>
     <loc>https://seameet.ai/en/pricing/</loc>
@@ -486,6 +502,22 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/zoom/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/record/zoom/" />
+  </url>
+  <url>
+    <loc>https://seameet.ai/en/screen-recording-with-audio-mac/</loc>
+    <lastmod>2026-07-03T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/screen-recording-with-audio-mac/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/screen-recording-with-audio-mac/" />
+  </url>
+  <url>
+    <loc>https://seameet.ai/en/screen-recording-with-audio-windows/</loc>
+    <lastmod>2026-07-03T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/screen-recording-with-audio-windows/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/screen-recording-with-audio-windows/" />
   </url>
   <url>
     <loc>https://seameet.ai/en/download/</loc>
