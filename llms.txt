@@ -1,5 +1,5 @@
 # SeaMeet MCP Server -- LLM Reference
-# Generated: 2026-07-03T04:27:05.508Z
+# Generated: 2026-07-03T05:19:51.754Z
 #
 # Auto-generated from src/main/agent/mcp/tools-registry.js
 # Do not edit manually -- run: npm run mcp:generate-llm-txt
