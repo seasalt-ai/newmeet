@@ -1,26 +1,27 @@
 # SeaMeet MCP Server -- LLM Reference
-# Generated: 2026-02-24T16:17:14.335Z
+# Generated: 2026-07-03T04:27:05.508Z
 #
 # Auto-generated from src/main/agent/mcp/tools-registry.js
 # Do not edit manually -- run: npm run mcp:generate-llm-txt
-# Live endpoint: http://localhost:3741/llm.txt  (app must be running)
+# Live endpoint: http://localhost:3741/llms.txt  (app must be running)
 
 ## Architecture
 
 SeaMeet is an Electron desktop app for recording audio/video from meetings.
-The MCP server exposes SeaMeet capabilities to Claude as 15 tools.
+The MCP server exposes SeaMeet capabilities to Claude as 18 tools.
 
   Claude Agent SDK
-    \-- spawns mcp-server.js via stdio (StdioServerTransport)
-         \-- HTTP bridge -> http://127.0.0.1:<port>/mcp-bridge/*
-              \-- bridge-routes.js (Electron main process)
+    -- spawns mcp-server.js via stdio (StdioServerTransport)
+         -- HTTP bridge -> http://127.0.0.1:<port>/mcp-bridge/*
+              -- bridge-routes.js (Electron main process)
                    |-- RecordingFileManager  (file I/O, metadata)
                    |-- AssetBundleManager    (artifacts, manifests)
                    |-- SettingsManager       (user preferences)
-                   \-- IPC -> renderer        (recording/screenshot)
+                   -- IPC -> renderer        (recording/screenshot)
 
 agent-server.js (Express) hosts:
-  GET  /llm.txt          -- this document (no auth)
+  GET  /llms.txt         -- this document (no auth)
+  GET  /llm.txt          -- compatibility alias (no auth)
   GET  /agent/health     -- health check (no auth)
   POST /agent/chat       -- Claude SSE stream
   *    /mcp-bridge/*     -- MCP bridge (requires X-Bridge-Secret)
@@ -31,7 +32,7 @@ The actual bound port is stored in appState.agentServerPort.
 Bridge auth: every /mcp-bridge/* request must include:
   X-Bridge-Secret: <SEAMEET_BRIDGE_SECRET>
 
-Credentials file written to $TMPDIR/seameet-mcp-bridge.json on app startup:
+Credentials file written to $TMPDIR/seameet-mcp-bridge-<username>.json on app startup:
   { port, secret, pid, startedAt }
 Inspector: npm run mcp:inspect  (reads credentials automatically)
 
@@ -51,16 +52,16 @@ PATH and other env vars from the parent process are NOT inherited.
   501  Not Implemented     -- analyze-media requires Layer B (Gemini) deployment
   500  Internal Error      -- unexpected server-side error
 
-## Tools (15)
+## Tools (18)
 
 ### seameet_list_recordings
 
-List recordings and screenshots with metadata. Optionally filter by media type, date range, or limit the number of results. Each entry includes: filePath, name, type, timestamp, durationMilliSeconds, hasVideo, videoMetadata (codec/width/height/frameRate), audioCodec, events (user-marked timestamps), sourceAppName, sourceLabel, imageMetadata (for screenshots), and SeaMeet meeting IDs.
+List recordings and screenshots with metadata. Returns a compact summary with totalCount (total matching recordings) and a paginated list of recordings (default limit: 50). Each entry includes: filePath, name, type, timestamp, duration, hasVideo. Use seameet_get_asset_bundle to get full details for a specific recording.
 
 Parameters:
-  type  string (recording | screenshot | microphone | all)  -- Filter by media type. Omit or use "all" to return everything.
-  dateFrom  string  -- ISO 8601 date-time -- only include recordings at or after this time.
-  dateTo  string  -- ISO 8601 date-time -- only include recordings at or before this time.
+  type  string (recording | screenshot | microphone | all)  -- Semantic media-type filter. "recording" returns meetings and audio/video files (everything that is NOT a screenshot or system process). "screenshot" returns screenshots only. "microphone" returns bare-mic captures only. "all" (or omitted) returns everything.
+  dateFrom  string  -- ISO 8601 date-time — only include recordings at or after this time.
+  dateTo  string  -- ISO 8601 date-time — only include recordings at or before this time.
   limit  number  -- Maximum number of results to return. Default: 50.
 Returns: { defaultSaveDirectory, recordings } where each recording has
   { filePath, name, type, timestamp, durationMilliSeconds, hasVideo,
@@ -71,11 +72,11 @@ Note: type values -- "recording" (video/webm), "screenshot" (image), "microphone
 
 ### seameet_get_artifact
 
-Read a specific AI-generated artifact from an asset bundle. Common artifact keys: "summary" (meeting summary markdown), "transcription" (SRT + speaker labels JSON), "action-items" (JSON array), "chapters" (JSON), "key-decisions" (JSON), "description" (screenshot description), "ocr-text" (screenshot OCR).
+Read a pre-generated AI artifact for a recording or screenshot. IMPORTANT: Always use this tool to read existing artifacts instead of using shell commands. Most recordings already have all of these artifact keys: summary, transcription, action-items, key-decisions, chapters. Call this tool once per key you need. Do NOT pass "manifest.json" as the key.
 
 Parameters:
-  filePath [required]  string  -- Absolute path to the original recording or screenshot file.
-  key [required]  string  -- Artifact key (e.g., "summary", "transcription", "action-items").
+  filePath [required]  string  -- Absolute path to the original recording or screenshot file (e.g. /path/to/recording.webm).
+  key [required]  string (summary | transcription | transcription-srt | action-items | key-decisions | chapters | description | ocr-text)  -- Artifact key. For meetings use: summary, transcription, action-items, key-decisions, chapters. For screenshots use: description, ocr-text.
 
 ### seameet_get_asset_bundle
 
@@ -101,7 +102,7 @@ Parameters:
 
 ### seameet_start_recording
 
-Start recording in SeaMeet. Pass "source" to specify what to record: - source: "microphone" -> record audio (microphone) only - source: "screen" -> record screen video + microphone audio - source: "both" -> record microphone + screen video together If "source" is omitted or unclear, the tool returns a needsClarification response with a suggested question to ask the user.
+Start recording in SeaMeet. Pass "source" to specify what to record: - source: "microphone" → record audio (microphone) only - source: "screen" → record screen video + microphone audio - source: "both" → record microphone + screen video together If "source" is omitted or unclear, the tool returns a needsClarification response with a suggested question to ask the user.
 
 Parameters:
   source  string (microphone | screen | both)  -- "microphone" = audio only, no video; "screen" = screen video + microphone audio; "both" = screen video + microphone + system/speaker audio. Omit to trigger a needsClarification response with clickable choices.
@@ -134,7 +135,7 @@ Rename a recording or screenshot file with a meaningful name. The file extension
 Parameters:
   filePath [required]  string  -- Absolute path to the file to rename.
   newName [required]  string  -- New base name for the file (without extension).
-  fileTimestampSuffix  string  -- Optional timestamp suffix to preserve in the filename (13-14 digits).
+  fileTimestampSuffix  string  -- Optional timestamp suffix to preserve in the filename (13–14 digits).
 Security: newName must not contain path separators or "..".
 Returns: response passed through from RecordingFileManager.renameRecordingFile()
   { success, newFilePath }
@@ -151,10 +152,25 @@ Note: returns files only -- subdirectories are excluded.
 
 ### seameet_get_settings
 
-Get current SeaMeet app settings including the default save directory, microphone gain, and app recording permissions.
+Get current SeaMeet app settings including the default save directory, microphone gain, app recording permissions, the user's preferred summary output language, and whether AI summary template auto-detection is enabled.
 
 Parameters: none
 Returns: { defaultSaveDirectory, microphoneGain, appPermissions, recordingFormat, language }
+
+### seameet_list_templates
+
+List all available AI summary templates with their slugs, names, descriptions, categories (team/project/sales/hr/education/medical/legal/events), and whether they are specialized (medical/legal templates that auto-append a disclaimer). Use this when the user asks which summary types are supported or when you want to recommend a specific template for a meeting.
+
+Parameters: none
+
+### seameet_regenerate_summary
+
+Regenerate the AI summary for a specific recording using a chosen template. Pass the recording's absolute filePath (same as you would to seameet_get_artifact) and a templateSlug from seameet_list_templates. The regeneration runs the production pipeline and updates the recording's "summary" artifact in place; subsequent calls to seameet_get_artifact will return the new summary. Optionally pass customPrompt to override the template's default instructions for this regeneration.
+
+Parameters:
+  filePath [required]  string  -- Absolute path to the recording file.
+  templateSlug [required]  string  -- Slug from seameet_list_templates (e.g. "soap-note", "retro").
+  customPrompt  string  -- Optional custom prompt that overrides the template's instructions.
 
 ### seameet_search_text
 
@@ -163,21 +179,29 @@ Search across all asset bundle text content (summaries, transcriptions, action i
 Parameters:
   query [required]  string  -- Text to search for (case-insensitive substring match).
   limit  number  -- Maximum number of results to return. Default: 10.
+  workspaceId  string  -- Optional workspace identifier to scope search results. Currently informational only — asset bundles are global. Phase 6 will scope the underlying SearchManager index by workspace.
 Returns: results array where each item has { assetId, filePath, artifactKey, snippet }
-  snippet -- excerpt centred around the first match (?60 chars before + match + ?140 chars after)
+  snippet -- excerpt centred around the first match (<=60 chars before + match + <=140 chars after)
 Note: at most one result per recording file even if multiple artifacts match.
 
 ### seameet_analyze_media
 
-Send a recording or screenshot to Gemini for AI analysis. NOTE: This feature requires Layer B (Gemini backend) deployment and is not yet available.
+NOT AVAILABLE. Do NOT call this tool. Recordings already have pre-generated artifacts — use seameet_get_asset_bundle to list available artifacts, then seameet_get_artifact to read them (keys: "summary", "transcription", "action-items", "key-decisions", "chapters").
 
 Parameters:
   filePath [required]  string  -- Absolute path to the media file to analyze.
   prompt  string  -- Optional analysis prompt or instructions for Gemini.
 
+### seameet_get_live_transcript
+
+Get the live transcript accumulated so far during the current recording session. Returns speaker-labeled segments with timestamps from the Gemini Live transcription. Only available when a recording with live transcription is active. Use this to answer questions about what has been said in the meeting so far.
+
+Parameters:
+  lastN  number  -- If provided, return only the last N segments instead of the full transcript. Useful for recent context.
+
 ### seameet_recording_status
 
-Get the current recording state -- whether a recording is active, paused, elapsed time, and whether video is included. Use this to check recording progress before a summary is available.
+Get the current recording state — whether a recording is active, paused, elapsed time, and whether video is included. Use this to check recording progress before a summary is available.
 
 Parameters: none
 Returns: { isRecording, isPaused, isVideoRecording, elapsedMs, recordingStartTime }
@@ -185,7 +209,7 @@ Note: Synchronous read from FloaterStateManager -- no IPC round-trip.
 
 ### seameet_pause_recording
 
-Pause the current audio recording. IMPORTANT: Only microphone/audio-only recordings can be paused. Video (screen capture) recordings cannot be paused -- this tool returns an error if the active recording includes video.
+Pause the current audio recording. IMPORTANT: Only microphone/audio-only recordings can be paused. Video (screen capture) recordings cannot be paused — this tool returns an error if the active recording includes video.
 
 Parameters: none
 Note: audio-only recordings only; returns 400 for video recordings or when nothing is recording.
