@@ -16,3 +16,42 @@ Crawl-delay: 1
 
 # Allow all search engines to index content
 # This includes Google, Bing, Yahoo, DuckDuckGo, etc.
+# ─── AI crawlers / answer engines ────────────────────────────────────────────
+# Explicitly welcome — SeaMeet wants to be discoverable and quotable by
+# AI assistants. Machine-readable site map for LLMs: https://seameet.ai/llms.txt
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
