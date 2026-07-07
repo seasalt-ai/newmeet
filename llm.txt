@@ -1,57 +1,6 @@
 # SeaMeet
 
-> SeaMeet (https://seameet.ai) is a bot-free meeting recorder and AI note
-> taker by Seasalt.ai. It records meetings, calls, and anything on screen
-> directly on your device -- no bot joins the call -- then produces
-> transcripts (23 languages), AI summaries, action items, and chapters.
-> Three ways to run it: instant in-browser recording at
-> https://app.seameet.ai (no account or install), a Chrome extension, and a
-> Windows/macOS desktop app. Recordings sync across all three with Sync Pro.
-> AI agents can operate the desktop recorder through its MCP server.
+SeaMeet's canonical machine-readable index for AI agents and LLMs is at the
+standard plural filename:
 
-## Start here
-
-- Record in your browser right now (no sign-up): https://app.seameet.ai/
-- Desktop app download (Windows/macOS): https://seameet.ai/en/download/
-- Chrome extension: https://chromewebstore.google.com/detail/gkkhkniggakfgioeeclbllpihmipkcmn
-- Pricing: https://seameet.ai/en/pricing/
-- Compare SeaMeet vs other note takers: https://seameet.ai/en/compare/
-
-## Record any app (how-to guides)
-
-- Zoom: https://seameet.ai/en/record/zoom/
-- Microsoft Teams: https://seameet.ai/en/record/microsoft-teams/
-- Google Meet: https://seameet.ai/en/record/google-meet/
-- WhatsApp: https://seameet.ai/en/record/whatsapp/
-- Discord: https://seameet.ai/en/record/discord/
-- Slack: https://seameet.ai/en/record/slack/
-- Webex: https://seameet.ai/en/record/webex/
-- Telegram: https://seameet.ai/en/record/telegram/
-- Also: LINE, WeChat, Skype, Signal, Viber, KakaoTalk, OBS Studio, Twitch --
-  same URL pattern https://seameet.ai/en/record/<app>/
-
-## Guides
-
-- How to record a meeting without a bot: https://seameet.ai/en/how-to-record-a-meeting-without-a-bot/
-- How to transcribe a meeting for free: https://seameet.ai/en/how-to-transcribe-a-meeting-for-free/
-- Screen recording with audio on Mac: https://seameet.ai/en/screen-recording-with-audio-mac/
-- Screen recording with audio on Windows: https://seameet.ai/en/screen-recording-with-audio-windows/
-- Features overview: https://seameet.ai/en/features/
-
-## For AI agents and developers
-
-- Use SeaMeet from Claude Code / Codex / Cursor (MCP setup):
-  https://seameet.ai/en/docs/agents/
-- MCP server npm package: https://www.npmjs.com/package/@seameet/mcp
-- MCP tool reference for LLMs: https://app.seameet.ai/mcp/llms.txt
-- Web app description for LLMs: https://app.seameet.ai/llms.txt
-- API reference (Sync Pro API, OpenAPI 3.1): https://app.seameet.ai/api/
-- Desktop MCP feature page: https://seameet.ai/en/desktop-app/features/mcp-server/
-
-## Company
-
-- About Seasalt.ai: https://seameet.ai/en/about/
-- Blog: https://seameet.ai/en/blog/
-- FAQ: https://seameet.ai/en/faq/
-- Privacy: https://seameet.ai/en/privacy/
-- Terms: https://seameet.ai/en/terms/
+  https://seameet.ai/llms.txt
