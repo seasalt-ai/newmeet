@@ -1575,12 +1575,12 @@
     },
     "phone": {
       "title": "Telefon Support",
-      "number": "+1 (555) 123-4567",
+      "number": "+1 (SMB)-AI-AGENT",
       "hours": "Montag - Freitag, 9:00 - 18:00 PST"
     },
     "office": {
-      "title": "Unser Büro",
-      "address": "San Francisco, Kalifornien, Vereinigte Staaten"
+      "title": "Standort",
+      "address": "Seattle, WA, USA"
     },
     "quickActions": {
       "title": "Schnelle Aktionen",

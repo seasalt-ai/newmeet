@@ -1610,12 +1610,12 @@
     },
     "phone": {
       "title": "Soporte Telefónico",
-      "number": "+1 (555) 123-4567",
+      "number": "+1 (SMB)-AI-AGENT",
       "hours": "Lunes - Viernes, 9:00 AM - 6:00 PM PST"
     },
     "office": {
-      "title": "Nuestra Oficina",
-      "address": "San Francisco, California, Estados Unidos"
+      "title": "Ubicación",
+      "address": "Seattle, WA, EE. UU."
     },
     "quickActions": {
       "title": "Acciones Rápidas",

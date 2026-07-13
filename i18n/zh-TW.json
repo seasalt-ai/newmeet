@@ -1576,12 +1576,12 @@
     },
     "phone": {
       "title": "電話支援",
-      "number": "+1 (555) 123-4567",
+      "number": "+1 (SMB)-AI-AGENT",
       "hours": "週一 - 週五，上午 9:00 - 下午 6:00 PST"
     },
     "office": {
-      "title": "我們的辦公室",
-      "address": "美國加利福尼亞州舊金山"
+      "title": "地點",
+      "address": "美國華盛頓州西雅圖"
     },
     "quickActions": {
       "title": "快速操作",
