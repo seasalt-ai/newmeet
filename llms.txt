@@ -53,6 +53,7 @@ Studio, Twitch) follow the same URL pattern: `https://seameet.ai/en/record/<app>
 - [About Seasalt.ai](https://seameet.ai/en/about/)
 - [Blog](https://seameet.ai/en/blog/)
 - [FAQ](https://seameet.ai/en/faq/)
+- [Support](https://seameet.ai/en/support/)
 - [Privacy](https://seameet.ai/en/privacy/)
 - [Terms](https://seameet.ai/en/terms/)
 
