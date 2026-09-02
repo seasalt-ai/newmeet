@@ -16,6 +16,12 @@
 - [Chrome extension](https://chromewebstore.google.com/detail/gkkhkniggakfgioeeclbllpihmipkcmn)
 - [Pricing](https://seameet.ai/en/pricing/)
 - [Compare SeaMeet vs other note takers](https://seameet.ai/en/compare/)
+- [SeaMeet vs Otter.ai](https://seameet.ai/en/compare/otter/)
+- [SeaMeet vs Fireflies.ai](https://seameet.ai/en/compare/fireflies/)
+- [SeaMeet vs Read AI](https://seameet.ai/en/compare/read-ai/)
+- [SeaMeet vs tl;dv](https://seameet.ai/en/compare/tldv/)
+- [SeaMeet vs Notta](https://seameet.ai/en/compare/notta/)
+- [SeaMeet vs Granola](https://seameet.ai/en/compare/granola/)
 
 ## Record any app (how-to guides)
 
