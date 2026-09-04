@@ -2,23 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://seameet.ai/en/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/" />
   </url>
   <url>
     <loc>https://seameet.ai/en/about/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/compare/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/" />
@@ -27,14 +28,14 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/contact/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/" />
@@ -43,245 +44,247 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/ai-agent/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/ai-extraction/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/ai-skills/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/ai-templates/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/ai-transcription/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/auto-detection/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/cross-platform/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/flashback/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/github-sync/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/mcp-server/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/notes/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/privacy/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/recording/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/screenshot-ocr/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/action-todos/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/agentic-meeting-copilot/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/ai-assistant/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/features/ai-assistant/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/features/ai-assistant/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/features/ai-assistant/" />
   </url>
   <url>
     <loc>https://seameet.ai/en/features/audio-upload/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/auto-join/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/auto-share/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/chinese-japanese-english-trilingual-transcription/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/collaboration/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/customized-summary/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/daily-executive-insights/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/fine-tune-speech-model/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/language-switching/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/meeting-labels/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/meeting-translation/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/speaker-id/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/topics-summary/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/transcription/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/features/workspace-management/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/how-to-record-a-discord-call/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-record-a-discord-call/" />
@@ -290,7 +293,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/how-to-record-a-google-meet/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-record-a-google-meet/" />
@@ -299,14 +302,14 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/how-to-record-a-meeting-without-a-bot/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/how-to-record-a-slack-huddle/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-record-a-slack-huddle/" />
@@ -315,7 +318,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/how-to-record-a-teams-meeting/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-record-a-teams-meeting/" />
@@ -324,7 +327,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/how-to-record-a-whatsapp-call/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-record-a-whatsapp-call/" />
@@ -333,7 +336,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/how-to-record-a-zoom-meeting/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-record-a-zoom-meeting/" />
@@ -342,30 +345,31 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/how-to-transcribe-a-meeting-for-free/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/pricing/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/pricing/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/pricing/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/pricing/" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/pricing/" />
   </url>
   <url>
     <loc>https://seameet.ai/en/record/audio-file/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/discord/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/discord/" />
@@ -374,7 +378,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/record/google-meet/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/google-meet/" />
@@ -383,21 +387,21 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/record/jitsi/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/kakao-talk/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/line/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/line/" />
@@ -406,21 +410,21 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/record/loom/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/mic/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/microsoft-teams/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/microsoft-teams/" />
@@ -429,49 +433,49 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/record/obs-studio/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/podcast/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/screen/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/signal/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/skype/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/slack/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/telegram/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/telegram/" />
@@ -480,35 +484,35 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/record/twitch/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/url/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/viber/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/webex/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/wechat/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/wechat/" />
@@ -517,7 +521,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/record/whatsapp/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/whatsapp/" />
@@ -526,21 +530,21 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/record/whereby/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/youtube/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/record/zoom/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/zoom/" />
@@ -549,28 +553,57 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/screen-recording-with-audio-mac/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/screen-recording-with-audio-windows/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/support/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
+    <loc>https://seameet.ai/ko/</loc>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/" />
+  </url>
+  <url>
+    <loc>https://seameet.ai/ko/features/ai-assistant/</loc>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/features/ai-assistant/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/features/ai-assistant/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/features/ai-assistant/" />
+  </url>
+  <url>
+    <loc>https://seameet.ai/ko/pricing/</loc>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/pricing/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/pricing/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/pricing/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/pricing/" />
+  </url>
+  <url>
     <loc>https://seameet.ai/zh-TW/compare/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/" />
@@ -579,7 +612,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/" />
@@ -588,16 +621,17 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/pricing/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/pricing/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/pricing/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/pricing/" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/pricing/" />
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/record/discord/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/discord/" />
@@ -606,7 +640,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/record/google-meet/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/google-meet/" />
@@ -615,7 +649,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/record/line/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/line/" />
@@ -624,7 +658,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/record/microsoft-teams/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/microsoft-teams/" />
@@ -633,7 +667,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/record/telegram/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/telegram/" />
@@ -642,7 +676,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/record/wechat/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/wechat/" />
@@ -651,7 +685,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/record/whatsapp/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/whatsapp/" />
@@ -660,7 +694,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/record/zoom/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/record/zoom/" />
@@ -669,21 +703,21 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/affiliate-terms/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/affiliate/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/compare/fireflies/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/fireflies/" />
@@ -692,7 +726,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/compare/granola/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/granola/" />
@@ -701,7 +735,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/compare/notta/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/notta/" />
@@ -710,7 +744,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/compare/otter/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/otter/" />
@@ -719,7 +753,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/compare/read-ai/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/read-ai/" />
@@ -728,7 +762,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/compare/tldv/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/tldv/" />
@@ -737,88 +771,100 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/docs/agents/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/download/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/download/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/download/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/download/" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/download/" />
   </url>
   <url>
     <loc>https://seameet.ai/en/privacy/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/solutions/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/solutions/marketing/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/solutions/recruiting/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/solutions/sales/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/terms/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/why-agentic-meeting-copilot/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/why-team-plan/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
+    <loc>https://seameet.ai/ko/download/</loc>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/download/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/download/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/download/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/download/" />
+  </url>
+  <url>
     <loc>https://seameet.ai/zh-TW/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/" />
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/compare/fireflies/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/fireflies/" />
@@ -827,7 +873,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/compare/granola/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/granola/" />
@@ -836,7 +882,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/compare/notta/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/notta/" />
@@ -845,7 +891,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/compare/otter/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/otter/" />
@@ -854,7 +900,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/compare/read-ai/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/read-ai/" />
@@ -863,7 +909,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/compare/tldv/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/tldv/" />
@@ -872,16 +918,17 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/download/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/download/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/download/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/download/" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/download/" />
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/how-to-record-a-discord-call/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-record-a-discord-call/" />
@@ -890,7 +937,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/how-to-record-a-google-meet/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-record-a-google-meet/" />
@@ -899,7 +946,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/how-to-record-a-slack-huddle/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-record-a-slack-huddle/" />
@@ -908,7 +955,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/how-to-record-a-teams-meeting/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-record-a-teams-meeting/" />
@@ -917,7 +964,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/how-to-record-a-whatsapp-call/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-record-a-whatsapp-call/" />
@@ -926,7 +973,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/how-to-record-a-zoom-meeting/</loc>
-    <lastmod>2026-09-03T00:00:00.000Z</lastmod>
+    <lastmod>2026-09-04T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/how-to-record-a-zoom-meeting/" />
