@@ -5944,26 +5944,6 @@
       }
     }
   },
-  "aiSalesWhitepaper": {
-    "form": {
-      "placeholders": {
-        "name": "姓名",
-        "email": "电子邮件",
-        "company": "公司",
-        "phone": "联络电话",
-        "referralSource": "请选择您是如何得知我们的"
-      },
-      "success": {
-        "title": "提交成功！",
-        "message": "我们很快会将白皮书发送到您的邮箱。"
-      }
-    },
-    "finalCta": {
-      "description": "立即获取免费的AI驱动销售转型白皮书",
-      "formTitle": "下载白皮书",
-      "submitButton": "立即下载"
-    }
-  },
   "meetingTranslationPage": {
     "hero": {
       "title_part1": "听懂每个人。",
