@@ -44,7 +44,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/blog/</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/blog/" />
@@ -1373,9 +1373,7 @@
     <lastmod>2026-09-07T16:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/blog/the-uninvited-guest-your-definitive-guide-to-stopping-otter-ai-from-joining-your-meetings/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/blog/the-uninvited-guest-your-definitive-guide-to-stopping-otter-ai-from-joining-your-meetings/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/blog/the-uninvited-guest-your-definitive-guide-to-stopping-otter-ai-from-joining-your-meetings/" />
+
   </url>
   <url>
     <loc>https://seameet.ai/en/blog/this-ai-tool-translates-meetings-into-3-languages-in-parallel-but-everyones-talking-about-yoda-and-klingon/</loc>
@@ -1732,6 +1730,13 @@
 
   </url>
   <url>
+    <loc>https://seameet.ai/ja/blog/the-uninvited-guest-your-definitive-guide-to-stopping-otter-ai-from-joining-your-meetings/</loc>
+    <lastmod>2025-09-15T16:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+
+  </url>
+  <url>
     <loc>https://seameet.ai/ko/blog/how-to-record-a-line-call/</loc>
     <lastmod>2026-08-30T16:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -1748,6 +1753,13 @@
   <url>
     <loc>https://seameet.ai/ko/blog/record-whatsapp-call-with-transcript/</loc>
     <lastmod>2026-08-31T16:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/ko/blog/the-uninvited-guest-your-definitive-guide-to-stopping-otter-ai-from-joining-your-meetings/</loc>
+    <lastmod>2025-09-15T16:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
 
@@ -1943,7 +1955,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/blog/</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/blog/" />
@@ -3286,9 +3298,7 @@
     <lastmod>2025-09-15T16:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/blog/the-uninvited-guest-your-definitive-guide-to-stopping-otter-ai-from-joining-your-meetings/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/blog/the-uninvited-guest-your-definitive-guide-to-stopping-otter-ai-from-joining-your-meetings/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/blog/the-uninvited-guest-your-definitive-guide-to-stopping-otter-ai-from-joining-your-meetings/" />
+
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/blog/this-ai-tool-translates-meetings-into-3-languages-in-parallel-but-everyones-talking-about-yoda-and-klingon/</loc>
