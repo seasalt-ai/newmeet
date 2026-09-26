@@ -711,8 +711,22 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/record/zoom/" />
   </url>
   <url>
+    <loc>https://seameet.ai/ar/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
     <loc>https://seameet.ai/ar/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/da/convert-files/</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
@@ -725,8 +739,15 @@
 
   </url>
   <url>
+    <loc>https://seameet.ai/de/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
     <loc>https://seameet.ai/de/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
@@ -800,6 +821,16 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/compare/tldv/" />
   </url>
   <url>
+    <loc>https://seameet.ai/en/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/convert-files/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/convert-files/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/convert-files/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/convert-files/" />
+  </url>
+  <url>
     <loc>https://seameet.ai/en/docs/agents/</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -860,7 +891,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/transcribe-files/" />
@@ -883,43 +914,92 @@
 
   </url>
   <url>
+    <loc>https://seameet.ai/es/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
     <loc>https://seameet.ai/es/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/fa/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/fa/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/fil/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/fil/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/fr/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/fr/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/hi/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/hi/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/id/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/id/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/it/convert-files/</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
@@ -932,11 +1012,28 @@
 
   </url>
   <url>
-    <loc>https://seameet.ai/ja/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <loc>https://seameet.ai/ja/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
+  </url>
+  <url>
+    <loc>https://seameet.ai/ja/transcribe-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/ko/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/convert-files/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/convert-files/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/convert-files/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/convert-files/" />
   </url>
   <url>
     <loc>https://seameet.ai/ko/download/</loc>
@@ -950,7 +1047,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/ko/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/transcribe-files/" />
@@ -959,64 +1056,127 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/transcribe-files/" />
   </url>
   <url>
+    <loc>https://seameet.ai/ms/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
     <loc>https://seameet.ai/ms/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/pl/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/pl/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/pt/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/pt/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/ro/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/ro/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/ru/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/ru/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/ta/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/ta/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/th/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/th/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/vi/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/vi/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+
+  </url>
+  <url>
+    <loc>https://seameet.ai/zh-CN/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/zh-CN/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 
@@ -1084,6 +1244,16 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/compare/tldv/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/compare/tldv/" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/compare/tldv/" />
+  </url>
+  <url>
+    <loc>https://seameet.ai/zh-TW/convert-files/</loc>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/convert-files/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/convert-files/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seameet.ai/ko/convert-files/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/convert-files/" />
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/download/</loc>
@@ -1160,7 +1330,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/transcribe-files/</loc>
-    <lastmod>2026-09-26T00:22:42.000Z</lastmod>
+    <lastmod>2026-09-26T16:50:49.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/transcribe-files/" />
