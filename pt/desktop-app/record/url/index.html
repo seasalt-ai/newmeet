@@ -1,4 +1,29 @@
-<!DOCTYPE html><html lang="pt"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SeaMeet - Redirecting...</title><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="/pt/record/url/"><meta http-equiv="refresh" content="0; url=/pt/record/url/"><link rel="stylesheet" href="/_astro/_slug_.P_JQXGVI.css"></head> <body> <p>Redirecting to <a href="/pt/record/url/">/pt/record/url/</a></p> <script>(function(){const targetUrl = "/pt/record/url/";
+<!DOCTYPE html><html lang="pt"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SeaMeet - Redirecting...</title><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="/pt/record/url/"><meta http-equiv="refresh" content="0; url=/pt/record/url/"><!-- Attribution ledger landing touch: a same-origin client redirect
+       replaces the referrer, so a visitor arriving here via an AI citation
+       or newsletter (no utm/gclid) would otherwise land in the ledger as
+       direct_unknown. Deferred scripts execute before DOMContentLoaded
+       and send the beacon immediately (readyState 'interactive'), and the
+       redirect below waits for DOMContentLoaded — index.astro's ordering —
+       so the touch always precedes the navigation. Known gap
+       (pre-existing, same as index.astro's): the no-JS meta-refresh
+       fallback and the <a> below carry neither query nor touch. --><script src="/js/journey-tracking.js" defer></script><link rel="stylesheet" href="/_astro/_slug_.FlFjcrKS.css"></head> <body> <p>Redirecting to <a href="/pt/record/url/">/pt/record/url/</a></p> <script>(function(){const targetUrl = "/pt/record/url/";
 
-    window.location.replace(targetUrl);
+    // Carry inbound query (utm_*/gclid) through the redirect — the
+    // attribution landing touch on the target page reads it from the URL.
+    // Redirect at DOMContentLoaded, NOT inline during parsing: deferred
+    // journey-tracking.js executes before DOMContentLoaded, so this
+    // ordering guarantees its beacon is sent before the navigation starts
+    // (an inline location.replace() could discard the document before the
+    // deferred script ever ran — the cold-cache entry-page case).
+    // Known gap (pre-existing, same class as index.astro's): the no-JS
+    // meta-refresh fallback and the <a> above carry no query.
+    function go() {
+      var qs = window.location.search || '';
+      window.location.replace(qs ? targetUrl + qs : targetUrl);
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', go);
+    } else {
+      go();
+    }
   })();</script> </body> </html>
