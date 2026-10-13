@@ -47,6 +47,7 @@ Studio, Twitch) follow the same URL pattern: `https://seameet.ai/en/record/<app>
 
 ## For AI agents and developers
 
+- [Use SeaMeet in Claude and ChatGPT](https://seameet.ai/en/web-app/wiki/account-billing-and-growth/use-seameet-in-claude-and-chatgpt/): add the hosted connector `https://mcp.seameet.ai/mcp` in claude.ai, ChatGPT, or their desktop apps; sign in with a SeaMeet account (OAuth, any plan), no install or API key
 - [Setup guide + full tool list (desktop & cloud modes)](https://seameet.ai/en/docs/agents/): install the MCP server in one line -- `npx -y @seameet/mcp`
 - [MCP server npm package](https://www.npmjs.com/package/@seameet/mcp)
 - [MCP server source](https://github.com/seameet-ai/seameet-mcp)
