@@ -44,6 +44,8 @@ Studio, Twitch) follow the same URL pattern: `https://seameet.ai/en/record/<app>
 - [Screen recording with audio on Mac](https://seameet.ai/en/screen-recording-with-audio-mac/)
 - [Screen recording with audio on Windows](https://seameet.ai/en/screen-recording-with-audio-windows/)
 - [Features overview](https://seameet.ai/en/features/)
+- [SeaMeet for contact centers](https://seameet.ai/en/features/contact-center/): both sides of every call recorded from the agent's computer, notes when the call ends, a voice wrap-up written into the call's notes, approved AI assistants only
+- [SeaMeet for meeting rooms](https://seameet.ai/en/features/meeting-rooms/): one tap on the room's USB speakerphone starts recording in the browser, everyone in the room and on the call, decisions into Meeting Memory, ask the meeting out loud
 
 ## For AI agents and developers
 
