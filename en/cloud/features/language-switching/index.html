@@ -6,7 +6,8 @@
        redirect below waits for DOMContentLoaded — index.astro's ordering —
        so the touch always precedes the navigation. Known gap
        (pre-existing, same as index.astro's): the no-JS meta-refresh
-       fallback and the <a> below carry neither query nor touch. --><script src="/js/journey-tracking.js" defer></script><link rel="stylesheet" href="/_astro/_slug_.CrkpeiVh.css"></head> <body> <p>Redirecting to <a href="/en/features/language-switching/">/en/features/language-switching/</a></p> <script>(function(){const targetUrl = "/en/features/language-switching/";
+       fallback and the <a> below carry neither query nor touch. --><script src="/js/journey-tracking.js" defer></script><link rel="stylesheet" href="/_astro/_slug_.DD7sCM-I.css"></head> <body> <p>Redirecting to <a href="/en/features/language-switching/">/en/features/language-switching/</a></p> <script>(function(){const targetPath = "/en/features/language-switching/";
+const fragment = "";
 
     // Carry inbound query (utm_*/gclid) through the redirect — the
     // attribution landing touch on the target page reads it from the URL.
@@ -19,7 +20,7 @@
     // meta-refresh fallback and the <a> above carry no query.
     function go() {
       var qs = window.location.search || '';
-      window.location.replace(qs ? targetUrl + qs : targetUrl);
+      window.location.replace(targetPath + qs + fragment);
     }
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', go);

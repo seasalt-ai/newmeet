@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://seameet.ai/en/chrome-extension/wiki/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/chrome-extension/wiki/cloud-and-recovery/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/chrome-extension/wiki/getting-started/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/chrome-extension/wiki/integrations/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
@@ -65,7 +65,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/chrome-extension/wiki/recording/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
@@ -86,14 +86,14 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/features/wiki/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/" />
@@ -102,12 +102,10 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/advanced-features/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/advanced-features/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/advanced-features/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/advanced-features/" />
+
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/advanced-features/auto-detection/</loc>
@@ -123,13 +121,11 @@
     <lastmod>2026-01-31T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/advanced-features/flashback-recording/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/advanced-features/flashback-recording/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/advanced-features/flashback-recording/" />
+
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/ai-features/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/ai-features/" />
@@ -150,9 +146,7 @@
     <lastmod>2026-06-03T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/ai-features/ai-summary-templates/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/ai-features/ai-summary-templates/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/ai-features/ai-summary-templates/" />
+
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/ai-features/byok-setup-guide/</loc>
@@ -201,7 +195,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/core-recording/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/core-recording/" />
@@ -246,7 +240,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/getting-started/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/getting-started/" />
@@ -273,21 +267,17 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/interface-controls/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/interface-controls/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/interface-controls/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/interface-controls/" />
+
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/interface-controls/keyboard-shortcuts/</loc>
     <lastmod>2026-10-28T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/interface-controls/keyboard-shortcuts/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/interface-controls/keyboard-shortcuts/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/interface-controls/keyboard-shortcuts/" />
+
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/interface-controls/main-interface/</loc>
@@ -309,7 +299,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/knowledge-base/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/knowledge-base/" />
@@ -317,17 +307,8 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/knowledge-base/" />
   </url>
   <url>
-    <loc>https://seameet.ai/en/desktop-app/wiki/knowledge-base/the-wiki/</loc>
-    <lastmod>2026-09-01T16:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/knowledge-base/the-wiki/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/knowledge-base/the-wiki/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/knowledge-base/the-wiki/" />
-  </url>
-  <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/managing-recordings/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/managing-recordings/" />
@@ -342,15 +323,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/managing-recordings/importing-files/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/managing-recordings/importing-files/" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/managing-recordings/importing-files/" />
-  </url>
-  <url>
-    <loc>https://seameet.ai/en/desktop-app/wiki/managing-recordings/media-library/</loc>
-    <lastmod>2026-06-03T16:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/managing-recordings/media-library/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/managing-recordings/media-library/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/managing-recordings/media-library/" />
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/managing-recordings/playback-features/</loc>
@@ -372,12 +344,10 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/notes/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/notes/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/notes/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/notes/" />
+
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/notes/note-editor-and-ai-synthesis/</loc>
@@ -399,7 +369,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/settings/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/settings/" />
@@ -471,7 +441,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/sync/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/sync/" />
@@ -488,15 +458,6 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/sync/github-sync-setup/" />
   </url>
   <url>
-    <loc>https://seameet.ai/en/desktop-app/wiki/technical/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/technical/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/technical/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/technical/" />
-  </url>
-  <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/technical/glossary/</loc>
     <lastmod>2026-06-03T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -506,15 +467,6 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/technical/glossary/" />
   </url>
   <url>
-    <loc>https://seameet.ai/en/desktop-app/wiki/technical/how-seameet-works/</loc>
-    <lastmod>2026-01-31T16:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/technical/how-seameet-works/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/technical/how-seameet-works/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/technical/how-seameet-works/" />
-  </url>
-  <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/technical/platform-differences/</loc>
     <lastmod>2026-06-03T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -522,24 +474,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/technical/platform-differences/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/technical/platform-differences/" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/technical/platform-differences/" />
-  </url>
-  <url>
-    <loc>https://seameet.ai/en/desktop-app/wiki/troubleshooting/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/troubleshooting/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/troubleshooting/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/troubleshooting/" />
-  </url>
-  <url>
-    <loc>https://seameet.ai/en/desktop-app/wiki/troubleshooting/best-practices/</loc>
-    <lastmod>2026-01-31T16:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/troubleshooting/best-practices/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/troubleshooting/best-practices/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/troubleshooting/best-practices/" />
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/troubleshooting/common-issues-solutions/</loc>
@@ -561,34 +495,20 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/web-app/wiki/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/web-app/wiki/account-billing-and-growth/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/web-app/wiki/account-billing-and-growth/account-and-settings/</loc>
-    <lastmod>2026-10-11T16:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-
-  </url>
-  <url>
-    <loc>https://seameet.ai/en/web-app/wiki/account-billing-and-growth/affiliate-program/</loc>
-    <lastmod>2026-09-02T16:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-
-  </url>
-  <url>
-    <loc>https://seameet.ai/en/web-app/wiki/account-billing-and-growth/connecting-mcp-cli/</loc>
     <lastmod>2026-10-11T16:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -604,13 +524,6 @@
   <url>
     <loc>https://seameet.ai/en/web-app/wiki/account-billing-and-growth/google-drive/</loc>
     <lastmod>2026-11-15T16:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-
-  </url>
-  <url>
-    <loc>https://seameet.ai/en/web-app/wiki/account-billing-and-growth/plans-and-billing/</loc>
-    <lastmod>2026-08-30T16:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
@@ -638,7 +551,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/web-app/wiki/getting-started/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
@@ -659,7 +572,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/web-app/wiki/recording/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
@@ -694,7 +607,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/web-app/wiki/sharing-and-teams/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
@@ -722,14 +635,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/web-app/wiki/your-recordings/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-
-  </url>
-  <url>
-    <loc>https://seameet.ai/en/web-app/wiki/your-recordings/meeting-memory/</loc>
-    <lastmod>2026-10-15T16:00:00.000Z</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
@@ -764,21 +670,12 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/" />
-  </url>
-  <url>
-    <loc>https://seameet.ai/zh-TW/desktop-app/wiki/advanced-features/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/advanced-features/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/advanced-features/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/advanced-features/" />
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/advanced-features/auto-detection/</loc>
@@ -790,17 +687,8 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/advanced-features/auto-detection/" />
   </url>
   <url>
-    <loc>https://seameet.ai/zh-TW/desktop-app/wiki/advanced-features/flashback-recording/</loc>
-    <lastmod>2026-01-31T16:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/advanced-features/flashback-recording/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/advanced-features/flashback-recording/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/advanced-features/flashback-recording/" />
-  </url>
-  <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/ai-features/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/ai-features/" />
@@ -815,15 +703,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/ai-features/ai-extraction/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/ai-features/ai-extraction/" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/ai-features/ai-extraction/" />
-  </url>
-  <url>
-    <loc>https://seameet.ai/zh-TW/desktop-app/wiki/ai-features/ai-summary-templates/</loc>
-    <lastmod>2026-06-03T16:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/ai-features/ai-summary-templates/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/ai-features/ai-summary-templates/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/ai-features/ai-summary-templates/" />
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/ai-features/byok-setup-guide/</loc>
@@ -872,7 +751,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/core-recording/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/core-recording/" />
@@ -917,7 +796,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/getting-started/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/getting-started/" />
@@ -943,24 +822,6 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/getting-started/your-first-recording/" />
   </url>
   <url>
-    <loc>https://seameet.ai/zh-TW/desktop-app/wiki/interface-controls/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/interface-controls/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/interface-controls/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/interface-controls/" />
-  </url>
-  <url>
-    <loc>https://seameet.ai/zh-TW/desktop-app/wiki/interface-controls/keyboard-shortcuts/</loc>
-    <lastmod>2026-01-31T16:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/interface-controls/keyboard-shortcuts/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/interface-controls/keyboard-shortcuts/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/interface-controls/keyboard-shortcuts/" />
-  </url>
-  <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/interface-controls/main-interface/</loc>
     <lastmod>2026-01-31T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -980,7 +841,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/knowledge-base/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/knowledge-base/" />
@@ -992,13 +853,11 @@
     <lastmod>2026-09-01T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/knowledge-base/the-wiki/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/knowledge-base/the-wiki/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/knowledge-base/the-wiki/" />
+
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/managing-recordings/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/managing-recordings/" />
@@ -1019,9 +878,7 @@
     <lastmod>2026-06-03T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/managing-recordings/media-library/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/managing-recordings/media-library/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/managing-recordings/media-library/" />
+
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/managing-recordings/playback-features/</loc>
@@ -1040,15 +897,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/managing-recordings/your-recording-library/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/managing-recordings/your-recording-library/" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/managing-recordings/your-recording-library/" />
-  </url>
-  <url>
-    <loc>https://seameet.ai/zh-TW/desktop-app/wiki/notes/</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/notes/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/notes/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/notes/" />
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/notes/note-editor-and-ai-synthesis/</loc>
@@ -1070,7 +918,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/settings/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/settings/" />
@@ -1142,7 +990,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/sync/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/sync/" />
@@ -1160,12 +1008,10 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/technical/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/technical/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/technical/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/technical/" />
+
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/technical/glossary/</loc>
@@ -1181,9 +1027,7 @@
     <lastmod>2026-01-31T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/technical/how-seameet-works/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/technical/how-seameet-works/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/technical/how-seameet-works/" />
+
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/technical/platform-differences/</loc>
@@ -1196,21 +1040,17 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/troubleshooting/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/troubleshooting/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/troubleshooting/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/troubleshooting/" />
+
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/troubleshooting/best-practices/</loc>
     <lastmod>2026-01-31T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/troubleshooting/best-practices/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/troubleshooting/best-practices/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/troubleshooting/best-practices/" />
+
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/troubleshooting/common-issues-solutions/</loc>
