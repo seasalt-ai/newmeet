@@ -143,14 +143,14 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/ai-features/ai-summary-templates/</loc>
-    <lastmod>2026-06-03T16:00:00.000Z</lastmod>
+    <lastmod>2026-11-21T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
 
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/ai-features/byok-setup-guide/</loc>
-    <lastmod>2026-06-03T16:00:00.000Z</lastmod>
+    <lastmod>2026-11-21T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/ai-features/byok-setup-guide/" />
@@ -159,7 +159,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/ai-features/copilot-provider/</loc>
-    <lastmod>2026-03-19T16:00:00.000Z</lastmod>
+    <lastmod>2026-11-21T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/ai-features/copilot-provider/" />
@@ -185,8 +185,17 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/ai-features/live-transcription/" />
   </url>
   <url>
+    <loc>https://seameet.ai/en/desktop-app/wiki/ai-features/on-device-ai-what-to-expect/</loc>
+    <lastmod>2026-11-21T16:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/ai-features/on-device-ai-what-to-expect/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/ai-features/on-device-ai-what-to-expect/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/ai-features/on-device-ai-what-to-expect/" />
+  </url>
+  <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/ai-features/subscription-billing/</loc>
-    <lastmod>2026-03-19T16:00:00.000Z</lastmod>
+    <lastmod>2026-11-21T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/ai-features/subscription-billing/" />
@@ -450,7 +459,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/sync/github-sync-setup/</loc>
-    <lastmod>2026-06-03T16:00:00.000Z</lastmod>
+    <lastmod>2026-11-21T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/sync/github-sync-setup/" />
@@ -459,7 +468,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/technical/glossary/</loc>
-    <lastmod>2026-06-03T16:00:00.000Z</lastmod>
+    <lastmod>2026-11-21T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/technical/glossary/" />
@@ -593,7 +602,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/en/web-app/wiki/recording/stopping-and-saving/</loc>
-    <lastmod>2026-10-14T16:00:00.000Z</lastmod>
+    <lastmod>2026-10-28T16:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
 
@@ -706,7 +715,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/ai-features/byok-setup-guide/</loc>
-    <lastmod>2026-06-03T16:00:00.000Z</lastmod>
+    <lastmod>2026-11-21T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/ai-features/byok-setup-guide/" />
@@ -715,7 +724,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/ai-features/copilot-provider/</loc>
-    <lastmod>2026-03-19T16:00:00.000Z</lastmod>
+    <lastmod>2026-11-21T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/ai-features/copilot-provider/" />
@@ -741,8 +750,17 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/ai-features/live-transcription/" />
   </url>
   <url>
+    <loc>https://seameet.ai/zh-TW/desktop-app/wiki/ai-features/on-device-ai-what-to-expect/</loc>
+    <lastmod>2026-11-21T16:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/ai-features/on-device-ai-what-to-expect/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/ai-features/on-device-ai-what-to-expect/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/ai-features/on-device-ai-what-to-expect/" />
+  </url>
+  <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/ai-features/subscription-billing/</loc>
-    <lastmod>2026-03-19T16:00:00.000Z</lastmod>
+    <lastmod>2026-11-21T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/ai-features/subscription-billing/" />
@@ -999,7 +1017,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/sync/github-sync-setup/</loc>
-    <lastmod>2026-06-03T16:00:00.000Z</lastmod>
+    <lastmod>2026-11-21T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/sync/github-sync-setup/" />
@@ -1015,7 +1033,7 @@
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/technical/glossary/</loc>
-    <lastmod>2026-06-03T16:00:00.000Z</lastmod>
+    <lastmod>2026-11-21T16:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/technical/glossary/" />
