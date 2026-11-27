@@ -117,13 +117,6 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/advanced-features/auto-detection/" />
   </url>
   <url>
-    <loc>https://seameet.ai/en/desktop-app/wiki/advanced-features/flashback-recording/</loc>
-    <lastmod>2026-01-31T16:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-
-  </url>
-  <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/ai-features/</loc>
     <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -402,15 +395,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/settings/auto-recording-settings/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/settings/auto-recording-settings/" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/settings/auto-recording-settings/" />
-  </url>
-  <url>
-    <loc>https://seameet.ai/en/desktop-app/wiki/settings/flashback-settings/</loc>
-    <lastmod>2026-01-31T16:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/settings/flashback-settings/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/settings/flashback-settings/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/settings/flashback-settings/" />
   </url>
   <url>
     <loc>https://seameet.ai/en/desktop-app/wiki/settings/language-appearance/</loc>
@@ -967,15 +951,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/settings/auto-recording-settings/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/settings/auto-recording-settings/" />
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/settings/auto-recording-settings/" />
-  </url>
-  <url>
-    <loc>https://seameet.ai/zh-TW/desktop-app/wiki/settings/flashback-settings/</loc>
-    <lastmod>2026-01-31T16:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seameet.ai/en/desktop-app/wiki/settings/flashback-settings/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seameet.ai/en/desktop-app/wiki/settings/flashback-settings/" />
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://seameet.ai/zh-TW/desktop-app/wiki/settings/flashback-settings/" />
   </url>
   <url>
     <loc>https://seameet.ai/zh-TW/desktop-app/wiki/settings/language-appearance/</loc>
